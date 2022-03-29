@@ -51,7 +51,7 @@ public class GettingInAndOutOfCars : MonoBehaviour
         human.SetActive((true));
 
         human.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.left);
-        
+
         mCamera.SetTarget((human.transform));
 
         carController.enabled = false;
