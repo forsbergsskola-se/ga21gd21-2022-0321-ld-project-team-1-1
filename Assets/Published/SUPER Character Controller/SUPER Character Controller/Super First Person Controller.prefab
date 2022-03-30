@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6817638361354391144}
   m_RootOrder: 0
@@ -112,7 +113,8 @@ Transform:
   m_GameObject: {fileID: 6817638361354391147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0.24}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6817638360860843947}
   m_Father: {fileID: 0}
@@ -169,7 +171,7 @@ MonoBehaviour:
   crosshairSprite: {fileID: 0}
   cameraPerspective: 0
   automaticallySwitchPerspective: 0
-  perspectiveSwitchingKey: 31
+  perspectiveSwitchingKey_L: 0
   mouseInputInversion: 0
   Sensitivity: 8
   rotationWeight: 4
@@ -191,16 +193,16 @@ MonoBehaviour:
   sprintingSpeed: 240
   crouchingSpeed: 45
   decelerationSpeed: 240
-  sprintKey: 51
-  crouchKey: 55
-  slideKey: 36
+  sprintKey_L: 304
+  crouchKey_L: 306
+  slideKey_L: 118
   canSprint: 1
   isSprinting: 0
   toggleSprint: 0
   sprintOveride: 0
   canCrouch: 1
   isCrouching: 0
-  toggleCrouch: 0
+  toggleCrouch: 1
   crouchOverride: 0
   isIdle: 0
   currentStance: 0
@@ -210,15 +212,15 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 51
-  hardSlopeLimit: 70
+  hardSlopeLimit: 45
   slopeInfluenceOnSpeed: 1
-  maxStairRise: 0.25
-  stepUpSpeed: 0.2
+  maxStairRise: 1.5
+  stepUpSpeed: 0.227
   canJump: 1
   holdJump: 0
   jumpEnhancements: 0
   Jumped: 0
-  jumpKey: 1
+  jumpKey_L: 32
   jumpPower: 40
   airControlFactor: 1
   decentMultiplier: 2.5
@@ -249,7 +251,7 @@ MonoBehaviour:
     groundLayer: {fileID: 0}
     groundPhysicMaterial: {fileID: 0}
   enableStaminaSystem: 1
-  jumpingDepletesStamina: 1
+  jumpingDepletesStamina: 0
   Stamina: 100
   currentStaminaLevel: 0
   s_minimumStaminaToSprint: 5
@@ -282,7 +284,7 @@ MonoBehaviour:
     hasLowHealth: 0
     isStarving: 0
     isDehydrated: 0
-  interactKey: 19
+  interactKey_L: 101
   interactRange: 2.4
   interactableLayer:
     serializedVersion: 2
