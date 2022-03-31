@@ -20,6 +20,10 @@ public class GettingInAndOutOfCars : MonoBehaviour
     [SerializeField] private GameObject car = null;
     [SerializeField] CarUserControl carController = null;
     [SerializeField] private CarController carEngine = null;
+    public float steeringCar = 0;
+    public float accelerateCar = 0;
+    public float brakeCar = 0;
+    public float handBrakeCar = 0;
 
     [Header("Input")]
     [SerializeField] private KeyCode enterExitKey = KeyCode.E;
@@ -36,8 +40,13 @@ public class GettingInAndOutOfCars : MonoBehaviour
     {
         if (Input.GetKeyDown((enterExitKey)))
         {
-            if(inCar)
+            if (inCar)
+            {
                 GetOutOfCar();
+                // BrakeCar();
+            }
+                
+            
             
             else if (Vector3.Distance(car.transform.position, human.transform.position) < closeDistance) //if out of car
                 GetIntoCar();
@@ -56,7 +65,8 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
         carController.enabled = false;
 
-        carEngine.enabled = false;
+        // carEngine.enabled = false;
+        carEngine.Move(steeringCar,accelerateCar,brakeCar,handBrakeCar);
         
         
 
@@ -72,6 +82,12 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
         carController.enabled = true;
 
-        carEngine.enabled = true;
+        // carEngine.enabled = true;
     }
+
+    // // void BrakeCar()
+    // {
+    //     carEngine.Move(steeringCar,accelerateCar,brakeCar,handBrakeCar);
+    // }                      
 }
+
