@@ -431,7 +431,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5.06
+  m_Radius: 5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1569780894
 MonoBehaviour:
@@ -448,11 +448,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1933844310
-      Data2: 1271291513
-      Data3: 501964425
-      Data4: -641509264
-    Path: event:/CrystalAmbience
+      Data1: -1748728028
+      Data2: 1213475433
+      Data3: -535954250
+      Data4: -1441061663
+    Path: event:/CrystalAmbience2
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -462,7 +462,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 15
+  OverrideMaxDistance: 20
 --- !u!4 &1569780895
 Transform:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ Transform:
   m_GameObject: {fileID: 1569780892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.0003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2039701297}
@@ -589,7 +589,6 @@ GameObject:
   - component: {fileID: 1747523982}
   - component: {fileID: 1747523983}
   - component: {fileID: 1747523984}
-  - component: {fileID: 1747523985}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -813,36 +812,6 @@ MonoBehaviour:
       Data3: 2070489274
       Data4: 1226060942
     Path: event:/Wind
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1747523985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747523978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1648993072
-      Data2: 1295517072
-      Data3: -2012225876
-      Data4: -1993918062
-    Path: event:/Footsteps
   Event: 
   PlayEvent: 1
   StopEvent: 2
