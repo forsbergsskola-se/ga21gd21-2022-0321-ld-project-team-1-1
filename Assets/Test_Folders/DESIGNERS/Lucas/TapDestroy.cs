@@ -9,6 +9,8 @@ public class TapDestroy : MonoBehaviour
     private Ray rayPointer;
     private RaycastHit rayHit;
     private string CollectableObject = "Collectable";
+    public float timer;
+    public float holdDuration = 3f;
     
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,23 @@ public class TapDestroy : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            ShootRay();
+            timer = Time.time;
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            if (Time.time - timer > holdDuration)
+            {
+                //by making it positive inf, we won't subsequently run this code by accident,
+                //since X - +inf = -inf, which is always less than holdDur
+                timer = float.PositiveInfinity;
+                
+                //perform our action
+                ShootRay();
+            }
+        }
+        else
+        {
+            timer = float.PositiveInfinity;
         }
     }
 

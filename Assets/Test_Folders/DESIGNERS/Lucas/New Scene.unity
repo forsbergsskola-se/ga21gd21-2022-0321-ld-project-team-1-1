@@ -1151,6 +1151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1287158391}
+  timer: 0
+  holdDuration: 2
 --- !u!4 &1904352124
 Transform:
   m_ObjectHideFlags: 0
