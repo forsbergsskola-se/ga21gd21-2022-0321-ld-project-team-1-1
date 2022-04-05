@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TapDestroy : MonoBehaviour
 {
@@ -12,10 +13,16 @@ public class TapDestroy : MonoBehaviour
     public float timer;
     public float holdDuration = 3f;
     
+    public Text countText;
+    private int count;
+
+    
     // Start is called before the first frame update
     void Start()
     {
         camera = Camera.main;
+        count = 0;
+        SetCountText();
     }
 
     // Update is called once per frame
@@ -48,8 +55,22 @@ public class TapDestroy : MonoBehaviour
         rayPointer = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(rayPointer, out rayHit))
         {
-            if(rayHit.collider.gameObject.tag == "Collectable")
-            Destroy(rayHit.transform.gameObject);
+            if (rayHit.collider.gameObject.tag == "Collectable")
+            {
+                count = ++count;
+                SetCountText();
+                Destroy(rayHit.transform.gameObject);
+            }
+            
         }
+    }
+    
+    void SetCountText()
+    {
+        countText.text = $"Collected resources: {count.ToString()}";
+        // if (count >= 9)
+        // {
+        //     SceneManager.LoadScene(3);
+        // }
     }
 }
