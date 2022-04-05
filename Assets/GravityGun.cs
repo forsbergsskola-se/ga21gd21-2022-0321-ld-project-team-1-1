@@ -17,15 +17,15 @@ public class GravityGun : MonoBehaviour
         {
             grabbedRB.MovePosition(Vector3.Lerp(grabbedRB.position, objectHolder.transform.position, Time.deltaTime * lerpSpeed));
  
-            if(Input.GetMouseButtonDown(0))
+            /*if(Input.GetMouseButtonDown(0))
             {
                 grabbedRB.isKinematic = false;
                 grabbedRB.AddForce(cam.transform.forward * throwForce, ForceMode.VelocityChange);
                 grabbedRB = null;
-            }
+            }*/
         }
  
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetMouseButtonDown(1))
         {
             if(grabbedRB)
             {
