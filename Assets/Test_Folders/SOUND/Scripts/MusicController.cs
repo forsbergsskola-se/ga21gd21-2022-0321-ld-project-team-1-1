@@ -21,6 +21,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     public void changeMusicHealthParam(int _val)
     {
-        musicEvInst.setParameterByName
+        //musicEvInst.setParameterByName
     }
 }
