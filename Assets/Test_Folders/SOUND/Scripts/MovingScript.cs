@@ -27,7 +27,15 @@ public class MovingScript : MonoBehaviour
         //if (Input.GetKeyDown(KeyCode.A)) myinstance.start();
         //if (Input.GetKeyDown(KeyCode.S)) myinstance.start();
         //if (Input.GetKeyDown(KeyCode.D)) myinstance.start();
+
+        /*if audio is loop
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S)) myinstance.start();
-        else myinstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        else myinstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);*/
+    }
+
+    public void Footsteps()
+    {
+        myinstance.start();
+        Debug.Log("footstep");
     }
 }

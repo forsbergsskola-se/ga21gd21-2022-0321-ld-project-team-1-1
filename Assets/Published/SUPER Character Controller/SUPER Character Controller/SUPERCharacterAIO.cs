@@ -21,7 +21,8 @@ using UnityEngine.InputSystem.Interactions;
 namespace SUPERCharacter{
 [RequireComponent(typeof(Rigidbody)), RequireComponent(typeof(CapsuleCollider))][AddComponentMenu("SUPER Character/SUPER Character Controller")]
 public class SUPERCharacterAIO : MonoBehaviour{
-    #region Variables
+        #region Variables
+        public MovingScript PlaySound;
 
     #region Camera Settings
     [Header("Camera Settings")]
@@ -1168,16 +1169,20 @@ public class SUPERCharacterAIO : MonoBehaviour{
             if(_2DVelocity.magnitude>(currentGroundSpeed/100)&& !isIdle){
                 if(cameraPerspective == PerspectiveModes._1stPerson){
                     if((enableHeadbob ? headbobCyclePosition : Time.time) > StepCycle && currentGroundInfo.isGettingGroundInfo && !isSliding){
-                        //print("Steped");
-                        CallFootstepClip();
-                        StepCycle = enableHeadbob ? (headbobCyclePosition+0.5f) : (Time.time+((stepTiming*_2DVelocityMag)*2));
+                            //print("Steped");
+                            //CallFootstepClip();
+                            PlaySound.Footsteps();
+                            StepCycle = enableHeadbob ? (headbobCyclePosition+0.5f) : (Time.time+((stepTiming*_2DVelocityMag)*2));
+                            PlaySound.Footsteps();
                     }
                 }else{
                     if(Time.time > StepCycle && currentGroundInfo.isGettingGroundInfo && !isSliding){
-                        //print("Steped");
-                        CallFootstepClip();
-                        StepCycle = (Time.time+((stepTiming*_2DVelocityMag)*2));
-                    }
+                            //print("Steped");
+                            //CallFootstepClip();
+                            PlaySound.Footsteps();
+                            StepCycle = (Time.time+((stepTiming*_2DVelocityMag)*2));
+                            
+                        }
                 }
             }
         }
