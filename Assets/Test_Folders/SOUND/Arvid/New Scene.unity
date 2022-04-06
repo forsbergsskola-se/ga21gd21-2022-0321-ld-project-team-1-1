@@ -1008,6 +1008,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 6817638360693598340}
+  timer: 0
+  holdDuration: 3
+  countText: {fileID: 0}
 --- !u!114 &1998714686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,6 +1344,7 @@ GameObject:
   - component: {fileID: 6817638360379750731}
   - component: {fileID: 1998714686}
   - component: {fileID: 1998714676}
+  - component: {fileID: 6817638360379750732}
   m_Layer: 2
   m_Name: Super First Person Controller
   m_TagString: Untagged
@@ -1385,7 +1389,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6817638360379750726}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -1474,6 +1478,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6817638360379750732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6817638360379750726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363f214034af0d544a03d66690aac74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeEventHere:
+    Guid:
+      Data1: -1648993072
+      Data2: 1295517072
+      Data3: -2012225876
+      Data4: -1993918062
+    Path: event:/Footsteps
+  is3D: 0
 --- !u!1 &6817638360693598337
 GameObject:
   m_ObjectHideFlags: 0
