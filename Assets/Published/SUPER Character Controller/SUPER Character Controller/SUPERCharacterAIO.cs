@@ -22,7 +22,7 @@ namespace SUPERCharacter{
 [RequireComponent(typeof(Rigidbody)), RequireComponent(typeof(CapsuleCollider))][AddComponentMenu("SUPER Character/SUPER Character Controller")]
 public class SUPERCharacterAIO : MonoBehaviour{
         #region Variables
-        public MovingScript PlaySound;
+
 
     #region Camera Settings
     [Header("Camera Settings")]
@@ -208,8 +208,11 @@ public class SUPERCharacterAIO : MonoBehaviour{
     #endregion
     
     #region Footstep System
-    [Header("Footstep System")]
+    [Header("Footstep Audio")]
+    public MovingScript PlaySound;
+
     public bool enableFootstepSounds = true;
+        public bool some = false;
     public FootstepTriggeringMode footstepTriggeringMode = FootstepTriggeringMode.calculatedTiming;
     [Range(0.0f,1.0f)] public float stepTiming = 0.15f;
     public List<GroundMaterialProfile> footstepSoundSet = new List<GroundMaterialProfile>();
@@ -1169,17 +1172,18 @@ public class SUPERCharacterAIO : MonoBehaviour{
             if(_2DVelocity.magnitude>(currentGroundSpeed/100)&& !isIdle){
                 if(cameraPerspective == PerspectiveModes._1stPerson){
                     if((enableHeadbob ? headbobCyclePosition : Time.time) > StepCycle && currentGroundInfo.isGettingGroundInfo && !isSliding){
-                            //print("Steped");
+                            Debug.Log("Steped");
                             //CallFootstepClip();
-                            PlaySound.Footsteps();
+                            //PlaySound.Footsteps();
                             StepCycle = enableHeadbob ? (headbobCyclePosition+0.5f) : (Time.time+((stepTiming*_2DVelocityMag)*2));
-                            PlaySound.Footsteps();
                     }
                 }else{
                     if(Time.time > StepCycle && currentGroundInfo.isGettingGroundInfo && !isSliding){
                             //print("Steped");
                             //CallFootstepClip();
-                            PlaySound.Footsteps();
+                            //PlaySound.Footsteps();
+                            Debug.Log("Steped");
+
                             StepCycle = (Time.time+((stepTiming*_2DVelocityMag)*2));
                             
                         }
@@ -1827,7 +1831,9 @@ public class SuperFPEditor : Editor{
         t.enableFootstepSounds = EditorGUILayout.ToggleLeft(new GUIContent("Enable Footstep System", "Should the crontoller enable it's footstep audio systems?"),t.enableFootstepSounds);
         GUI.enabled = t.enableFootstepSounds;
         t.footstepTriggeringMode = (FootstepTriggeringMode)EditorGUILayout.EnumPopup(new GUIContent("Footstep Trigger Mode", "How should a footstep SFX call be triggered? \n\n- Calculated Timing: The controller will attempt to calculate the footstep cycle position based on Headbob cycle position, movement speed, and capsule size. This can sometimes be inaccurate depending on the selected perspective and base walk speed. (Not recommended if character animations are being used)\n\n- Called From Animations: The controller will not do it's own footstep cycle calculations/call for SFX. Instead the controller will rely on character Animations to call the 'CallFootstepClip()' function. This gives much more precise results. The controller will still calculate what footstep clips should be played."),t.footstepTriggeringMode);
-        
+            //t.PlaySound = EditorGUILayout.ObjectField(new GUIContent("blah"), PlaySound, typeof(MovingScript) );
+            //GUI.enabled = t.PlaySound;
+
         if(t.footstepTriggeringMode == FootstepTriggeringMode.calculatedTiming){
             t.stepTiming = EditorGUILayout.Slider(new GUIContent("Step Timing", "The time (measured in seconds) between each footstep."),t.stepTiming,0.0f,1.0f);
         }
