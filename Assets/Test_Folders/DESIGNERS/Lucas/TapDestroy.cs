@@ -16,6 +16,9 @@ public class TapDestroy : MonoBehaviour
     public Text countText;
     private int count;
 
+    //AudioRef
+    public SoundController Gravitygun;
+
     
     // Start is called before the first frame update
     void Start()
@@ -30,12 +33,15 @@ public class TapDestroy : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Gravitygun.GravitygunAudio();
             timer = Time.time;
         }
         else if (Input.GetMouseButton(0))
         {
             if (Time.time - timer > holdDuration)
             {
+               
+                
                 //by making it positive inf, we won't subsequently run this code by accident,
                 //since X - +inf = -inf, which is always less than holdDur
                 timer = float.PositiveInfinity;
@@ -46,20 +52,27 @@ public class TapDestroy : MonoBehaviour
         }
         else
         {
+            Gravitygun.GravitygunAudioStop();
             timer = float.PositiveInfinity;
         }
     }
 
-    void ShootRay()
+    public void ShootRay()
     {
         rayPointer = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(rayPointer, out rayHit))
         {
+            
             if (rayHit.collider.gameObject.tag == "Collectable")
             {
                 count = ++count;
                 SetCountText();
+                //Add audio ref loop
+                
+
                 Destroy(rayHit.transform.gameObject);
+                //add release ref
+                
             }
             
         }
