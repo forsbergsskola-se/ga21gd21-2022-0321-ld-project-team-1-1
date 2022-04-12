@@ -9,6 +9,9 @@ public class GravityGun2 : MonoBehaviour
    private GameObject grabbedOBJ;
    public Transform grabPos;
 
+    //AudioRef
+    public SoundController Gravitygun2;
+
    private void Update()
    {
       /*Yrot -= Input.GetAxis("Mouse Y");
@@ -18,10 +21,14 @@ public class GravityGun2 : MonoBehaviour
           hit.transform.GetComponent<Rigidbody>())
       {
          grabbedOBJ = hit.transform.gameObject;
+            //Audio
+            Debug.Log("make noise");
+            Gravitygun2.Gravitygun2Audio();
       }
       else if (Input.GetMouseButtonUp(1))
       {
          grabbedOBJ = null;
+            Gravitygun2.Gravitygun2AudioStop();
       }
 
       if (grabbedOBJ)
