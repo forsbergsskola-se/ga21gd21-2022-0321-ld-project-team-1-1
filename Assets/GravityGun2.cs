@@ -19,6 +19,7 @@ public class GravityGun2 : MonoBehaviour
 
     //AudioRef
     public SoundController Gravitygun2;
+    public SoundController Error;
 
    private void Update()
    {
@@ -36,18 +37,29 @@ public class GravityGun2 : MonoBehaviour
             //Audio
             //Debug.Log("make noise");
             Gravitygun2.Gravitygun2Audio();
+
+      }
+      else if (Input.GetMouseButtonDown(1))
+      {
+         Error.ErrorSound();
+         Debug.Log("ErrorSound");
+                  
       }
       else if (Input.GetMouseButtonUp(1))
       {
          SelectionManager.SetActive(true);
          grabbedOBJ = null;
          Gravitygun2.Gravitygun2AudioStop();
-         
+         //Error.ErrorSoundStop();
+         //Debug.Log("ErrorSoundStop");
+
       }
       if (grabbedOBJ)
       {
          grabbedOBJ.GetComponent<Rigidbody>().velocity = 10 * (grabPos.position - grabbedOBJ.transform.position);
       }
+
+
       
    }
 }
