@@ -337,6 +337,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1555747788, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6817638360860843946, guid: 32fce1012f8c24c43af86f00f457f500,
         type: 3}
       propertyPath: m_Enabled
@@ -2626,6 +2630,7 @@ MonoBehaviour:
   SelectionManager: {fileID: 482543890}
   grabPos: {fileID: 799257585}
   Gravitygun2: {fileID: 1618324918}
+  Error: {fileID: 1618324918}
 --- !u!114 &1998714676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2912,8 +2917,58 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
+      propertyPath: ErrorRef.Path
+      value: event:/ErrorSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Path
+      value: event:/ErrorSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
       propertyPath: gravBeam2Ref.Path
       value: event:/Gravitybeam2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: ErrorRef.Guid.Data1
+      value: 39758100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: ErrorRef.Guid.Data2
+      value: 1269229058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: ErrorRef.Guid.Data3
+      value: -1465425730
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: ErrorRef.Guid.Data4
+      value: -134944668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data1
+      value: 39758100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data2
+      value: 1269229058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data3
+      value: -1465425730
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data4
+      value: -134944668
       objectReference: {fileID: 0}
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
