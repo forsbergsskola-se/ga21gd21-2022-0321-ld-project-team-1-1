@@ -316,6 +316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be91d39406e1a804a829faa14ec2514b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactiveTag: Interactive
+  grabbedMaterial: {fileID: 2100000, guid: 224295cdad5471d4baa85f147dea1872, type: 2}
+  defaultMaterial: {fileID: 0}
+  SelectionManager: {fileID: 0}
   grabPos: {fileID: 972973124}
   Gravitygun2: {fileID: 0}
 --- !u!1 &6817638361354391147
