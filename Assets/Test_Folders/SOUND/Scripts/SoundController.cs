@@ -12,6 +12,10 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference gravBeam2Ref;
     private FMOD.Studio.EventInstance gravBeam2Inst;
 
+    //ErrorSound for when you cant lift object with gravitygun
+    public FMODUnity.EventReference ErrorRef;
+    private FMOD.Studio.EventInstance ErrorInst;
+
     void Start()
     {
         gravBeamInst = FMODUnity.RuntimeManager.CreateInstance(gravBeamRef);
@@ -38,5 +42,13 @@ public class SoundController : MonoBehaviour
     public void Gravitygun2AudioStop() //Gravity Beam
     {
         gravBeam2Inst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    public void ErrorSound()
+    {
+        ErrorInst.start();
+    }
+    public void ErrorSoundStop()
+    {
+        ErrorInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

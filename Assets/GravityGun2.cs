@@ -22,7 +22,7 @@ public class GravityGun2 : MonoBehaviour
       {
          grabbedOBJ = hit.transform.gameObject;
             //Audio
-            Debug.Log("make noise");
+            //Debug.Log("make noise");
             Gravitygun2.Gravitygun2Audio();
       }
       else if (Input.GetMouseButtonUp(1))
@@ -35,5 +35,6 @@ public class GravityGun2 : MonoBehaviour
       {
          grabbedOBJ.GetComponent<Rigidbody>().velocity = 10 * (grabPos.position - grabbedOBJ.transform.position);
       }
+      
    }
 }
