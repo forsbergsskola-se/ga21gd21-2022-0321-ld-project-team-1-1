@@ -10,13 +10,12 @@ public class CarAudio : MonoBehaviour
     FMOD.Studio.PARAMETER_ID myParam_ID;
     public Rigidbody rb;
     public GettingInAndOutOfCars engine;
-    bool engineActive = false;
+    private FMOD.Studio.PLAYBACK_STATE state;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        engineActive = false;
          vehicleInst = FMODUnity.RuntimeManager.CreateInstance(vehicleRef);
          FMOD.Studio.EventDescription myParam_EventDescription;
          vehicleInst.getDescription(out myParam_EventDescription);
@@ -31,21 +30,29 @@ public class CarAudio : MonoBehaviour
     {
         
 
-        if (engine.inCar == true)
+        if (engine.ridingInCar == true)
         {
-            engineActive = true;
             Debug.Log("startcar");
-            vehicleInst.start();
+            vehicleInst.getPlaybackState(out state);
+
             Debug.Log("rb.velocity" + rb.velocity.magnitude);
             vehicleInst.setParameterByID(myParam_ID, rb.velocity.magnitude);
             //vehicleInst.setParameterByName("EnginePitch", rb.velocity.magnitude);
 
+            if (state != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
+            {
+
+                vehicleInst.start();
+
+
+            }
+
+
 
 
         }
-        else if (engine.inCar == false)
+        else if (engine.ridingInCar == false)
         {
-            engineActive = false; 
             Debug.Log("stopCar");
             vehicleInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
