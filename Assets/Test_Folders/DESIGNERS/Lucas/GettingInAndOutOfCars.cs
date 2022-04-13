@@ -28,7 +28,7 @@ public class GettingInAndOutOfCars : MonoBehaviour
     [Header("Input")]
     [SerializeField] private KeyCode enterExitKey = KeyCode.E;
 
-    private bool inCar = false;
+    public bool inCar = false;
 
     private void Start()
     {

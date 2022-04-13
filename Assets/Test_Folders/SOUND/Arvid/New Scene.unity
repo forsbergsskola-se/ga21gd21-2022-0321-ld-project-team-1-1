@@ -2724,6 +2724,47 @@ MonoBehaviour:
   grabPos: {fileID: 799257585}
   Gravitygun2: {fileID: 1618324918}
   Error: {fileID: 1618324918}
+--- !u!114 &1928991978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928991965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea65b38d485c374caa584a03f1de571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CarDriveType: 2
+  m_WheelColliders:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_WheelMeshes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_WheelEffects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
+  m_MaximumSteerAngle: 0
+  m_SteerHelper: 0
+  m_TractionControl: 0
+  m_FullTorqueOverAllWheels: 0
+  m_ReverseTorque: 0
+  m_MaxHandbrakeTorque: 0
+  m_Downforce: 100
+  m_SpeedType: 0
+  m_Topspeed: 200
+  m_RevRangeBoundary: 1
+  m_SlipLimit: 0
+  m_BrakeTorque: 0
 --- !u!1 &1975418964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2766,6 +2807,7 @@ MonoBehaviour:
   brakeCar: 1
   handBrakeCar: 1
   enterExitKey: 101
+  inCar: 0
 --- !u!114 &1975418966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2854,26 +2896,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 400395547}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1999639713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999639704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa55da05254053489898d8c98ff2b7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vehicleRef:
-    Guid:
-      Data1: -119528956
-      Data2: 1137603878
-      Data3: 1892875676
-      Data4: -1284232677
-    Path: event:/Vehicle
-  rb: {fileID: 2062057836}
 --- !u!114 &1999639714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,6 +3335,27 @@ Rigidbody:
     type: 3}
   m_PrefabInstance: {fileID: 2062057830}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2062057837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062057834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa55da05254053489898d8c98ff2b7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleRef:
+    Guid:
+      Data1: -119528956
+      Data2: 1137603878
+      Data3: 1892875676
+      Data4: -1284232677
+    Path: event:/Vehicle
+  rb: {fileID: 2062057836}
+  engine: {fileID: 1975418965}
 --- !u!1001 &2110679764642141113
 PrefabInstance:
   m_ObjectHideFlags: 0
