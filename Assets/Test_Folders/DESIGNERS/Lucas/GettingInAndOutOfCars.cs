@@ -28,7 +28,9 @@ public class GettingInAndOutOfCars : MonoBehaviour
     [Header("Input")]
     [SerializeField] private KeyCode enterExitKey = KeyCode.E;
 
-    public bool inCar = false;
+    bool inCar = false;
+    public bool ridingInCar = false;
+
 
     private void Start()
     {
@@ -44,12 +46,13 @@ public class GettingInAndOutOfCars : MonoBehaviour
             {
                 GetOutOfCar();
                 // BrakeCar();
+                ridingInCar = false;
             }
-                
-            
-            
             else if (Vector3.Distance(car.transform.position, human.transform.position) < closeDistance) //if out of car
+            {
                 GetIntoCar();
+                ridingInCar = true;
+            }
         }
     }
 
