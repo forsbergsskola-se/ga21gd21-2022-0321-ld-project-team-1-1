@@ -14,6 +14,8 @@ public class GettingInAndOutOfCars : MonoBehaviour
     [Header("Human")]
     [SerializeField] private GameObject human = null;
 
+    [SerializeField] private GameObject ThirdPersonCamera = null;
+
     [SerializeField] private float closeDistance = 10f;
     
     [Space, Header("Car Stuff")]
@@ -30,6 +32,7 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
     bool inCar = false;
     public bool ridingInCar = false;
+
 
 
     private void Start()
@@ -62,6 +65,8 @@ public class GettingInAndOutOfCars : MonoBehaviour
         
         human.SetActive((true));
 
+        ThirdPersonCamera.SetActive((false));
+        
         human.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.left);
 
         mCamera.SetTarget((human.transform));
@@ -80,6 +85,8 @@ public class GettingInAndOutOfCars : MonoBehaviour
         inCar = true;
         
         human.SetActive((false));
+        
+        ThirdPersonCamera.SetActive((true));
         
         mCamera.SetTarget(car.transform);
 

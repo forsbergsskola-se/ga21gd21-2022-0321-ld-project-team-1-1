@@ -31,6 +31,7 @@ public class TapDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0))
         {
             Gravitygun.GravitygunAudio();
@@ -38,6 +39,7 @@ public class TapDestroy : MonoBehaviour
         }
         else if (Input.GetMouseButton(0))
         {
+            
             if (Time.time - timer > holdDuration)
             {
                
@@ -45,7 +47,7 @@ public class TapDestroy : MonoBehaviour
                 //by making it positive inf, we won't subsequently run this code by accident,
                 //since X - +inf = -inf, which is always less than holdDur
                 timer = float.PositiveInfinity;
-                
+                Debug.Log("ShootRay");
                 //perform our action
                 ShootRay();
             }
