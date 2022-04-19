@@ -18,6 +18,7 @@ public class TapDestroy : MonoBehaviour
 
     //AudioRef
     public SoundController Gravitygun;
+    //public SoundController CrystalAmb;
 
     
     // Start is called before the first frame update
@@ -74,9 +75,12 @@ public class TapDestroy : MonoBehaviour
 
                 Destroy(rayHit.transform.gameObject);
                 //add release ref
-                
+
+                //CrystalAmb.CrystalAmbStop();
+                //Debug.Log("Stop crystalAudio");
+
             }
-            
+
         }
     }
     
@@ -87,5 +91,9 @@ public class TapDestroy : MonoBehaviour
         // {
         //     SceneManager.LoadScene(3);
         // }
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        
     }
 }

@@ -16,12 +16,16 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference errorRef;
     private FMOD.Studio.EventInstance errorInst;
 
+    //Crystal audio for navigation 
+    public FMODUnity.EventReference crystalAmbienceRef;
+    private FMOD.Studio.EventInstance crystalAmbienceInst;
+
     void Start()
     {
         gravBeamInst = FMODUnity.RuntimeManager.CreateInstance(gravBeamRef);
         gravBeam2Inst = FMODUnity.RuntimeManager.CreateInstance(gravBeam2Ref);
         errorInst = FMODUnity.RuntimeManager.CreateInstance(errorRef);
-
+        crystalAmbienceInst = FMODUnity.RuntimeManager.CreateInstance(crystalAmbienceRef);
     }
 
     void Update()
@@ -51,5 +55,13 @@ public class SoundController : MonoBehaviour
     public void ErrorSoundStop()
     {
         errorInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    public void CrystalAmbAudio()
+    {
+        crystalAmbienceInst.start();
+    }
+    public void CrystalAmbStop()
+    {
+        crystalAmbienceInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }
