@@ -4145,6 +4145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 853efe36463dd8b429ca8f55ccd7049a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 994483483}
+  camera: {fileID: 1320672909}
+  selectionManager: {fileID: 1302019109}
   shopMenuUI: {fileID: 915820639}
   instructions: {fileID: 1776973174}
   maxDistance: 2.5
@@ -5414,6 +5417,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+--- !u!1 &994483483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6817638361354391147, guid: 32fce1012f8c24c43af86f00f457f500,
+    type: 3}
+  m_PrefabInstance: {fileID: 960025116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1021359444
 Mesh:
   m_ObjectHideFlags: 0
@@ -7431,6 +7440,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1320672909 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6817638360860843945, guid: 32fce1012f8c24c43af86f00f457f500,
+    type: 3}
+  m_PrefabInstance: {fileID: 960025116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1329295997
 GameObject:
   m_ObjectHideFlags: 0
