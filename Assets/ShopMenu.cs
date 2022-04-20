@@ -18,11 +18,6 @@ public class ShopMenu : MonoBehaviour
     
     [SerializeField] private float maxDistance;
 
-   /* private void Start()
-    {
-        player = gameObject.Find("Super First Person Controller").GetComponent("SUPERCharacterAIO");
-    }*/
-
     void Update()
     {
         RaycastHit hit;
@@ -49,15 +44,15 @@ public class ShopMenu : MonoBehaviour
 
     public void Resume()
     {
-        shopMenuUI.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Time.timeScale = 1f;
-        GameIsPaused = false;
         player.GetComponent<SUPERCharacterAIO>().enabled = true;
         player.GetComponent<TapDestroy>().enabled = true;
         camera.GetComponent<GravityGun2>().enabled = true;
         selectionManager.SetActive(true);
+        shopMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
     }
     public void Pause()
     {
