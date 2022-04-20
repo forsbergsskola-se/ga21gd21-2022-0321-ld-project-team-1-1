@@ -19,6 +19,7 @@ public class TapDestroy : MonoBehaviour
     //AudioRef
     public SoundController Gravitygun;
     //public SoundController CrystalAmb;
+    public CrystalBurnAudio CrystalBurn; //audio impact loop
 
     
     // Start is called before the first frame update
@@ -65,16 +66,20 @@ public class TapDestroy : MonoBehaviour
         rayPointer = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(rayPointer, out rayHit))
         {
-            
+            CrystalBurn.CrystalBurnStart();  //audio loop on impact
+            Debug.Log("BurnBaby");
             if (rayHit.collider.gameObject.tag == "Collectable")
             {
+
                 count = ++count;
                 SetCountText();
                 //Add audio ref loop
-                
+
+
 
                 Destroy(rayHit.transform.gameObject);
                 //add release ref
+                CrystalBurn.CrystalBurnStop(); // stop audio impact loop
 
                 //CrystalAmb.CrystalAmbStop();
                 //Debug.Log("Stop crystalAudio");
