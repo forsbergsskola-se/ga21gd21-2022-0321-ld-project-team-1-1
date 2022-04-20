@@ -78,6 +78,7 @@ public class ShopMenu : MonoBehaviour
     
     public void EnableCrouch()
     {
+        player.GetComponent<SUPERCharacterAIO>().canCrouch = true;
         CrouchButton.enabled = false;
     }
 }
