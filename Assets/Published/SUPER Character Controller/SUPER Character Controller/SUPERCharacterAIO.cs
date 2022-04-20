@@ -107,7 +107,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
     #else
     public KeyCode sprintKey_L = KeyCode.LeftShift, crouchKey_L = KeyCode.LeftControl, slideKey_L = KeyCode.V;
     #endif
-    public bool canSprint=true, isSprinting, toggleSprint, sprintOveride, canCrouch=true, isCrouching, toggleCrouch, crouchOverride, isIdle;
+    public bool canSprint=true, isSprinting, toggleSprint, sprintOveride, canCrouch=false, isCrouching, toggleCrouch, crouchOverride, isIdle;
     public Stances currentStance = Stances.Standing;
     public float stanceTransitionSpeed = 5.0f, crouchingHeight = 0.80f;
     public GroundSpeedProfiles currentGroundMovementSpeed = GroundSpeedProfiles.Walking;

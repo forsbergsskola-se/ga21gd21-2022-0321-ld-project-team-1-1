@@ -15,6 +15,7 @@ public class ShopMenu : MonoBehaviour
     public GameObject instructions;
 
     [SerializeField] private Button gravityGunButton;
+    [SerializeField] private Button CrouchButton;
     
     [SerializeField] private float maxDistance;
 
@@ -73,5 +74,10 @@ public class ShopMenu : MonoBehaviour
         camera.GetComponent<GravityGun2>().enabled = true;
         selectionManager.SetActive(true);
         gravityGunButton.enabled = false;
+    }
+    
+    public void EnableCrouch()
+    {
+        CrouchButton.enabled = false;
     }
 }
