@@ -1,16 +1,21 @@
 using System;
 using SUPERCharacter;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopMenu : MonoBehaviour
 {
     private string interactiveTag = "Shop";
     private static bool GameIsPaused = false;
+    
     public GameObject player;
     public Camera camera;
     public GameObject selectionManager;
     public GameObject shopMenuUI;
     public GameObject instructions;
+
+    [SerializeField] private Button gravityGunButton;
+    
     [SerializeField] private float maxDistance;
 
    /* private void Start()
@@ -72,6 +77,6 @@ public class ShopMenu : MonoBehaviour
     {
         camera.GetComponent<GravityGun2>().enabled = true;
         selectionManager.SetActive(true);
-        gameObject.GetComponentInChildren<GravityGun>().
+        gravityGunButton.enabled = false;
     }
 }
