@@ -198,10 +198,10 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637859794261121138
+  lastModified: 637860650962836414
   FileSizes:
   - Name: 
-    Value: 1782
+    Value: 1818
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -235,12 +235,13 @@ MonoBehaviour:
   - {fileID: 7097097943359720116}
   - {fileID: 8541651594481918633}
   - {fileID: -5342864639675590796}
+  - {fileID: 3603053710090941252}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2536008503797336486}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637859794261121138
+  cacheTime: 637860650962836414
   cacheVersion: 10
 --- !u!114 &2536008503797336486
 MonoBehaviour:
@@ -257,7 +258,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637859794261061482
+  lastModified: 637860650962787474
   FileSizes: []
   Exists: 1
 --- !u!114 &2756240790167214819
@@ -338,6 +339,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &3603053710090941252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CrystalBurn
+  m_EditorClassIdentifier: 
+  Path: event:/CrystalBurn
+  Guid:
+    Data1: -1895232486
+    Data2: 1138139297
+    Data3: 2021419711
+    Data4: 1052505382
+  Banks:
+  - {fileID: 2536008503797336486}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33488
 --- !u!114 &3772210962423326238
 MonoBehaviour:
   m_ObjectHideFlags: 0
