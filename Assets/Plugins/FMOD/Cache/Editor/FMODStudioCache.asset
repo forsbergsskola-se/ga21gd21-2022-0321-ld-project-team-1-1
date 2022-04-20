@@ -198,7 +198,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637859794261121138
+  lastModified: 637860608764643987
   FileSizes:
   - Name: 
     Value: 1782
@@ -240,7 +240,7 @@ MonoBehaviour:
   - {fileID: 2536008503797336486}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637859794261121138
+  cacheTime: 637860608764643987
   cacheVersion: 10
 --- !u!114 &2536008503797336486
 MonoBehaviour:
@@ -257,7 +257,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637859794261061482
+  lastModified: 637860608764633986
   FileSizes: []
   Exists: 1
 --- !u!114 &2756240790167214819

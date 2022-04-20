@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
-    [SerializeField] private string interactiveTag = "Interactive";
+    private string interactiveTag = "Interactive";
         [Header("Materials")]
     [SerializeField] private Material highlightedMaterial;
     [SerializeField] private Material defaultMaterial;
