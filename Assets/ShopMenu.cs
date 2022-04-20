@@ -51,13 +51,13 @@ public class ShopMenu : MonoBehaviour
     {
         shopMenuUI.SetActive(false);
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
         GameIsPaused = false;
         player.GetComponent<SUPERCharacterAIO>().enabled = true;
         player.GetComponent<TapDestroy>().enabled = true;
         camera.GetComponent<GravityGun2>().enabled = true;
         selectionManager.SetActive(true);
-        Debug.Log("resume");
     }
     public void Pause()
     {
