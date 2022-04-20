@@ -67,4 +67,11 @@ public class ShopMenu : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
+
+    public void EnableGravityGun()
+    {
+        camera.GetComponent<GravityGun2>().enabled = true;
+        selectionManager.SetActive(true);
+        gameObject.GetComponentInChildren<GravityGun>().
+    }
 }
