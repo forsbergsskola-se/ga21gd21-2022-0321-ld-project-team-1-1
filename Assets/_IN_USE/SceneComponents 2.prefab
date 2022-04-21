@@ -418,6 +418,11 @@ PrefabInstance:
       propertyPath: CrystalBurn
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1151600506619500613, guid: 53cd0254eb98a446b9cf24874499c57a,
+        type: 3}
+      propertyPath: holdDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865467343359186484, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
       propertyPath: m_RootOrder
