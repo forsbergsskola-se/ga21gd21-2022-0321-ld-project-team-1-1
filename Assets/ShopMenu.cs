@@ -22,6 +22,7 @@ public class ShopMenu : MonoBehaviour
     [SerializeField] private Button CrouchButton;
     [SerializeField] private GameObject info;
     
+    
         [Header("Ray")]
     [SerializeField] private float maxDistance;
 
