@@ -834,7 +834,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -879,7 +879,9 @@ MonoBehaviour:
   textCurrencyUI: {fileID: 1893236023920574940}
   gravityGunButton: {fileID: 1893236025516302907}
   CrouchButton: {fileID: 1893236024950354702}
-  info: {fileID: 0}
+  info: {fileID: 1212340209574175836}
+  gravityGunUnlocked: {fileID: 492534705637839181}
+  crouchUnlocked: {fileID: 5128715368713797671}
   maxDistance: 2.5
   gravityGunCost: 1
   crouchCost: 2

@@ -21,7 +21,8 @@ public class ShopMenu : MonoBehaviour
     [SerializeField] private Button gravityGunButton;
     [SerializeField] private Button CrouchButton;
     [SerializeField] private GameObject info;
-    
+    [SerializeField] private GameObject gravityGunUnlocked;
+    [SerializeField] private GameObject crouchUnlocked;
     
         [Header("Ray")]
     [SerializeField] private float maxDistance;
@@ -97,8 +98,11 @@ public class ShopMenu : MonoBehaviour
         {
             camera.GetComponent<GravityGun2>().enabled = true;
             selectionManager.SetActive(true);
-            gravityGunButton.enabled = false;
+            //gravityGunButton.enabled = false;
             gravityGunPurchased = true;
+            gravityGunButton.image.enabled = false;
+            Destroy(info);
+            gravityGunUnlocked.SetActive(true);
             TapDestroy.count -= gravityGunCost;
             CostCheck();
             EnableButtons();
@@ -108,7 +112,9 @@ public class ShopMenu : MonoBehaviour
     public void EnableCrouch()
     {
         player.GetComponent<SUPERCharacterAIO>().canCrouch = true;
-        CrouchButton.enabled = false;
+        //CrouchButton.enabled = false;
+        CrouchButton.image.enabled = false;
+        crouchUnlocked.SetActive(true);
         crouchPurchased = true;
         TapDestroy.count -= crouchCost;
         CostCheck();
