@@ -513,6 +513,11 @@ PrefabInstance:
       propertyPath: crouchingHeight
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 5865467343359186485, guid: 53cd0254eb98a446b9cf24874499c57a,
+        type: 3}
+      propertyPath: enableSurvivalStats
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5865467343359186487, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
       propertyPath: m_Name
