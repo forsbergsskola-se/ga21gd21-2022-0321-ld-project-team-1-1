@@ -2029,6 +2029,12 @@ Transform:
   m_Father: {fileID: 1824843878}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1409191546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1452535489652158710, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4993966609949336339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1516234820
 Mesh:
   m_ObjectHideFlags: 0
@@ -3369,36 +3375,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneComponents
       objectReference: {fileID: 0}
-    - target: {fileID: 4993966611213802486, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -35
-      objectReference: {fileID: 0}
     - target: {fileID: 5257980757787919353, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
       propertyPath: m_RootOrder
@@ -3459,5 +3435,10 @@ PrefabInstance:
       propertyPath: CrystalBurn
       value: 
       objectReference: {fileID: 1309835689}
+    - target: {fileID: 5731994302951223423, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: mainCam
+      value: 
+      objectReference: {fileID: 1409191546}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cfa1d5849f3ac841a3bc5579231dffd, type: 3}
