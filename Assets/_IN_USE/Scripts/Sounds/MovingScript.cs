@@ -16,9 +16,13 @@ public class MovingScript : MonoBehaviour
 
     public bool is3D = false;
 
+
     void Start()
     {
         foot_EvInst = FMODUnity.RuntimeManager.CreateInstance(foot_EvRef);
+        //ChangeMaterial(0);
+
+
 
         //should be in void update
         if (is3D) FMODUnity.RuntimeManager.AttachInstanceToGameObject(foot_EvInst, GetComponent<Transform>(), GetComponent<Rigidbody>());
@@ -27,11 +31,7 @@ public class MovingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //if (Input.GetKeyDown(KeyCode.W)) myinstance.start();
-        //if (Input.GetKeyDown(KeyCode.A)) myinstance.start();
-        //if (Input.GetKeyDown(KeyCode.S)) myinstance.start();
-        //if (Input.GetKeyDown(KeyCode.D)) myinstance.start();
+        //ChangeMaterial();
 
         //if audio is loop
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S)) isMoving = true;
@@ -63,5 +63,9 @@ public class MovingScript : MonoBehaviour
     public void Footsteps()
     {
         Debug.Log("footstep");
+    }
+    public void ChangeMaterial(int _val)
+    {
+        foot_EvInst.setParameterByName("Material", _val);
     }
 }
