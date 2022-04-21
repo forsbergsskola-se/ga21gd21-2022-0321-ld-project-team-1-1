@@ -24,8 +24,18 @@ public class ShopMenu : MonoBehaviour
         [Header("Ray")]
     [SerializeField] private float maxDistance;
 
+    private bool gravityGunAffordable;
+    private bool crouchAffordable;
+
+    private bool gravityGunPurchased = false;
+    private bool crouchPurchased = false;
+
+    [SerializeField] private int gravityGunCost = 1;
+    [SerializeField] private int crouchCost = 2;
+
     void Update()
     {
+        CostCheck();
         ResourcesCount();
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, maxDistance) && !GameIsPaused)
@@ -67,37 +77,68 @@ public class ShopMenu : MonoBehaviour
         instructions.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
+        EnableButtons();
+        
         player.GetComponent<SUPERCharacterAIO>().enabled = false;
         player.GetComponent<TapDestroy>().enabled = false;
         //camera.GetComponent<GravityGun2>().enabled = false;
         //selectionManager.SetActive(false);
+        
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
 
     public void EnableGravityGun()
     {
-        camera.GetComponent<GravityGun2>().enabled = true;
-        selectionManager.SetActive(true);
-        gravityGunButton.enabled = false;
+        if (TapDestroy.count >= 1)
+        {
+            camera.GetComponent<GravityGun2>().enabled = true;
+            selectionManager.SetActive(true);
+            gravityGunButton.enabled = false;
+            gravityGunPurchased = true;
+            TapDestroy.count -= gravityGunCost;
+            CostCheck();
+            EnableButtons();
+        }
     }
     
     public void EnableCrouch()
     {
         player.GetComponent<SUPERCharacterAIO>().canCrouch = true;
         CrouchButton.enabled = false;
+        crouchPurchased = true;
+        TapDestroy.count -= crouchCost;
+        CostCheck();
+        EnableButtons();
+    }
+
+    void EnableButtons()
+    {
+        if (gravityGunAffordable && !gravityGunPurchased)
+            gravityGunButton.enabled = true;
+        else
+            gravityGunButton.enabled = false;
+        if (crouchAffordable && !crouchPurchased)
+            CrouchButton.enabled = true;
+        else
+            CrouchButton.enabled = false;
     }
 
     public void ResourcesCount()
     {
         textCurrencyUI.text = TapDestroy.count.ToString();
-        /*get { return TapDestroy.count; }
-        set
-        {
-            TapDestroy.count = value;
-            //here you can update the UI
-            textCurrencyUI.text = Resources.ToString();
-            PlayerPrefs.SetInt ("Resources", Resources);
-        }*/
+    }
+
+    public void CostCheck()
+    {
+        if (TapDestroy.count >= gravityGunCost)
+            gravityGunAffordable = true;
+        else
+            gravityGunAffordable = false;
+        if (TapDestroy.count >= crouchCost)
+            crouchAffordable = true;
+        else
+            crouchAffordable = false;
     }
 }
