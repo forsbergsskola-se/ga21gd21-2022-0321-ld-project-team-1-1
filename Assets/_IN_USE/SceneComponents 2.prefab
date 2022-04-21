@@ -478,6 +478,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewPlayerFPS
       objectReference: {fileID: 0}
+    - target: {fileID: 5865467343838185465, guid: 53cd0254eb98a446b9cf24874499c57a,
+        type: 3}
+      propertyPath: Error
+      value: 
+      objectReference: {fileID: 5855748704698361812}
+    - target: {fileID: 5865467343838185465, guid: 53cd0254eb98a446b9cf24874499c57a,
+        type: 3}
+      propertyPath: Gravitygun2
+      value: 
+      objectReference: {fileID: 5855748704698361812}
+    - target: {fileID: 5865467343838185465, guid: 53cd0254eb98a446b9cf24874499c57a,
+        type: 3}
+      propertyPath: SelectionManager
+      value: 
+      objectReference: {fileID: 4993966610846457654}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53cd0254eb98a446b9cf24874499c57a, type: 3}
 --- !u!1 &1452535489208279345 stripped
@@ -573,6 +588,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4993966610578982812}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5855748704698361812 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4993966610578982812}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb090d913e2de947a0b1549faf52d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6847725493473736995
 PrefabInstance:
   m_ObjectHideFlags: 0
