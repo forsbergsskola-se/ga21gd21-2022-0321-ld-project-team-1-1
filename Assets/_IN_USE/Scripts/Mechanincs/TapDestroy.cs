@@ -14,7 +14,7 @@ public class TapDestroy : MonoBehaviour
     public float holdDuration = 3f;
     
     public Text countText;
-    private int count;
+    public int count;
 
     //AudioRef
     public SoundController Gravitygun;
@@ -37,6 +37,7 @@ public class TapDestroy : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Gravitygun.GravitygunAudio();
+            BurnAudio();
             timer = Time.time;
         }
         else if (Input.GetMouseButton(0))
@@ -66,8 +67,7 @@ public class TapDestroy : MonoBehaviour
         rayPointer = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(rayPointer, out rayHit))
         {
-            CrystalBurn.CrystalBurnStart();  //audio loop on impact
-            Debug.Log("BurnBaby");
+
             if (rayHit.collider.gameObject.tag == "Collectable")
             {
 
@@ -80,7 +80,7 @@ public class TapDestroy : MonoBehaviour
                 Destroy(rayHit.transform.gameObject);
                 //add release ref
                 CrystalBurn.CrystalBurnStop(); // stop audio impact loop
-
+                Debug.Log("stopBurn");
                 //CrystalAmb.CrystalAmbStop();
                 //Debug.Log("Stop crystalAudio");
 
@@ -100,5 +100,27 @@ public class TapDestroy : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         
+    }
+    public void BurnAudio()
+    {
+        rayPointer = camera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(rayPointer, out rayHit))
+        {
+
+            if (rayHit.collider.gameObject.tag == "Collectable")
+            {
+                CrystalBurn.CrystalBurnStart();  //audio loop on impact
+                Debug.Log("BurnBaby");
+
+
+
+
+            }
+            else
+            {
+                
+            }
+
+        }
     }
 }
