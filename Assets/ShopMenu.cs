@@ -20,6 +20,7 @@ public class ShopMenu : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textCurrencyUI;
     [SerializeField] private Button gravityGunButton;
     [SerializeField] private Button CrouchButton;
+    [SerializeField] private GameObject info;
     
         [Header("Ray")]
     [SerializeField] private float maxDistance;
@@ -111,6 +112,7 @@ public class ShopMenu : MonoBehaviour
         TapDestroy.count -= crouchCost;
         CostCheck();
         EnableButtons();
+        Destroy(info);
     }
 
     void EnableButtons()
@@ -137,8 +139,14 @@ public class ShopMenu : MonoBehaviour
         else
             gravityGunAffordable = false;
         if (TapDestroy.count >= crouchCost && gravityGunPurchased)
+        {
             crouchAffordable = true;
+            info.SetActive(false);
+        }
         else
+        {
             crouchAffordable = false;
+            info.SetActive(true);
+        }
     }
 }

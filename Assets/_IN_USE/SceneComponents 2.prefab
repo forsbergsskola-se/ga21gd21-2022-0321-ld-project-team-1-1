@@ -473,6 +473,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5865467343359186485, guid: 53cd0254eb98a446b9cf24874499c57a,
+        type: 3}
+      propertyPath: crouchingHeight
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 5865467343359186487, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
       propertyPath: m_Name
@@ -607,6 +612,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5257980757787919353}
     m_Modifications:
+    - target: {fileID: 1893236024516282991, guid: 183767acb78a5cd418073393730ea798,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1893236024802553541, guid: 183767acb78a5cd418073393730ea798,
         type: 3}
       propertyPath: m_Name
@@ -719,6 +729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893236024802553546, guid: 183767acb78a5cd418073393730ea798,
         type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 5754222573021044095}
+    - target: {fileID: 1893236024802553546, guid: 183767acb78a5cd418073393730ea798,
+        type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 1452535489652158707}
@@ -762,11 +777,22 @@ PrefabInstance:
       propertyPath: m_Colors.m_NormalColor.r
       value: 0.0758722
       objectReference: {fileID: 0}
+    - target: {fileID: 1893236025673133897, guid: 183767acb78a5cd418073393730ea798,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 183767acb78a5cd418073393730ea798, type: 3}
 --- !u!224 &4993966609370929130 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1893236024802553545, guid: 183767acb78a5cd418073393730ea798,
+    type: 3}
+  m_PrefabInstance: {fileID: 6847725493473736995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5754222573021044095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1212340209574175836, guid: 183767acb78a5cd418073393730ea798,
     type: 3}
   m_PrefabInstance: {fileID: 6847725493473736995}
   m_PrefabAsset: {fileID: 0}
