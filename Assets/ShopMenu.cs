@@ -26,6 +26,7 @@ public class ShopMenu : MonoBehaviour
 
     void Update()
     {
+        ResourcesCount();
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, maxDistance) && !GameIsPaused)
         {
@@ -87,15 +88,16 @@ public class ShopMenu : MonoBehaviour
         CrouchButton.enabled = false;
     }
 
-    public int Resources
+    public void ResourcesCount()
     {
-        get { return TapDestroy.count; }
+        textCurrencyUI.text = TapDestroy.count.ToString();
+        /*get { return TapDestroy.count; }
         set
         {
             TapDestroy.count = value;
             //here you can update the UI
             textCurrencyUI.text = Resources.ToString();
             PlayerPrefs.SetInt ("Resources", Resources);
-        }
+        }*/
     }
 }
