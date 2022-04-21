@@ -36,13 +36,13 @@ public class TapDestroy : MonoBehaviour
         SetCountText();
         if (Input.GetMouseButtonDown(0))
         {
-            //Gravitygun.GravitygunAudio();
+            Gravitygun.GravitygunAudio();
             BurnAudio();
             timer = Time.time;
         }
         else if (Input.GetMouseButton(0))
         {
-            
+
             if (Time.time - timer > holdDuration)
             {
                
@@ -57,11 +57,12 @@ public class TapDestroy : MonoBehaviour
         }
         else
         {
-            rayHit.collider.gameObject.GetComponentInChildren<CrystalBurnAudio>().CrystalBurnStop();
+
             //CrystalBurn.CrystalBurnStop();
             Debug.Log("BurnBabyStop");
             Gravitygun.GravitygunAudioStop();
             Debug.Log("Gravitygunstop");
+            rayHit.collider.gameObject.GetComponentInChildren<CrystalBurnAudio>().CrystalBurnStop();
             timer = float.PositiveInfinity;
         }
     }
