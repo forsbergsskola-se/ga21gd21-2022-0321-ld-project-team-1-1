@@ -12,13 +12,13 @@ public class CrystalBurnAudio : MonoBehaviour
     void Start()
     {
         crystalburnInst = FMODUnity.RuntimeManager.CreateInstance(crystalburnRef);
-
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(crystalburnInst, GetComponent<Transform>(), GetComponent<Rigidbody>());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void CrystalBurnStart()
     {

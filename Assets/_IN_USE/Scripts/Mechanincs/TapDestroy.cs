@@ -36,7 +36,7 @@ public class TapDestroy : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0))
         {
-            Gravitygun.GravitygunAudio();
+            //Gravitygun.GravitygunAudio();
             BurnAudio();
             timer = Time.time;
         }
@@ -57,6 +57,7 @@ public class TapDestroy : MonoBehaviour
         }
         else
         {
+            CrystalBurn.CrystalBurnStop();
             Gravitygun.GravitygunAudioStop();
             timer = float.PositiveInfinity;
         }
@@ -79,7 +80,7 @@ public class TapDestroy : MonoBehaviour
 
                 Destroy(rayHit.transform.gameObject);
                 //add release ref
-                CrystalBurn.CrystalBurnStop(); // stop audio impact loop
+
                 Debug.Log("stopBurn");
                 //CrystalAmb.CrystalAmbStop();
                 //Debug.Log("Stop crystalAudio");
