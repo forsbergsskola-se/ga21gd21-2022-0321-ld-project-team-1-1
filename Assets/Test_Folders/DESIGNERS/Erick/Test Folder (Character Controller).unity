@@ -3369,6 +3369,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneComponents
       objectReference: {fileID: 0}
+    - target: {fileID: 4993966610738600728, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.09080877
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966610738600728, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.2924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966610738600728, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.0758722
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611099552301, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.09411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611099552301, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.29411766
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611099552301, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.078431375
+      objectReference: {fileID: 0}
     - target: {fileID: 5257980757787919353, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
       propertyPath: m_RootOrder
@@ -3429,10 +3459,5 @@ PrefabInstance:
       propertyPath: CrystalBurn
       value: 
       objectReference: {fileID: 1309835689}
-    - target: {fileID: 5383328377787346755, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: holdDuration
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cfa1d5849f3ac841a3bc5579231dffd, type: 3}
