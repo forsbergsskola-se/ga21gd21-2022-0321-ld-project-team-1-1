@@ -136,7 +136,7 @@ public class ShopMenu : MonoBehaviour
             gravityGunAffordable = true;
         else
             gravityGunAffordable = false;
-        if (TapDestroy.count >= crouchCost)
+        if (TapDestroy.count >= crouchCost && gravityGunPurchased)
             crouchAffordable = true;
         else
             crouchAffordable = false;
