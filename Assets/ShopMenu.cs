@@ -101,7 +101,7 @@ public class ShopMenu : MonoBehaviour
             //gravityGunButton.enabled = false;
             gravityGunPurchased = true;
             gravityGunButton.image.enabled = false;
-            Destroy(info);
+            //Destroy(info);
             gravityGunUnlocked.SetActive(true);
             TapDestroy.count -= gravityGunCost;
             CostCheck();
@@ -119,7 +119,6 @@ public class ShopMenu : MonoBehaviour
         TapDestroy.count -= crouchCost;
         CostCheck();
         EnableButtons();
-        Destroy(info);
     }
 
     void EnableButtons()
@@ -148,12 +147,15 @@ public class ShopMenu : MonoBehaviour
         if (TapDestroy.count >= crouchCost && gravityGunPurchased)
         {
             crouchAffordable = true;
-            info.SetActive(false);
         }
         else
         {
             crouchAffordable = false;
-            info.SetActive(true);
         }
+        
+        if (!gravityGunPurchased && TapDestroy.count >= crouchCost)
+            info.SetActive(true);
+        else
+            info.SetActive(false);
     }
 }
