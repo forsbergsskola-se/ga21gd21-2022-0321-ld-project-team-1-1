@@ -14,7 +14,7 @@ public class TapDestroy : MonoBehaviour
     public float holdDuration = 3f;
     
     public Text countText;
-    public int count;
+    public static int count;
 
     //AudioRef
     public SoundController Gravitygun;

@@ -8,15 +8,19 @@ public class ShopMenu : MonoBehaviour
     private string interactiveTag = "Shop";
     private static bool GameIsPaused = false;
     
+        [Header("References")]
     public GameObject player;
     public Camera camera;
     public GameObject selectionManager;
     public GameObject shopMenuUI;
     public GameObject instructions;
 
+        [Header("UI")]
+    [SerializeField] private Text textCurrencyUI;
     [SerializeField] private Button gravityGunButton;
     [SerializeField] private Button CrouchButton;
     
+        [Header("Ray")]
     [SerializeField] private float maxDistance;
 
     void Update()
@@ -80,5 +84,17 @@ public class ShopMenu : MonoBehaviour
     {
         player.GetComponent<SUPERCharacterAIO>().canCrouch = true;
         CrouchButton.enabled = false;
+    }
+
+    public int Resources
+    {
+        get { return TapDestroy.count; }
+        set
+        {
+            TapDestroy.count = value;
+            //here you can update the UI
+            textCurrencyUI.text = Resources.ToString();
+            PlayerPrefs.SetInt ("Resources", Resources);
+        }
     }
 }
