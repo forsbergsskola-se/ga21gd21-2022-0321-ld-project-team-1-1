@@ -3429,5 +3429,10 @@ PrefabInstance:
       propertyPath: CrystalBurn
       value: 
       objectReference: {fileID: 1309835689}
+    - target: {fileID: 5383328377787346755, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: holdDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cfa1d5849f3ac841a3bc5579231dffd, type: 3}

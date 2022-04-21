@@ -33,7 +33,7 @@ public class TapDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        SetCountText();
         if (Input.GetMouseButtonDown(0))
         {
             //Gravitygun.GravitygunAudio();
