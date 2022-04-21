@@ -121,6 +121,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5257980757787919353}
     m_Modifications:
+    - target: {fileID: 6624435228475434682, guid: db16978f0427fba4ba31d89f0d8c3d0d,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624435228475434683, guid: db16978f0427fba4ba31d89f0d8c3d0d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624435228475434683, guid: db16978f0427fba4ba31d89f0d8c3d0d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624435228475434683, guid: db16978f0427fba4ba31d89f0d8c3d0d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624435228475434683, guid: db16978f0427fba4ba31d89f0d8c3d0d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 6624435229086337299, guid: db16978f0427fba4ba31d89f0d8c3d0d,
         type: 3}
       propertyPath: m_Pivot.x

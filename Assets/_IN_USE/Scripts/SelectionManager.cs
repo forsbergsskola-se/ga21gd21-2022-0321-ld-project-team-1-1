@@ -7,7 +7,7 @@ public class SelectionManager : MonoBehaviour
     private string interactiveTag = "Interactive";
         [Header("Materials")]
     [SerializeField] private Material highlightedMaterial;
-    [SerializeField] private Material defaultMaterial;
+    private Material defaultMaterial;
 
     private Transform _selection;
     void Update()

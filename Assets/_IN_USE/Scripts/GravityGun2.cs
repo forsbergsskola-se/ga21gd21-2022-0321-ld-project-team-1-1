@@ -8,7 +8,7 @@ public class GravityGun2 : MonoBehaviour
    [SerializeField] private string interactiveTag = "Interactive";
    
    [SerializeField] private Material grabbedMaterial;
-   [SerializeField] private Material defaultMaterial;
+   //[SerializeField] private Material defaultMaterial;
 
    [SerializeField] private GameObject SelectionManager;
    

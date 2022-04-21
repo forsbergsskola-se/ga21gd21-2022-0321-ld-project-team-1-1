@@ -3369,6 +3369,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneComponents
       objectReference: {fileID: 0}
+    - target: {fileID: 4993966611213802486, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993966611213802487, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 5257980757787919353, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
       propertyPath: m_RootOrder
@@ -3429,10 +3459,5 @@ PrefabInstance:
       propertyPath: CrystalBurn
       value: 
       objectReference: {fileID: 1309835689}
-    - target: {fileID: 5383328377787346755, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: holdDuration
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cfa1d5849f3ac841a3bc5579231dffd, type: 3}
