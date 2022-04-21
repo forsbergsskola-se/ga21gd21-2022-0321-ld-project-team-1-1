@@ -1,5 +1,6 @@
 using System;
 using SUPERCharacter;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +17,7 @@ public class ShopMenu : MonoBehaviour
     public GameObject instructions;
 
         [Header("UI")]
-    [SerializeField] private Text textCurrencyUI;
+    [SerializeField] private TextMeshProUGUI textCurrencyUI;
     [SerializeField] private Button gravityGunButton;
     [SerializeField] private Button CrouchButton;
     
@@ -53,8 +54,8 @@ public class ShopMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         player.GetComponent<SUPERCharacterAIO>().enabled = true;
         player.GetComponent<TapDestroy>().enabled = true;
-        camera.GetComponent<GravityGun2>().enabled = true;
-        selectionManager.SetActive(true);
+        //camera.GetComponent<GravityGun2>().enabled = true;
+        //selectionManager.SetActive(true);
         shopMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -67,8 +68,8 @@ public class ShopMenu : MonoBehaviour
         GameIsPaused = true;
         player.GetComponent<SUPERCharacterAIO>().enabled = false;
         player.GetComponent<TapDestroy>().enabled = false;
-        camera.GetComponent<GravityGun2>().enabled = false;
-        selectionManager.SetActive(false);
+        //camera.GetComponent<GravityGun2>().enabled = false;
+        //selectionManager.SetActive(false);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }

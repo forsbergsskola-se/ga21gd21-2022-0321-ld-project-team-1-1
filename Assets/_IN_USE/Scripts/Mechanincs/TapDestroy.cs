@@ -71,8 +71,7 @@ public class TapDestroy : MonoBehaviour
 
             if (rayHit.collider.gameObject.tag == "Collectable")
             {
-
-                count = ++count;
+                count++;
                 SetCountText();
                 //Add audio ref loop
 
@@ -92,7 +91,7 @@ public class TapDestroy : MonoBehaviour
     
     void SetCountText()
     {
-        countText.text = $"Collected resources: {count.ToString()}";
+        countText.text = count.ToString();
         // if (count >= 9)
         // {
         //     SceneManager.LoadScene(3);

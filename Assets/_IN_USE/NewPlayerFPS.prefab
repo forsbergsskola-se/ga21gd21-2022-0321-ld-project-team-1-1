@@ -114,7 +114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5865467343359186484
 Transform:
   m_ObjectHideFlags: 0
@@ -213,14 +213,14 @@ MonoBehaviour:
   isSprinting: 0
   toggleSprint: 0
   sprintOveride: 0
-  canCrouch: 1
+  canCrouch: 0
   isCrouching: 0
   toggleCrouch: 1
   crouchOverride: 0
   isIdle: 0
   currentStance: 0
   stanceTransitionSpeed: 5
-  crouchingHeight: 0.8
+  crouchingHeight: 0.15
   currentGroundMovementSpeed: 1
   whatIsGround:
     serializedVersion: 2
@@ -447,7 +447,9 @@ MonoBehaviour:
   timer: 0
   holdDuration: 3
   countText: {fileID: 0}
-  Gravitygun: {fileID: 0}
+  Gravitygun: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+    type: 3}
+  CrystalBurn: {fileID: 0}
 --- !u!1 &5865467343838185456
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +674,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5865467343838185456}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be91d39406e1a804a829faa14ec2514b, type: 3}
   m_Name: 
