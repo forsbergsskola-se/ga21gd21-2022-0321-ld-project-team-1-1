@@ -57,8 +57,11 @@ public class TapDestroy : MonoBehaviour
         }
         else
         {
-            CrystalBurn.CrystalBurnStop();
+            rayHit.collider.gameObject.GetComponentInChildren<CrystalBurnAudio>().CrystalBurnStop();
+            //CrystalBurn.CrystalBurnStop();
+            Debug.Log("BurnBabyStop");
             Gravitygun.GravitygunAudioStop();
+            Debug.Log("Gravitygunstop");
             timer = float.PositiveInfinity;
         }
     }
@@ -76,7 +79,7 @@ public class TapDestroy : MonoBehaviour
                 //Add audio ref loop
 
 
-
+                rayHit.collider.gameObject.GetComponentInChildren<CrystalBurnAudio>().CrystalBurnStop();
                 Destroy(rayHit.transform.gameObject);
                 //add release ref
 
@@ -109,17 +112,15 @@ public class TapDestroy : MonoBehaviour
 
             if (rayHit.collider.gameObject.tag == "Collectable")
             {
-                CrystalBurn.CrystalBurnStart();  //audio loop on impact
+                //CrystalBurn.CrystalBurnStart();  //audio loop on impact
+                rayHit.collider.gameObject.GetComponentInChildren<CrystalBurnAudio>().CrystalBurnStart();
                 Debug.Log("BurnBaby");
 
 
-
-
-            }
-            else
-            {
                 
+
             }
+
 
         }
     }

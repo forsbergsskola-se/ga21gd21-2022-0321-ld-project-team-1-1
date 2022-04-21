@@ -27,6 +27,7 @@ public class CrystalBurnAudio : MonoBehaviour
     public void CrystalBurnStop()
     {
         crystalburnInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
     }
 
 }
