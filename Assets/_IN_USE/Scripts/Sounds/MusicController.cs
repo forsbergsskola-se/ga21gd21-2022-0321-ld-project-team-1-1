@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public FMODUnity.EventReference musicEvRef;
     private FMOD.Studio.EventInstance musicEvInst;
 
     void Start()
     {
-       
+       musicEvInst = FMODUnity.RuntimeManager.CreateInstance(musicEvRef);
+       musicEvInst.start();
     }
 
     // Update is called once per frame
@@ -19,9 +20,9 @@ public class MusicController : MonoBehaviour
         
     }
 
-    public void changeMusicHealthParam(int _val)
+    public void changeMusicProgress(int _val)
     {
-        //musicEvInst.setParameterByName
+        musicEvInst.setParameterByName("Progress", _val);
     }
 
 

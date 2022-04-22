@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class MusicProgressController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public MusicController mc;
+    public int musicLevel = 0;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if(other.tag == "Player")
+        {
+
+        }
+
+
+        mc.changeMusicProgress(musicLevel);
     }
 
 }
