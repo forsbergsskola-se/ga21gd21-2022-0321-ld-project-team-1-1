@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972973123}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.284, y: -0.6, z: 1.5}
+  m_LocalPosition: {x: -0.284, y: 0.14, z: 3.071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033121262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.343, z: 0.205}
+  m_LocalPosition: {x: 0, y: -0.55, z: 0.205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 6817638360860843945}
   - component: {fileID: 6817638360860843946}
   - component: {fileID: 354614990}
+  - component: {fileID: 1555747788}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -303,6 +304,24 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &1555747788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6817638360860843948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be91d39406e1a804a829faa14ec2514b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactiveTag: Interactive
+  grabbedMaterial: {fileID: 2100000, guid: 224295cdad5471d4baa85f147dea1872, type: 2}
+  defaultMaterial: {fileID: 0}
+  SelectionManager: {fileID: 0}
+  grabPos: {fileID: 972973124}
+  Gravitygun2: {fileID: 0}
 --- !u!1 &6817638361354391147
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +354,7 @@ Transform:
   m_GameObject: {fileID: 6817638361354391147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0.24}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6817638360860843947}
@@ -397,7 +416,7 @@ MonoBehaviour:
   automaticallySwitchPerspective: 0
   perspectiveSwitchingKey_L: 0
   mouseInputInversion: 0
-  Sensitivity: 8
+  Sensitivity: 4
   rotationWeight: 4
   verticalRotationRange: 170
   eyeHeight: 0.8
@@ -436,7 +455,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 51
-  hardSlopeLimit: 45
+  hardSlopeLimit: 60
   slopeInfluenceOnSpeed: 1
   maxStairRise: 1.5
   stepUpSpeed: 0.227
@@ -482,7 +501,9 @@ MonoBehaviour:
   s_depletionSpeed: 2
   s_regenerationSpeed: 1.2
   s_JumpStaminaDepletion: 5
+  PlaySound: {fileID: 0}
   enableFootstepSounds: 1
+  some: 0
   footstepTriggeringMode: 0
   stepTiming: 0.15
   footstepSoundSet: []
@@ -655,6 +676,8 @@ MonoBehaviour:
   camera: {fileID: 6817638360860843945}
   timer: 0
   holdDuration: 3
+  countText: {fileID: 0}
+  Gravitygun: {fileID: 0}
 --- !u!114 &1092888366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,7 +685,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6817638361354391147}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86899ef02523c5a4cb70ca29d8e68a90, type: 3}
   m_Name: 
