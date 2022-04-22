@@ -5,7 +5,7 @@ using UnityEngine;
 public class MaterialAudio : MonoBehaviour
 {
     public MovingScript footsteps;
-    public int material = 1;
+    public int material = 0;
 
     private void OnTriggerEnter(Collider other)
     {

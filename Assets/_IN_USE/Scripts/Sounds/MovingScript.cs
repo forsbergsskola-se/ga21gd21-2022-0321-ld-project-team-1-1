@@ -66,6 +66,7 @@ public class MovingScript : MonoBehaviour
     }
     public void ChangeMaterial(int _val)
     {
-        foot_EvInst.setParameterByName("Material", _val);
+        //foot_EvInst.setParameterByName("Material", _val);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Material", _val);  //when to change global parameters!
     }
 }
