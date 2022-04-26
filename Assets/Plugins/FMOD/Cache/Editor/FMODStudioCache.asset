@@ -156,6 +156,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 30
   Length: 48715
+--- !u!114 &-4955694137643378182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps 2/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3224363159
+    data2: 1984435043
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Snow
+  - ice
+  Exists: 1
 --- !u!114 &-3746800805423667053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +235,33 @@ MonoBehaviour:
   - Snow
   - ice
   Exists: 1
+--- !u!114 &-2803668961644288277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CrystalBurn
+  m_EditorClassIdentifier: 
+  Path: event:/CrystalBurn
+  Guid:
+    Data1: -1895232486
+    Data2: 1138139297
+    Data3: 2021419711
+    Data4: 1052505382
+  Banks:
+  - {fileID: 2536008503797336486}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 20
+  Length: 33488
 --- !u!114 &-2750405667526196540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +277,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637862426506536323
+  lastModified: 637865809256325120
   FileSizes:
   - Name: 
     Value: 1814
@@ -260,14 +313,14 @@ MonoBehaviour:
   - {fileID: 7097097943359720116}
   - {fileID: 8541651594481918633}
   - {fileID: -5342864639675590796}
-  - {fileID: 857728399325210366}
+  - {fileID: -2803668961644288277}
   EditorParameters:
-  - {fileID: -3528883105500014818}
+  - {fileID: 3431532142493638294}
   MasterBanks:
   - {fileID: 2536008503797336486}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637862426506536323
+  cacheTime: 637865809256325120
   cacheVersion: 10
 --- !u!114 &857728399325210366
 MonoBehaviour:
@@ -337,7 +390,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637862426506453833
+  lastModified: 637865809256305124
   FileSizes: []
   Exists: 1
 --- !u!114 &2756240790167214819
@@ -391,7 +444,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 973307820625153170}
+  - {fileID: -4955694137643378182}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -418,6 +471,32 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &3431532142493638294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  StudioPath: parameter:/Material
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3224363159
+    data2: 1984435043
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Snow
+  - ice
   Exists: 1
 --- !u!114 &3772210962423326238
 MonoBehaviour:
