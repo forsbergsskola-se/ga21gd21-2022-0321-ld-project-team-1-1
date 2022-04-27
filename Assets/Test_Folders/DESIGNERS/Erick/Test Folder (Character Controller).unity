@@ -336,25 +336,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &230600548 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4993966610846457654, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4993966609949336339}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &230600551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230600548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f408f0d6ec88d42b216827e591f29b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: f83195ee0ce58da449a63391399f17d0, type: 2}
 --- !u!850595691 &313937714
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1683,24 +1664,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1291786520 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1452535489208279345, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4993966609949336339}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1291786528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291786520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068871b8aa22d344bb18e8825c9ac2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1309835684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3692,35 +3655,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1452535489208279347, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: Sensitivity
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1452535489208279347, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: rotationWeight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1452535489208279347, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: enableSurvivalStats
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4847363997944508136, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
       propertyPath: m_Name
       value: SceneComponents
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993966610846457653, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993966610846457654, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5257980757787919353, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}

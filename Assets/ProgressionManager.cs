@@ -9,8 +9,7 @@ public class ProgressionManager : MonoBehaviour
     {
         if (TapDestroy.waterFilterCount >= 3)
         {
-            //SceneManager.LoadScene(sceneBuildIndex: 2);
-            Debug.Log("ending");
+            SceneManager.LoadScene(sceneBuildIndex: 1);
         }
             
     }
