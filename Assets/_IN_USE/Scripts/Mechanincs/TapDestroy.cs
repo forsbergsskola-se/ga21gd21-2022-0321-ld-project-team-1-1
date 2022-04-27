@@ -15,6 +15,7 @@ public class TapDestroy : MonoBehaviour
     
     public Text countText;
     public static int count;
+    public static int waterFilterCount = 0;
 
     //AudioRef
     public SoundController Gravitygun;
@@ -84,10 +85,16 @@ public class TapDestroy : MonoBehaviour
                 Destroy(rayHit.transform.gameObject);
                 //add release ref
 
-                Debug.Log("stopBurn");
+                //Debug.Log("stopBurn");
                 //CrystalAmb.CrystalAmbStop();
                 //Debug.Log("Stop crystalAudio");
 
+            }
+
+            if (rayHit.collider.gameObject.tag == "WaterFilter")
+            {
+                waterFilterCount++;
+                Destroy(rayHit.transform.gameObject);
             }
 
         }

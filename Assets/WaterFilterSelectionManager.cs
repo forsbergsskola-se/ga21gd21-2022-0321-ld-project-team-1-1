@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectionManager : MonoBehaviour
+public class WaterFilterSelectionManager : MonoBehaviour
 {
-    private string interactiveTag = "Interactive";
-    
-        [Header("Materials")]
+    private string interactiveTag1 = "WaterFilter";
+    private string interactiveTag2 = "Collectable";
+
+    [Header("Materials")]
     [SerializeField] private Material highlightedMaterial;
     private Material defaultMaterial;
 
@@ -23,7 +24,7 @@ public class SelectionManager : MonoBehaviour
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit))
         {
             var selection = hit.transform;
-            if (selection.CompareTag(interactiveTag))
+            if (selection.CompareTag(interactiveTag1) || selection.CompareTag(interactiveTag2) )
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
                 defaultMaterial = selectionRenderer.material;

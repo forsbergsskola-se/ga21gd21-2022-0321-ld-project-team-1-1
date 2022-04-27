@@ -97,7 +97,7 @@ public class ShopMenu : MonoBehaviour
         if (TapDestroy.count >= 1)
         {
             camera.GetComponent<GravityGun2>().enabled = true;
-            selectionManager.SetActive(true);
+            selectionManager.GetComponent<SelectionManager>().enabled = true;
             //gravityGunButton.enabled = false;
             gravityGunPurchased = true;
             gravityGunButton.image.enabled = false;
