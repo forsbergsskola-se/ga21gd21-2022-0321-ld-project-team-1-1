@@ -350,12 +350,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c67aaf76b09a94457a817275e7e35972, type: 3}
+--- !u!1 &1394137725265975902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323841961741250449, guid: c67aaf76b09a94457a817275e7e35972,
+    type: 3}
+  m_PrefabInstance: {fileID: 3411942381995488719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1394137725266069118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4323841961741284273, guid: c67aaf76b09a94457a817275e7e35972,
     type: 3}
   m_PrefabInstance: {fileID: 3411942381995488719}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1394137725273075642 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4323841961735723637, guid: c67aaf76b09a94457a817275e7e35972,
+    type: 3}
+  m_PrefabInstance: {fileID: 3411942381995488719}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394137725265975902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d3968294210ba4a9d2bb96dfa74a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3617276380638770721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -423,6 +441,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
+      propertyPath: human
+      value: 
+      objectReference: {fileID: 1452535489208279345}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
+      propertyPath: mCamera
+      value: 
+      objectReference: {fileID: 1394137725273075642}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
+      propertyPath: closeDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
+      propertyPath: ThirdPersonCamera
+      value: 
+      objectReference: {fileID: 1394137725265975902}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f, type: 3}
 --- !u!4 &4497469437133061393 stripped
