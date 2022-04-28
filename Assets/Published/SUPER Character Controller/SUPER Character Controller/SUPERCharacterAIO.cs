@@ -109,7 +109,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
     #endif
     public bool canSprint=true, isSprinting, toggleSprint, sprintOveride, canCrouch=false, isCrouching, toggleCrouch, crouchOverride, isIdle;
     public Stances currentStance = Stances.Standing;
-    public float stanceTransitionSpeed = 5.0f, crouchingHeight = 0.80f;
+    public float stanceTransitionSpeed = 5.0f, crouchingHeight = 0.05f;
     public GroundSpeedProfiles currentGroundMovementSpeed = GroundSpeedProfiles.Walking;
     public LayerMask whatIsGround =-1;
 
