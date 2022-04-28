@@ -111,7 +111,7 @@ public class ShopMenu : MonoBehaviour
     
     public void EnableCrouch()
     {
-        player.GetComponent<SUPERCharacterAIO>().canCrouch = true;
+        player.GetComponent<Shrink>().enabled = true;
         //CrouchButton.enabled = false;
         CrouchButton.image.enabled = false;
         crouchUnlocked.SetActive(true);
@@ -144,18 +144,13 @@ public class ShopMenu : MonoBehaviour
             gravityGunAffordable = true;
         else
             gravityGunAffordable = false;
-        if (TapDestroy.count >= crouchCost && gravityGunPurchased)
-        {
+        if (TapDestroy.count >= crouchCost)
             crouchAffordable = true;
-        }
         else
-        {
             crouchAffordable = false;
-        }
-        
-        if (!gravityGunPurchased && TapDestroy.count >= crouchCost)
+        /*if (!gravityGunPurchased && TapDestroy.count >= crouchCost)
             info.SetActive(true);
         else
-            info.SetActive(false);
+            info.SetActive(false);*/
     }
 }

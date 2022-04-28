@@ -100,7 +100,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
     public bool enableMovementControl = true;
 
     //Walking/Sprinting/Crouching
-    [Range(1.0f,650.0f)]public float walkingSpeed = 140, sprintingSpeed = 260, crouchingSpeed = 45;
+    [Range(1.0f,650.0f)] public float walkingSpeed = 140, sprintingSpeed = 260, crouchingSpeed = 45;
     [Range(1.0f,400.0f)] public float decelerationSpeed=240;
     #if ENABLE_INPUT_SYSTEM
     public Key sprintKey = Key.LeftShift, crouchKey = Key.LeftCtrl, slideKey = Key.V;
@@ -395,7 +395,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
         p_Rigidbody = GetComponent<Rigidbody>();
         capsule = GetComponent<CapsuleCollider>();
         standingHeight = capsule.height;
-        currentGroundSpeed = walkingSpeed;
+        currentGroundSpeed = walkingSpeed * Shrink.speedMultiplier;
         _ZeroFriction = new PhysicMaterial("Zero_Friction");
         _ZeroFriction.dynamicFriction =0f;
         _ZeroFriction.staticFriction =0;
@@ -751,7 +751,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
     }
     void FOVKick(){
         if(cameraPerspective == PerspectiveModes._1stPerson && FOVKickAmount>0){
-            currentFOVMod = (!isIdle && isSprinting) ? initialCameraFOV+(FOVKickAmount*((sprintingSpeed/walkingSpeed)-1)) : initialCameraFOV;
+            currentFOVMod = (!isIdle && isSprinting) ? initialCameraFOV+(FOVKickAmount*((sprintingSpeed/(walkingSpeed * Shrink.speedMultiplier))-1)) : initialCameraFOV;
             if(!Mathf.Approximately(playerCamera.fieldOfView, currentFOVMod) && playerCamera.fieldOfView >= initialCameraFOV){
                 playerCamera.fieldOfView = Mathf.SmoothDamp(playerCamera.fieldOfView, currentFOVMod,ref FOVKickVelRef, Time.deltaTime,50);
             }
@@ -799,7 +799,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
         isIdle = Direction.normalized.magnitude <=0;
         _2DVelocity = Vector2.right * p_Rigidbody.velocity.x + Vector2.up * p_Rigidbody.velocity.z;
         speedToVelocityRatio = (Mathf.Lerp(0, 2, Mathf.InverseLerp(0, (sprintingSpeed/50), _2DVelocity.magnitude)));
-        _2DVelocityMag = Mathf.Clamp((walkingSpeed/50) / _2DVelocity.magnitude, 0f,2f);
+        _2DVelocityMag = Mathf.Clamp(((walkingSpeed * Shrink.speedMultiplier)/50) / _2DVelocity.magnitude, 0f,2f);
     
 
         //Movement
@@ -822,7 +822,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
         
         //Air Control
         else if(!currentGroundInfo.isGettingGroundInfo){
-            p_Rigidbody.AddForce((((Direction*(walkingSpeed))*Time.fixedDeltaTime)*airControlFactor*5)*currentGroundInfo.groundAngleMultiplier_Inverse_persistent,ForceMode.Acceleration);
+            p_Rigidbody.AddForce((((Direction*((walkingSpeed * Shrink.speedMultiplier)))*Time.fixedDeltaTime)*airControlFactor*5)*currentGroundInfo.groundAngleMultiplier_Inverse_persistent,ForceMode.Acceleration);
             p_Rigidbody.velocity= Vector3.ClampMagnitude((Vector3.right*p_Rigidbody.velocity.x + Vector3.forward*p_Rigidbody.velocity.z) ,(walkingSpeed/50))+(Vector3.up*p_Rigidbody.velocity.y);
             if(!currentGroundInfo.potentialStair && jumpEnhancements){
                 if(p_Rigidbody.velocity.y < 0 && p_Rigidbody.velocity.y> Physics.gravity.y*1.5f){
@@ -878,7 +878,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
             }
         }else{
             if(OverheadCheck()){
-                if(p_Rigidbody.velocity.magnitude>(walkingSpeed/50)){
+                if(p_Rigidbody.velocity.magnitude>((walkingSpeed * Shrink.speedMultiplier)/50)){
                     if(enableMovementDebugging) {print("Key realeased, ending slide into a sprint.");}
                     isSliding = false;
                     StartCoroutine(ApplyStance(stanceTransitionSpeed,Stances.Standing));
@@ -1015,7 +1015,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
                     if(isCrouching || isSprinting){
                         isSprinting = false;
                         isCrouching = false;
-                        currentGroundSpeed = walkingSpeed;
+                        currentGroundSpeed = walkingSpeed * Shrink.speedMultiplier;
                         StopCoroutine("ApplyStance");
                         StartCoroutine(ApplyStance(stanceTransitionSpeed,Stances.Standing));
                     }
@@ -1056,7 +1056,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
                     if((toggleCrouch ? crouchInput_FrameOf : !crouchInput_Momentary)&&!crouchOverride && OverheadCheck()){
                         isCrouching = false;
                         isSprinting = false;
-                        currentGroundSpeed = walkingSpeed;
+                        currentGroundSpeed = walkingSpeed * Shrink.speedMultiplier;
                         currentGroundMovementSpeed = GroundSpeedProfiles.Walking;
                         StopCoroutine("ApplyStance");
                         StartCoroutine(ApplyStance(stanceTransitionSpeed,Stances.Standing));
@@ -1105,7 +1105,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
                         }else if((toggleSprint ? sprintInput_FrameOf : !sprintInput_Momentary)&&!sprintOveride){
                             isCrouching = false;
                             isSprinting = false;
-                            currentGroundSpeed = walkingSpeed;
+                            currentGroundSpeed = walkingSpeed * Shrink.speedMultiplier;
                             currentGroundMovementSpeed = GroundSpeedProfiles.Walking;
                             StopCoroutine("ApplyStance");
                             StartCoroutine(ApplyStance(stanceTransitionSpeed,Stances.Standing));
