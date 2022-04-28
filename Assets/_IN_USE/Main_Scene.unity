@@ -4584,6 +4584,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 35798049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &861657053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1452535489208279345, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+    type: 3}
+  m_PrefabInstance: {fileID: 3530067180004274068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &861657062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861657053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e64154212809342baa0d4bfb0c8fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &995048358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3747343104670716773, guid: adf658470cdb2784ca32d3b29a28cba8,
@@ -8751,7 +8769,7 @@ PrefabInstance:
     - target: {fileID: 1452535489208279347, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
       propertyPath: canCrouch
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1452535489208279347, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
