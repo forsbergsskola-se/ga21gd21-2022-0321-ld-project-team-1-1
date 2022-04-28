@@ -83,7 +83,8 @@ MonoBehaviour:
   mCamera: {fileID: 0}
   human: {fileID: 0}
   ThirdPersonCamera: {fileID: 0}
-  closeDistance: 5
+  closeDistance: 10
+  SpawnDistance: {x: 8, y: 0, z: 0}
   car: {fileID: 0}
   carController: {fileID: 0}
   carEngine: {fileID: 0}
