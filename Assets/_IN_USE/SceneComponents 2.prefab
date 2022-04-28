@@ -300,6 +300,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThirdPersonCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 4323841961741250449, guid: c67aaf76b09a94457a817275e7e35972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4323841961741284273, guid: c67aaf76b09a94457a817275e7e35972,
         type: 3}
       propertyPath: m_RootOrder
@@ -470,6 +475,11 @@ PrefabInstance:
       objectReference: {fileID: 3530067180196838204}
     - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
         type: 3}
+      propertyPath: accelerateCar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
       propertyPath: carController
       value: 
       objectReference: {fileID: 3530067180196838184}
@@ -506,7 +516,7 @@ PrefabInstance:
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -627.9
+      value: -680.89
       objectReference: {fileID: 0}
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
@@ -516,12 +526,12 @@ PrefabInstance:
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 366.2
+      value: 335.81
       objectReference: {fileID: 0}
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9238799
       objectReference: {fileID: 0}
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
@@ -531,7 +541,7 @@ PrefabInstance:
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.38268268
       objectReference: {fileID: 0}
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
@@ -546,7 +556,7 @@ PrefabInstance:
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 254545652057608642, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
@@ -557,6 +567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 254545652068415526, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 254545652068415528, guid: 187b728617dc54527b4e66b3a81d8535, type: 3}
@@ -607,7 +622,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 3707872658701796110}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3530067180186619572}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
@@ -638,13 +653,18 @@ PrefabInstance:
       objectReference: {fileID: 4993966611213802486}
     - target: {fileID: 1151600506619500613, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
+      propertyPath: Gravitygun
+      value: 
+      objectReference: {fileID: 5855748704698361812}
+    - target: {fileID: 1151600506619500613, guid: 53cd0254eb98a446b9cf24874499c57a,
+        type: 3}
       propertyPath: CrystalBurn
       value: 
       objectReference: {fileID: 2614362821059274269}
     - target: {fileID: 1151600506619500613, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
       propertyPath: holdDuration
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5865467343359186484, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
@@ -764,7 +784,7 @@ PrefabInstance:
     - target: {fileID: 5865467343838185465, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5865467343838185465, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
@@ -821,6 +841,81 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5257980757787919353}
     m_Modifications:
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Path
+      value: event:/ErrorSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: gravBeam2Ref.Path
+      value: event:/Gravitybeam2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data1
+      value: 39758100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data2
+      value: 1269229058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data3
+      value: -1465425730
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: errorRef.Guid.Data4
+      value: -134944668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Path
+      value: event:/CrystalAmbience2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: gravBeam2Ref.Guid.Data1
+      value: -1973592936
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: gravBeam2Ref.Guid.Data2
+      value: 1099499563
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: gravBeam2Ref.Guid.Data3
+      value: 482479756
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: gravBeam2Ref.Guid.Data4
+      value: -1548639031
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data1
+      value: -1748728028
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data2
+      value: 1213475433
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data3
+      value: -535954250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data4
+      value: -1441061663
+      objectReference: {fileID: 0}
     - target: {fileID: 3645635260371250226, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
       propertyPath: m_Name
@@ -1041,12 +1136,12 @@ PrefabInstance:
     - target: {fileID: 1893236024802553546, guid: 183767acb78a5cd418073393730ea798,
         type: 3}
       propertyPath: crouchCost
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1893236024802553546, guid: 183767acb78a5cd418073393730ea798,
         type: 3}
       propertyPath: gravityGunCost
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1893236024802553546, guid: 183767acb78a5cd418073393730ea798,
         type: 3}
@@ -1087,6 +1182,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042258315338944035, guid: 183767acb78a5cd418073393730ea798,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322356368321452792, guid: 183767acb78a5cd418073393730ea798,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 183767acb78a5cd418073393730ea798, type: 3}
