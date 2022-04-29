@@ -411,6 +411,8 @@ public class SUPERCharacterAIO : MonoBehaviour{
         #region Stamina System
         currentStaminaLevel = Stamina;
         #endregion
+
+        StaminaBar.SetMaxStamina(Stamina);
         
         #region Footstep
         playerAudioSource = GetComponent<AudioSource>();
@@ -418,7 +420,6 @@ public class SUPERCharacterAIO : MonoBehaviour{
         
     }
     void Update(){
-
         #region Input
         #if ENABLE_INPUT_SYSTEM
             MouseXY.x = Mouse.current.delta.y.ReadValue()/50;
@@ -1157,12 +1158,16 @@ public class SUPERCharacterAIO : MonoBehaviour{
         else if(currentStaminaLevel != Stamina && !ignoreStamina && (enableSurvivalStats ? (!currentSurvivalStats.isDehydrated && !currentSurvivalStats.isStarving) : true)){
             currentStaminaLevel = Mathf.MoveTowards(currentStaminaLevel, Stamina, s_regenerationSpeed*Time.deltaTime);
             staminaIsChanging = true;
+            StaminaBar.SetMaxStamina(currentStaminaLevel);
         }else{
             staminaIsChanging =false;
         }
     }
     public void InstantStaminaReduction(float Reduction){
-        if(!ignoreStamina && enableStaminaSystem){currentStaminaLevel = Mathf.Clamp(currentStaminaLevel-=Reduction, 0, Stamina);}
+        if (!ignoreStamina && enableStaminaSystem)
+        {
+            currentStaminaLevel = Mathf.Clamp(currentStaminaLevel-=Reduction, 0, Stamina);
+        }
     }
     #endregion
 
