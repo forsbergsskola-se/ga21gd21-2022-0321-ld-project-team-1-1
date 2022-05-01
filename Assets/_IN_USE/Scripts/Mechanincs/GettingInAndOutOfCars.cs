@@ -17,8 +17,10 @@ public class GettingInAndOutOfCars : MonoBehaviour
     [SerializeField] private GameObject ThirdPersonCamera = null;
 
     [Header("Spawn distance from car")]
-    [SerializeField] private float closeDistance = 10f;
+    [SerializeField] private float closeDistance;
 
+    [SerializeField] public GameObject RightCarDoor;
+    [SerializeField] public GameObject LeftCarDoor;
     [SerializeField] private Vector3 SpawnDistance;
     
     [Space, Header("Car Stuff")]
@@ -55,7 +57,12 @@ public class GettingInAndOutOfCars : MonoBehaviour
                 // BrakeCar();
                 ridingInCar = false;
             }
-            else if (Vector3.Distance(car.transform.position, human.transform.position) < closeDistance) //if out of car
+            else if (Vector3.Distance(RightCarDoor.transform.position, human.transform.position) < closeDistance) //if out of car
+            {
+                GetIntoCar();
+                ridingInCar = true;
+            }
+            else if (Vector3.Distance(LeftCarDoor.transform.position, human.transform.position) < closeDistance) //if out of car
             {
                 GetIntoCar();
                 ridingInCar = true;
@@ -73,7 +80,7 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
         ThirdPersonCamera.SetActive((false));
         
-        human.transform.position = car.transform.position + SpawnDistance;
+        human.transform.position = LeftCarDoor.transform.position + SpawnDistance;
 
         mCamera.SetTarget((human.transform));
 

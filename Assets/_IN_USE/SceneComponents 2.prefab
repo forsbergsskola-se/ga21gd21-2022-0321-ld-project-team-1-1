@@ -4674,6 +4674,68 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7487588500550476207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8272266337630279048}
+  m_Layer: 0
+  m_Name: LeftCarDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8272266337630279048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487588500550476207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.583, y: 1.505, z: 2.91}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3530067180186915532}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7654485378278857216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3815826836293737646}
+  m_Layer: 0
+  m_Name: RightCarDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3815826836293737646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7654485378278857216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.583, y: 1.505, z: 2.91}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3530067180186915532}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7882615287467780170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5262,7 +5324,7 @@ PrefabInstance:
     - target: {fileID: 889774476837751612, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
         type: 3}
       propertyPath: m_Name
-      value: GameManager
+      value: GetInOutOfCar
       objectReference: {fileID: 0}
     - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
         type: 3}
@@ -5291,6 +5353,16 @@ PrefabInstance:
       objectReference: {fileID: 3530067180196838204}
     - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
         type: 3}
+      propertyPath: LeftCarDoor
+      value: 
+      objectReference: {fileID: 7487588500550476207}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
+      propertyPath: RightCarDoor
+      value: 
+      objectReference: {fileID: 7654485378278857216}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
       propertyPath: accelerateCar
       value: 0
       objectReference: {fileID: 0}
@@ -5299,11 +5371,6 @@ PrefabInstance:
       propertyPath: carController
       value: 
       objectReference: {fileID: 3530067180196838184}
-    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
-        type: 3}
-      propertyPath: closeDistance
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
         type: 3}
       propertyPath: ThirdPersonCamera
@@ -5410,6 +5477,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Topspeed
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 254545652077008048, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 254545652077008048, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 254545652077008048, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 254545652077008048, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 254545652606747503, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
