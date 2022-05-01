@@ -92,7 +92,7 @@ MonoBehaviour:
   carEngine: {fileID: 0}
   carBody: {fileID: 0}
   steeringCar: 0
-  accelerateCar: -1
+  accelerateCar: 0
   brakeCar: 1
   handBrakeCar: 1
   enterExitKey: 101
