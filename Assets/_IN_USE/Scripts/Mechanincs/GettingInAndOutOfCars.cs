@@ -25,6 +25,7 @@ public class GettingInAndOutOfCars : MonoBehaviour
     [SerializeField] private GameObject car = null;
     [SerializeField] CarUserControl carController = null;
     [SerializeField] private CarController carEngine = null;
+    [SerializeField] public Rigidbody carBody;
     public float steeringCar = 0;
     public float accelerateCar = 0;
     public float brakeCar = 1;
@@ -64,8 +65,8 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
     void GetOutOfCar()
     {
-        brakeCar = 1;
-        handBrakeCar = 1;
+        // brakeCar = 1;
+        // handBrakeCar = 1;
         inCar = false;
         
         human.SetActive((true));
@@ -78,20 +79,20 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
         carController.enabled = false;
 
-        carEngine.enabled = false;
+        //carEngine.enabled = false;
 
         //car.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
         
-        carEngine.Move(steeringCar,accelerateCar,brakeCar,handBrakeCar);
+        //carEngine.Move(steeringCar,accelerateCar,brakeCar,handBrakeCar);
 
-
+        carBody.isKinematic = true;
 
     }
 
     void GetIntoCar()
     {
-        brakeCar = 0;
-        handBrakeCar = 0;
+        // brakeCar = 0;
+        // handBrakeCar = 0;
         inCar = true;
         
         human.SetActive((false));
@@ -102,7 +103,10 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
         carController.enabled = true;
 
-        carEngine.enabled = true;
+        //carEngine.enabled = true;
+
+        carBody.isKinematic = false;
+
     }
 
     // // void BrakeCar()

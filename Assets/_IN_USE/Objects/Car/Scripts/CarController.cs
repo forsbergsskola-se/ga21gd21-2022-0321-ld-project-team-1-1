@@ -164,8 +164,8 @@ namespace UnityStandardAssets.Vehicles.Car
             }
 
 
-            CalculateRevs();
-            GearChanging();
+            //CalculateRevs();
+            //GearChanging();
 
             AddDownForce();
             CheckForWheelSpin();
@@ -201,7 +201,7 @@ namespace UnityStandardAssets.Vehicles.Car
             switch (m_CarDriveType)
             {
                 case CarDriveType.FourWheelDrive:
-                    thrustTorque = accel * (m_CurrentTorque / 4f);
+                    thrustTorque = accel * (m_CurrentTorque / 1f);
                     for (int i = 0; i < 4; i++)
                     {
                         m_WheelColliders[i].motorTorque = thrustTorque;
