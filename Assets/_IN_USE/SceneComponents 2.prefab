@@ -5276,6 +5276,11 @@ PrefabInstance:
       objectReference: {fileID: 1452535489208279345}
     - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
         type: 3}
+      propertyPath: carBody
+      value: 
+      objectReference: {fileID: 3530067180183498174}
+    - target: {fileID: 889774476837751613, guid: 6ad9c4bf47a54473eb8a67fc65f3a19f,
+        type: 3}
       propertyPath: mCamera
       value: 
       objectReference: {fileID: 1394137725273075642}
@@ -5391,6 +5396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceVehicle
       objectReference: {fileID: 0}
+    - target: {fileID: 254545652067130771, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1611136
+      objectReference: {fileID: 0}
     - target: {fileID: 254545652068415526, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
       propertyPath: m_Enabled
@@ -5401,10 +5411,20 @@ PrefabInstance:
       propertyPath: m_Topspeed
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 254545652068415538, guid: 187b728617dc54527b4e66b3a81d8535,
+    - target: {fileID: 254545652606747503, guid: 187b728617dc54527b4e66b3a81d8535,
         type: 3}
-      propertyPath: m_FullTorqueOverAllWheels
-      value: 4000
+      propertyPath: m_LocalPosition.y
+      value: -0.1611136
+      objectReference: {fileID: 0}
+    - target: {fileID: 254545652726360389, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1611136
+      objectReference: {fileID: 0}
+    - target: {fileID: 254545654053540485, guid: 187b728617dc54527b4e66b3a81d8535,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1611136
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 254545652068415528, guid: 187b728617dc54527b4e66b3a81d8535, type: 3}
@@ -5668,18 +5688,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4993966609232852742}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1291786528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452535489208279345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068871b8aa22d344bb18e8825c9ac2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &861657062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5696,6 +5704,18 @@ MonoBehaviour:
   standingHeight: 1.75
   player: {fileID: 1452535489208279346}
   slowDown: 0.01
+--- !u!114 &1291786528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452535489208279345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068871b8aa22d344bb18e8825c9ac2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1452535489208279346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5865467343359186484, guid: 53cd0254eb98a446b9cf24874499c57a,
