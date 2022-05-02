@@ -201,7 +201,7 @@ namespace UnityStandardAssets.Vehicles.Car
             switch (m_CarDriveType)
             {
                 case CarDriveType.FourWheelDrive:
-                    thrustTorque = accel * (m_CurrentTorque / 1f);
+                    thrustTorque = accel * (m_CurrentTorque / 4f);
                     for (int i = 0; i < 4; i++)
                     {
                         m_WheelColliders[i].motorTorque = thrustTorque;
