@@ -9,7 +9,7 @@ using UnityStandardAssets.Vehicles.Car;
 public class GettingInAndOutOfCars : MonoBehaviour
 {
     [Header("Camera")]
-    [SerializeField] AutoCam mCamera = null;
+    [SerializeField] FreeLookCam mCamera = null;
     
     [Header("Human")]
     [SerializeField] private GameObject human = null;
