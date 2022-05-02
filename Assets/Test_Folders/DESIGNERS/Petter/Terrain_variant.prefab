@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 4545076122687426340}
   - component: {fileID: 3219982695241327441}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: Terrain Height 0-50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
