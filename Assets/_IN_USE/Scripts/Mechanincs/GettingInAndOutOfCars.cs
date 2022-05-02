@@ -9,7 +9,7 @@ using UnityStandardAssets.Vehicles.Car;
 public class GettingInAndOutOfCars : MonoBehaviour
 {
     [Header("Camera")]
-    [SerializeField] AutoCam mCamera = null;
+    [SerializeField] FreeLookCam mCamera = null;
     
     [Header("Human")]
     [SerializeField] private GameObject human = null;
@@ -25,7 +25,7 @@ public class GettingInAndOutOfCars : MonoBehaviour
     
     [Space, Header("Car Stuff")]
     [SerializeField] private GameObject car = null;
-    [SerializeField] CarUserControl carController = null;
+    [SerializeField] CarUserControl carUserControl = null;
     [SerializeField] private CarController carEngine = null;
     [SerializeField] public Rigidbody carBody;
     public float steeringCar = 0;
@@ -49,6 +49,7 @@ public class GettingInAndOutOfCars : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown((enterExitKey)))
         {
             if (inCar)
@@ -84,9 +85,9 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
         mCamera.SetTarget((human.transform));
 
-        carController.enabled = false;
+        carUserControl.enabled = false;
 
-        //carEngine.enabled = false;
+        carEngine.enabled = false;
 
         //car.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
         
@@ -108,9 +109,9 @@ public class GettingInAndOutOfCars : MonoBehaviour
         
         mCamera.SetTarget(car.transform);
 
-        carController.enabled = true;
+        carUserControl.enabled = true;
 
-        //carEngine.enabled = true;
+        carEngine.enabled = true;
 
         carBody.isKinematic = false;
 

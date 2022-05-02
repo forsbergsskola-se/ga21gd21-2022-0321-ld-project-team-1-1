@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 889774476837751614}
   - component: {fileID: 889774476837751613}
   m_Layer: 0
-  m_Name: GetInAndOutOfCar
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
   LeftCarDoor: {fileID: 0}
   SpawnDistance: {x: 0, y: 0, z: 0}
   car: {fileID: 0}
-  carController: {fileID: 0}
+  carUserControl: {fileID: 0}
   carEngine: {fileID: 0}
   carBody: {fileID: 0}
   steeringCar: 0
