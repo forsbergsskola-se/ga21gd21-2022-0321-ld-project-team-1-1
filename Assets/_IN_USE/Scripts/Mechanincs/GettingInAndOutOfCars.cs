@@ -93,6 +93,9 @@ public class GettingInAndOutOfCars : MonoBehaviour
         //carEngine.Move(steeringCar,accelerateCar,brakeCar,handBrakeCar);
 
         carBody.isKinematic = true;
+        
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
     }
 
