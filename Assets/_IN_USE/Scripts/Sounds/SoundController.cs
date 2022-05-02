@@ -20,12 +20,32 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference crystalAmbienceRef;
     private FMOD.Studio.EventInstance crystalAmbienceInst;
 
+    //Dialouge incrementer function
+    public int dialougeIncr = 0;
+    public FMODUnity.EventReference dialouge1_Ref;
+    public FMODUnity.EventReference dialouge2_Ref;
+    public FMODUnity.EventReference dialouge3_Ref;
+    public FMODUnity.EventReference dialouge4_Ref;
+    public FMODUnity.EventReference dialouge5_Ref;
+    public FMODUnity.EventReference dialouge6_Ref;
+    public FMODUnity.EventReference dialouge7_Ref;
+    public FMODUnity.EventReference dialouge8_Ref;
+    public FMODUnity.EventReference dialouge9_Ref;
+    public FMODUnity.EventReference dialouge10_Ref;
+
+    private FMOD.Studio.EventInstance dialougeInst;
+
     void Start()
     {
         gravBeamInst = FMODUnity.RuntimeManager.CreateInstance(gravBeamRef);
         gravBeam2Inst = FMODUnity.RuntimeManager.CreateInstance(gravBeam2Ref);
         errorInst = FMODUnity.RuntimeManager.CreateInstance(errorRef);
         crystalAmbienceInst = FMODUnity.RuntimeManager.CreateInstance(crystalAmbienceRef);
+
+        //Dialouge
+
+
+
     }
 
     void Update()
@@ -63,5 +83,25 @@ public class SoundController : MonoBehaviour
     public void CrystalAmbStop()
     {
         crystalAmbienceInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    public void DialougePlayer()
+    {
+        dialougeIncr++;
+
+        if (dialougeIncr == 1)
+        {
+            Debug.Log("playDialouge_1");
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(dialouge1_Ref);
+        }
+        else if (dialougeIncr == 2)
+        {
+            dialougeInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(dialouge2_Ref);
+            Debug.Log("playDialouge_2");
+        }
+        dialougeInst.start();
+        dialougeInst.release();
+
+
     }
 }
