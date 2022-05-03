@@ -20,6 +20,9 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference crystalAmbienceRef;
     private FMOD.Studio.EventInstance crystalAmbienceInst;
 
+    public FMODUnity.EventReference pauseFilterRef;
+    private FMOD.Studio.EventInstance pauseFilterInst;
+
     //Dialouge incrementer function
     public int dialougeIncr = 0;
     public FMODUnity.EventReference dialouge1_Ref;
@@ -103,5 +106,14 @@ public class SoundController : MonoBehaviour
         dialougeInst.release();
 
 
+    }
+    public void PauseMenu()
+    {
+        pauseFilterInst = FMODUnity.RuntimeManager.CreateInstance("snapshot:/PauseFilter");
+        pauseFilterInst.start();
+    }
+    public void PauseMenuStop()
+    {
+        pauseFilterInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

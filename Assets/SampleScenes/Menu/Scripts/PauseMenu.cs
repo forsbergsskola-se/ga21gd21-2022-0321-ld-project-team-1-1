@@ -18,14 +18,19 @@ public class PauseMenu : MonoBehaviour
         m_MenuToggle = GetComponent <Toggle> ();
 	}*/
 
+    //Audio reference
+    public SoundController PauseAudio;
 
     private void MenuOn ()
     {
         m_TimeScaleRef = Time.timeScale;
         Time.timeScale = 0f;
 
-        m_VolumeRef = AudioListener.volume;
-        AudioListener.volume = 0f;
+        //m_VolumeRef = AudioListener.volume;
+        //AudioListener.volume = 0f;
+
+        Debug.Log("AudioFilterON");
+        PauseAudio.PauseMenu();
 
         m_Paused = true;
         pauseMenu.SetActive(true);
@@ -39,7 +44,9 @@ public class PauseMenu : MonoBehaviour
     public void MenuOff ()
     {
         Time.timeScale = m_TimeScaleRef;
-        AudioListener.volume = m_VolumeRef;
+        //AudioListener.volume = m_VolumeRef;
+        PauseAudio.PauseMenuStop();
+        Debug.Log("AudioFilterOFF");
         m_Paused = false;
         pauseMenu.SetActive(false);
         gameUI.SetActive(true);
