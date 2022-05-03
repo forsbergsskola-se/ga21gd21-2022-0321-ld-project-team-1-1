@@ -26,7 +26,7 @@ public class GravityGun2 : MonoBehaviour
       /*Yrot -= Input.GetAxis("Mouse Y");
       Yrot = Mathf.Clamp(Yrot, -60, 60);
       transform.localRotation = Quaternion.Euler(Yrot, 0, 0);*/
-      if (Input.GetMouseButtonDown(1) && Physics.Raycast(transform.position, transform.forward, out hit, 5) &&
+      if (Input.GetMouseButtonDown(1) && Physics.Raycast(transform.position, transform.forward, out hit, 30) &&
           hit.transform.GetComponent<Rigidbody>() && hit.transform.CompareTag(interactiveTag))
       {
          SelectionManager.SetActive(false);
