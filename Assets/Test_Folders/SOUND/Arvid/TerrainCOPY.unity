@@ -1379,6 +1379,7 @@ GameObject:
   - component: {fileID: 977573104}
   - component: {fileID: 977573103}
   - component: {fileID: 977573102}
+  - component: {fileID: 977573106}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Interactive
@@ -1480,6 +1481,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977573100}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &977573106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977573100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
 --- !u!1001 &991064030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2137,6 +2158,7 @@ GameObject:
   - component: {fileID: 1426348232}
   - component: {fileID: 1426348231}
   - component: {fileID: 1426348230}
+  - component: {fileID: 1426348234}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Interactive
@@ -2238,6 +2260,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426348228}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1426348234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426348228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
 --- !u!1001 &1535587894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2442,6 +2484,7 @@ GameObject:
   - component: {fileID: 1693843832}
   - component: {fileID: 1693843831}
   - component: {fileID: 1693843830}
+  - component: {fileID: 1693843834}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Interactive
@@ -2543,6 +2586,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693843828}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1693843834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693843828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
 --- !u!1 &1717101872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4838696989767445901, guid: 91c790001e78e5a40980a036d58d4d6d,
@@ -2748,6 +2811,7 @@ GameObject:
   - component: {fileID: 1845585277}
   - component: {fileID: 1845585276}
   - component: {fileID: 1845585275}
+  - component: {fileID: 1845585279}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Interactive
@@ -2849,6 +2913,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845585273}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1845585279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845585273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
 --- !u!1001 &1918555562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3401,6 +3485,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
+      propertyPath: boxCollisionRef.Path
+      value: event:/BoxCollision
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
       propertyPath: crystalAmbienceRef.Path
       value: event:/CrystalAmbience2
       objectReference: {fileID: 0}
@@ -3463,6 +3552,26 @@ PrefabInstance:
         type: 3}
       propertyPath: dialouge2_Ref.Guid.Data4
       value: -999801304
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: boxCollisionRef.Guid.Data1
+      value: 1231706360
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: boxCollisionRef.Guid.Data2
+      value: 1303512029
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: boxCollisionRef.Guid.Data3
+      value: -1183676511
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
+        type: 3}
+      propertyPath: boxCollisionRef.Guid.Data4
+      value: -158779193
       objectReference: {fileID: 0}
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}

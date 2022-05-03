@@ -20,8 +20,12 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference crystalAmbienceRef;
     private FMOD.Studio.EventInstance crystalAmbienceInst;
 
+    //Audio filter for when the game is paused
     public FMODUnity.EventReference pauseFilterRef;
     private FMOD.Studio.EventInstance pauseFilterInst;
+
+
+
 
     //Dialouge incrementer function
     public int dialougeIncr = 0;
@@ -37,6 +41,7 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference dialouge10_Ref;
 
     private FMOD.Studio.EventInstance dialougeInst;
+
 
     void Start()
     {
@@ -116,4 +121,6 @@ public class SoundController : MonoBehaviour
     {
         pauseFilterInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
+
+    
 }
