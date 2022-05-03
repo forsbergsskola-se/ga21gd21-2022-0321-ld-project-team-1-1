@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7699023085895303908}
   - component: {fileID: 106589788707645609}
   - component: {fileID: 5753688846599402110}
+  - component: {fileID: 4353258830640283435}
   m_Layer: 0
   m_Name: glass_higher
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4353258830640283435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178575612018861759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0, y: 0.0399994, z: 0.15189755}
+  m_Center: {x: 0.000023038387, y: 0.07406801, z: 0.000000026077032}
 --- !u!1 &1007889904033678154
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +108,7 @@ GameObject:
   - component: {fileID: 1361353253985997821}
   - component: {fileID: 3202795116316531319}
   - component: {fileID: 8597207502913553981}
+  - component: {fileID: 5688525492326857485}
   m_Layer: 0
   m_Name: glass_lower
   m_TagString: Untagged
@@ -166,6 +181,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5688525492326857485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007889904033678154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0, y: 0.0399994, z: 0.15189755}
+  m_Center: {x: 0.000023038387, y: 0.02577454, z: 0.000000011175871}
 --- !u!1 &2457396072778737492
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +205,7 @@ GameObject:
   - component: {fileID: 1058566556666696744}
   - component: {fileID: 3574189594797521479}
   - component: {fileID: 3092144178852837784}
+  - component: {fileID: 2481870145992073469}
   m_Layer: 0
   m_Name: fence_middle_part
   m_TagString: Untagged
@@ -249,6 +278,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2481870145992073469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2457396072778737492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024805455, y: 0.32567883, z: 0.019262476}
+  m_Center: {x: -0.00035091586, y: 0.00000047683716, z: -0.00036876084}
 --- !u!1 &6958089534613927551
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +302,8 @@ GameObject:
   - component: {fileID: 3728384045360407941}
   - component: {fileID: 6060441948002014344}
   - component: {fileID: 6548030579992478231}
+  - component: {fileID: 1315046976676890127}
+  - component: {fileID: 8563569769114622546}
   m_Layer: 0
   m_Name: Pillar_duo
   m_TagString: Untagged
@@ -332,6 +376,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1315046976676890127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958089534613927551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03089806, y: 0.11039524, z: 0.023105716}
+  m_Center: {x: 0, y: 0.048839148, z: -0.07998244}
+--- !u!65 &8563569769114622546
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958089534613927551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03089806, y: 0.11039524, z: 0.022170676}
+  m_Center: {x: 0, y: 0.048839148, z: 0.080449946}
 --- !u!1 &7161242239380618943
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,8 +427,8 @@ Transform:
   m_GameObject: {fileID: 7161242239380618943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.44, y: 0, z: 85.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3728384045360407941}
   - {fileID: 7699023085895303908}
