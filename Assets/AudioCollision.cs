@@ -23,7 +23,7 @@ public class AudioCollision : MonoBehaviour
 
         if (collision.relativeVelocity.magnitude > impactThresh)
         {
-            Debug.Log("Play Impact Sound_1 " + collision.relativeVelocity.magnitude);
+            Debug.Log("Play > Impact Sound" + collision.relativeVelocity.magnitude);
             boxCollisionInst = FMODUnity.RuntimeManager.CreateInstance(boxCollisionRef);
             boxCollisionInst.setParameterByName("ImpactForce", collision.relativeVelocity.magnitude);
             boxCollisionInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
@@ -32,7 +32,7 @@ public class AudioCollision : MonoBehaviour
         }
         else if (collision.relativeVelocity.magnitude < impactThresh)
         {
-            Debug.Log("Play Impact Sound_10 " + collision.relativeVelocity.magnitude);
+            Debug.Log("Play < Impact Sound" + collision.relativeVelocity.magnitude);
             boxCollisionInst = FMODUnity.RuntimeManager.CreateInstance(boxCollisionRef);
             boxCollisionInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
             boxCollisionInst.start();
