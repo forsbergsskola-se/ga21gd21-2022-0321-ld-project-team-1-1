@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 95.63379, g: 100.24353, b: 99.98779, a: 1}
+  m_IndirectSpecularColor: {r: 95.642944, g: 100.50818, b: 100.59216, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4595,6 +4595,7 @@ GameObject:
   - component: {fileID: 637868452}
   - component: {fileID: 637868451}
   - component: {fileID: 637868450}
+  - component: {fileID: 637868455}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Interactive
@@ -4696,6 +4697,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 1.1, z: 0}
+--- !u!114 &637868455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637868449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
 --- !u!1001 &637969699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13102,6 +13123,7 @@ GameObject:
   - component: {fileID: 1335098980}
   - component: {fileID: 1335098979}
   - component: {fileID: 1335098983}
+  - component: {fileID: 1335098984}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Interactive
@@ -13203,6 +13225,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1335098984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335098978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
 --- !u!1 &1336185364
 GameObject:
   m_ObjectHideFlags: 0
@@ -15532,6 +15574,7 @@ GameObject:
   - component: {fileID: 1733886222}
   - component: {fileID: 1733886221}
   - component: {fileID: 1733886220}
+  - component: {fileID: 1733886225}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Interactive
@@ -15633,6 +15676,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 24.571, z: 0}
+--- !u!114 &1733886225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733886219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
 --- !u!1001 &1735428212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18007,6 +18070,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1452535489208279346, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -682.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452535489208279346, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -209.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452535489208279346, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 362.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3609034491815569642, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
       propertyPath: PauseAudio
