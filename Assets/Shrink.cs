@@ -17,6 +17,9 @@ public class Shrink : MonoBehaviour
     [SerializeField] private float slowDown;
     public static float speedMultiplier = 1;
 
+    [SerializeField] private GameObject selectionManager;
+    [SerializeField] private GameObject playerController;
+
     private float temporarySpeed;
 
     private void Start()
@@ -43,6 +46,9 @@ public class Shrink : MonoBehaviour
             //collider.center = ShrinkCameraPosition;
             player.localScale = new Vector3(0.1f,0.1f,0.1f);
             speedMultiplier = slowDown;
+            Camera.main.GetComponent<GravityGun2>().enabled = false;
+            selectionManager.GetComponent<SelectionManager>().enabled = false;
+            playerController.GetComponent<SUPERCharacterAIO>().canSprint = false;
             //camera.transform.position = ShrinkCameraPosition;
         }
         else
@@ -51,6 +57,9 @@ public class Shrink : MonoBehaviour
             //collider.center = StandardCameraPosition;
             player.localScale = new Vector3(1f,1f,1f);
             speedMultiplier = 1f;
+            Camera.main.GetComponent<GravityGun2>().enabled = true;
+            selectionManager.GetComponent<SelectionManager>().enabled = true;
+            playerController.GetComponent<SUPERCharacterAIO>().canSprint = true;
             //camera.transform.position = StandardCameraPosition;
         }
     }
