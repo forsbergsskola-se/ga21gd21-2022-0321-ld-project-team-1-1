@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1353928083996921785}
   - component: {fileID: 8076623471094931606}
   - component: {fileID: 2729168226080685667}
+  - component: {fileID: 2390274315639355339}
   m_Layer: 0
   m_Name: roof handtag.001
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2390274315639355339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957842836155507171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.44650522, y: 0.39356747, z: 0.025774926}
+  m_Center: {x: 0.43568835, y: -0.004392035, z: -0.04787913}
 --- !u!1 &3370089080964066660
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +109,7 @@ GameObject:
   - component: {fileID: 8420421111357674538}
   - component: {fileID: 8293998897921535529}
   - component: {fileID: 2497246597538222788}
+  - component: {fileID: 394888656727081280}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -168,6 +183,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &394888656727081280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370089080964066660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.57038695, y: 0.1586048, z: 0.5535178}
+  m_Center: {x: 0.010577428, y: -0.05984134, z: -0.271121}
 --- !u!1 &4356393823116283215
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +242,7 @@ GameObject:
   - component: {fileID: 7869941101236069071}
   - component: {fileID: 699164601820717071}
   - component: {fileID: 5950820303833831588}
+  - component: {fileID: 6896528275044699363}
   m_Layer: 0
   m_Name: Cylinder.001
   m_TagString: Untagged
@@ -286,6 +315,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6896528275044699363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085444802305855789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11026859, y: 0.18826528, z: 0.024673268}
+  m_Center: {x: 0.09718471, y: -0.0124102365, z: -0.054417472}
 --- !u!1 &7185269103505758459
 GameObject:
   m_ObjectHideFlags: 0
