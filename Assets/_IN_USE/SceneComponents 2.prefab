@@ -1511,6 +1511,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1734918088, guid: 53cd0254eb98a446b9cf24874499c57a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1151600505820738994, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
       propertyPath: m_IsActive
@@ -1629,7 +1633,7 @@ PrefabInstance:
     - target: {fileID: 5865467343359186485, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
       propertyPath: jumpPower
-      value: 50
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 5865467343359186485, guid: 53cd0254eb98a446b9cf24874499c57a,
         type: 3}
@@ -1752,15 +1756,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452535489208279345}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9e64154212809342baa0d4bfb0c8fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shrinkHeight: 0.1
+  shrinkHeight: 0.5
   standingHeight: 1.75
   player: {fileID: 1452535489208279346}
   slowDown: 0.01
+  selectionManager: {fileID: 4993966610846457654}
+  playerController: {fileID: 1452535489208279345}
 --- !u!114 &1291786528
 MonoBehaviour:
   m_ObjectHideFlags: 0

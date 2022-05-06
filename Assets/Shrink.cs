@@ -7,7 +7,7 @@ using UnityEngine;
 public class Shrink : MonoBehaviour
 {
     private bool isShrink = false;
-    [SerializeField] private float shrinkHeight = 0.1f;
+    [SerializeField] private float shrinkHeight;
     [SerializeField] private float standingHeight = 1f;
     //[SerializeField] private CapsuleCollider collider;
     //[SerializeField] private Camera camera;
@@ -44,7 +44,7 @@ public class Shrink : MonoBehaviour
         {
             //collider.height = shrinkHeight;
             //collider.center = ShrinkCameraPosition;
-            player.localScale = new Vector3(0.1f,0.1f,0.1f);
+            player.localScale = new Vector3(shrinkHeight,shrinkHeight,shrinkHeight);
             speedMultiplier = slowDown;
             Camera.main.GetComponent<GravityGun2>().enabled = false;
             selectionManager.GetComponent<SelectionManager>().enabled = false;
