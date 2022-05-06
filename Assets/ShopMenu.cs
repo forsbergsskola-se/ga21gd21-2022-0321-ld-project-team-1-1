@@ -21,8 +21,12 @@ public class ShopMenu : MonoBehaviour
     [SerializeField] private Button gravityGunButton;
     [SerializeField] private Button CrouchButton;
     [SerializeField] private GameObject info;
+    
     [SerializeField] private GameObject gravityGunUnlocked;
     [SerializeField] private GameObject crouchUnlocked;
+
+    [SerializeField] private GameObject gravityGunNotAffordable;
+    [SerializeField] private GameObject crouchNotAffordable;
     
         [Header("Ray")]
     [SerializeField] private float maxDistance;
@@ -102,6 +106,8 @@ public class ShopMenu : MonoBehaviour
             gravityGunPurchased = true;
             gravityGunButton.image.enabled = false;
             //Destroy(info);
+            Destroy(gravityGunButton);
+            Destroy(gravityGunNotAffordable);
             gravityGunUnlocked.SetActive(true);
             TapDestroy.count -= gravityGunCost;
             CostCheck();
@@ -114,6 +120,8 @@ public class ShopMenu : MonoBehaviour
         player.GetComponent<Shrink>().enabled = true;
         //CrouchButton.enabled = false;
         CrouchButton.image.enabled = false;
+        Destroy(CrouchButton);
+        Destroy(crouchNotAffordable);
         crouchUnlocked.SetActive(true);
         crouchPurchased = true;
         TapDestroy.count -= crouchCost;
@@ -124,13 +132,34 @@ public class ShopMenu : MonoBehaviour
     void EnableButtons()
     {
         if (gravityGunAffordable && !gravityGunPurchased)
+        {
             gravityGunButton.enabled = true;
-        else
+            gravityGunButton.image.enabled = true;
+            
+            gravityGunNotAffordable.SetActive(false);
+        }
+        else if(!gravityGunAffordable)
+        {
             gravityGunButton.enabled = false;
+            gravityGunButton.image.enabled = false;
+            
+            gravityGunNotAffordable.SetActive(true);
+        }
+
         if (crouchAffordable && !crouchPurchased)
+        {
             CrouchButton.enabled = true;
-        else
+            CrouchButton.image.enabled = true;
+            
+            crouchNotAffordable.SetActive(false);
+        }
+        else if (!crouchAffordable)
+        {
             CrouchButton.enabled = false;
+            CrouchButton.image.enabled = false;
+            
+            crouchNotAffordable.SetActive(true);
+        }
     }
 
     public void ResourcesCount()
