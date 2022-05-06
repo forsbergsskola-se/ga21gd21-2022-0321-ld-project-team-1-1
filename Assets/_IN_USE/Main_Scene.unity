@@ -27009,8 +27009,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048221668}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -236.19292, y: 29.94, z: 360.83792}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: -236.19292, y: 29.42, z: 370.04}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -27626,7 +27626,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 861657062, guid: 7cfa1d5849f3ac841a3bc5579231dffd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 861657062, guid: 7cfa1d5849f3ac841a3bc5579231dffd, type: 3}
       propertyPath: playerController
@@ -27650,6 +27650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 362.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452535489208279347, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
+        type: 3}
+      propertyPath: jumpPower
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1452535489652158719, guid: 7cfa1d5849f3ac841a3bc5579231dffd,
         type: 3}
