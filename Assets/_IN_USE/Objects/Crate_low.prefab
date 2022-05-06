@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7031865741378559695}
   - component: {fileID: 1096259108}
   - component: {fileID: 1096259107}
+  - component: {fileID: 7746530678692189023}
   m_Layer: 0
   m_Name: Crate_low
   m_TagString: Interactive
@@ -114,3 +115,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008972322, y: 0.008972319, z: 0.0089723235}
   m_Center: {x: 0.0000000088475645, y: -0.000000009546055, z: 0}
+--- !u!114 &7746530678692189023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833468525847002906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366a5d68c8e109847998e26410c4f0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollisionRef:
+    Guid:
+      Data1: 1231706360
+      Data2: 1303512029
+      Data3: -1183676511
+      Data4: -158779193
+    Path: event:/BoxCollision
+  impactThresh: 3
