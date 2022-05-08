@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class TapDestroy : MonoBehaviour
 {
     [SerializeField] private Camera camera = null;
-
+    [SerializeField] public GameObject LaserBeam = null;
+    
     private Ray rayPointer;
     private RaycastHit rayHit;
     private string CollectableObject = "Collectable";
     public float timer;
     public float holdDuration = 3f;
+    
     
     public Text countText;
     public static int count;
@@ -39,6 +41,9 @@ public class TapDestroy : MonoBehaviour
         {
             Gravitygun.GravitygunAudio();
             BurnAudio();
+            
+            LaserBeam.SetActive(true);
+            
             timer = Time.time;
         }
         else if (Input.GetMouseButton(0))
@@ -58,7 +63,8 @@ public class TapDestroy : MonoBehaviour
         }
         else
         {
-
+            
+            LaserBeam.SetActive(false);
             //CrystalBurn.CrystalBurnStop();
             Debug.Log("BurnBabyStop");
             Gravitygun.GravitygunAudioStop();
