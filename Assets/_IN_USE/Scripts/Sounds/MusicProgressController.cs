@@ -5,7 +5,7 @@ using UnityEngine;
 public class MusicProgressController : MonoBehaviour
 {
     public MusicController mc;
-    public int musicLevel = 0;
+    public int musicLevel;
 
     void OnTriggerEnter(Collider other)
     {
@@ -14,17 +14,10 @@ public class MusicProgressController : MonoBehaviour
 
         }
 
-
+        Debug.Log("music" + musicLevel);
         mc.changeMusicProgress(musicLevel);
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if(other.tag == "player")
-        {
 
-        }
-
-        mc.changeMusicProgressBack(musicLevel);
-    }
+    
 
 }

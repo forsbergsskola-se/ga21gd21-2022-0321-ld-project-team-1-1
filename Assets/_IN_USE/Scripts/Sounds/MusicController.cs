@@ -25,11 +25,6 @@ public class MusicController : MonoBehaviour
         musicEvInst.setParameterByName("Progress", _val);
     }
 
-    public void changeMusicProgressBack(int _val)
-    {
-        musicEvInst.setParameterByName("Progress", 1);
-    }
-
 
          
 }
