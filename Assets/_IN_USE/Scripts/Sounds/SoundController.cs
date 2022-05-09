@@ -24,8 +24,12 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference pauseFilterRef;
     private FMOD.Studio.EventInstance pauseFilterInst;
 
+    //ComputerAudio
 
-
+    public FMODUnity.EventReference enterShopRef;
+    private FMOD.Studio.EventInstance enterShopInst;
+    public FMODUnity.EventReference computerButtonRef;
+    private FMOD.Studio.EventInstance computerButtonInst;
 
     //Dialouge incrementer function
     public int dialougeIncr = 0;
@@ -158,5 +162,16 @@ public class SoundController : MonoBehaviour
         pauseFilterInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
-    
+    public void enterShopAudio()
+    {
+        enterShopInst = FMODUnity.RuntimeManager.CreateInstance(enterShopRef);
+        enterShopInst.start();
+        enterShopInst.release();
+    }
+    public void computerButtonAudio()
+    {
+        computerButtonInst = FMODUnity.RuntimeManager.CreateInstance(computerButtonRef);
+        computerButtonInst.start();
+        computerButtonInst.release();
+    }
 }

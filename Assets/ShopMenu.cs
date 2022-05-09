@@ -8,6 +8,7 @@ public class ShopMenu : MonoBehaviour
 {
     private string interactiveTag = "Shop";
     private static bool GameIsPaused = false;
+
     
         [Header("References")]
     public GameObject player;
@@ -40,6 +41,11 @@ public class ShopMenu : MonoBehaviour
     [SerializeField] private int gravityGunCost = 1;
     [SerializeField] private int crouchCost = 2;
 
+         [Header("Audio")]
+    //public SoundController playAudio;
+    public FMODUnity.EventReference enterShopRef;
+    private FMOD.Studio.EventInstance enterShopInst;
+
     void Update()
     {
         CostCheck();
@@ -51,8 +57,10 @@ public class ShopMenu : MonoBehaviour
             if (selection.CompareTag(interactiveTag))
             {
                 instructions.SetActive(true);
-                if(Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E))
+
                 Pause();
+
             }
         }
         var _selection = hit.transform;
@@ -94,6 +102,12 @@ public class ShopMenu : MonoBehaviour
         
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        //Audio
+        Debug.Log("EnterShopAudio");
+        //playAudio.enterShopAudio();
+        enterShopInst = FMODUnity.RuntimeManager.CreateInstance(enterShopRef);
+        enterShopInst.start();
+        enterShopInst.release();
     }
 
     public void EnableGravityGun()
