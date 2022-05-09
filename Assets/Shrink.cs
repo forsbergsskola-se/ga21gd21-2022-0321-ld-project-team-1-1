@@ -7,6 +7,9 @@ using UnityEngine;
 public class Shrink : MonoBehaviour
 {
     private bool isShrink = false;
+    
+    private bool canShrink;
+    
     [SerializeField] private float shrinkHeight;
     [SerializeField] private float standingHeight = 1f;
     //[SerializeField] private CapsuleCollider collider;
@@ -29,13 +32,30 @@ public class Shrink : MonoBehaviour
         //camera.transform.position = StandardCameraPosition;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("CanShrink"))
+        {
+            canShrink = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("CanShrink"))
+        {
+            canShrink = false;
+            isShrink = false;
+        }
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftControl) && isShrink)
         {
             isShrink = false;
         }
-        else if (Input.GetKeyDown(KeyCode.LeftControl) && !isShrink)
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && !isShrink && canShrink)
         {
             isShrink = true;
         }
