@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using SUPERCharacter;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ShipInteraction : MonoBehaviour
 {
- private string interactiveTag = "Ship";
+    [SerializeField] private string interactiveTag = "Ship";
     
         [Header("References")]
-    public Camera camera;
+    //public Camera camera;
     public GameObject instructions;
     
         [Header("Ray")]
@@ -24,11 +27,19 @@ public class ShipInteraction : MonoBehaviour
                 {
                     instructions.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
-                    {
                         SceneManager.LoadScene(sceneBuildIndex: 2);
-                    }
                 }
             }
+
+            var _selection = hit.transform;
+                if (_selection == null)
+                {
+                    instructions.SetActive(false);
+                }
+                if (!_selection.CompareTag(interactiveTag))
+                {
+                    instructions.SetActive(false);
+                }
         }
 }
 
