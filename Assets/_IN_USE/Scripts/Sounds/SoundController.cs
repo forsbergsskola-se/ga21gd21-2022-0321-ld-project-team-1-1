@@ -43,6 +43,15 @@ public class SoundController : MonoBehaviour
     private FMOD.Studio.EventInstance dialougeInst;
 
 
+    //JournalMonolog function
+    public int journalNum = 0;
+    public FMODUnity.EventReference journal1_Ref;
+    public FMODUnity.EventReference journal2_Ref;
+    public FMODUnity.EventReference journal3_Ref;
+    public FMODUnity.EventReference journal4_Ref;
+    public FMODUnity.EventReference journal5_Ref;
+
+    private FMOD.Studio.EventInstance journalInst;
     void Start()
     {
         gravBeamInst = FMODUnity.RuntimeManager.CreateInstance(gravBeamRef);
@@ -110,6 +119,32 @@ public class SoundController : MonoBehaviour
         dialougeInst.start();
         dialougeInst.release();
 
+
+    }
+    public void Journal()
+    {
+        if (journalNum == 1)
+        {
+            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal1_Ref);
+        }
+        else if (journalNum == 2)
+        {
+            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal2_Ref);
+        }
+        else if (journalNum == 3)
+        {
+            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal3_Ref);
+        }
+        else if (journalNum == 4)
+        {
+            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal4_Ref);
+        }
+        else if (journalNum == 5)
+        {
+            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal5_Ref);
+        }
+        journalInst.start();
+        journalInst.release();
 
     }
     public void PauseMenu()

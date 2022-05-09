@@ -5,7 +5,7 @@ using UnityEngine;
 public class MusicProgressController : MonoBehaviour
 {
     public MusicController mc;
-    public int musicLevel;
+    public int musicLevel = 1;
 
     void OnTriggerEnter(Collider other)
     {
