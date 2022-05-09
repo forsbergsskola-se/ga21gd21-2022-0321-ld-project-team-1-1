@@ -9,6 +9,7 @@ TagManager:
   - Interactive
   - Shop
   - WaterFilter
+  - CanShrink
   layers:
   - Default
   - TransparentFX
