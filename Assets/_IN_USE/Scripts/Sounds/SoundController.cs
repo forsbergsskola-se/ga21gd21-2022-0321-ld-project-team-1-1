@@ -100,6 +100,7 @@ public class SoundController : MonoBehaviour
     public void CrystalAmbStop()
     {
         crystalAmbienceInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        crystalAmbienceInst.release();
     }
     public void DialougePlayer()
     {
