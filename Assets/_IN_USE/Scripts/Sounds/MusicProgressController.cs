@@ -17,5 +17,14 @@ public class MusicProgressController : MonoBehaviour
 
         mc.changeMusicProgress(musicLevel);
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "player")
+        {
+
+        }
+
+        mc.changeMusicProgressBack(musicLevel);
+    }
 
 }

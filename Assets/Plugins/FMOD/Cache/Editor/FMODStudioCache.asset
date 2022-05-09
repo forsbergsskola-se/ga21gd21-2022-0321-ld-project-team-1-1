@@ -386,10 +386,10 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637872619259977640
+  lastModified: 637876875594756265
   FileSizes:
   - Name: 
-    Value: 2358
+    Value: 2410
   Exists: 1
 --- !u!114 &-2527698243104013821
 MonoBehaviour:
@@ -445,6 +445,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1709669269463612390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BoxScraping/ImpactForce
+  m_EditorClassIdentifier: 
+  Name: ImpactForce
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1770029694
+    data2: 2130355075
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-544102709367838144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,13 +541,14 @@ MonoBehaviour:
   - {fileID: -544102709367838144}
   - {fileID: -8572937183926249796}
   - {fileID: -3335743715444281982}
+  - {fileID: 1545389259193097533}
   EditorParameters:
   - {fileID: 3431532142493638294}
   MasterBanks:
   - {fileID: 2536008503797336486}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637872619259977640
+  cacheTime: 637876875594756265
   cacheVersion: 10
 --- !u!114 &857728399325210366
 MonoBehaviour:
@@ -656,6 +681,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1545389259193097533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BoxScraping
+  m_EditorClassIdentifier: 
+  Path: event:/BoxScraping
+  Guid:
+    Data1: 1709415700
+    Data2: 1242706138
+    Data3: -1622398279
+    Data4: -2133437491
+  Banks:
+  - {fileID: 2536008503797336486}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1709669269463612390}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4883
 --- !u!114 &2536008503797336486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,7 +724,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637872619259917627
+  lastModified: 637876875594681858
   FileSizes: []
   Exists: 1
 --- !u!114 &2756240790167214819
