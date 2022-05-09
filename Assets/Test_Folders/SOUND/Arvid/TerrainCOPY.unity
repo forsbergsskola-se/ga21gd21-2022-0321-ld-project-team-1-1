@@ -157,7 +157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202859769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.87, y: 0, z: 0}
+  m_LocalPosition: {x: 1.87, y: -3.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -266,6 +266,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1790692388}
     m_Modifications:
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: loadsound
+      value: 
+      objectReference: {fileID: 2132053597}
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Path
+      value: event:/CrystalAmbience2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data1
+      value: -1748728028
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data2
+      value: 1213475433
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data3
+      value: -535954250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: crystalAmbienceRef.Guid.Data4
+      value: -1441061663
+      objectReference: {fileID: 0}
     - target: {fileID: 9004363311652389611, guid: 4ff71f72563c77e41857e4592ad7ce83,
         type: 3}
       propertyPath: m_Name
@@ -330,6 +360,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004363311652389613, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004363311652389614, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: PlayEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004363311652389614, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ff71f72563c77e41857e4592ad7ce83, type: 3}
@@ -966,7 +1011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689788559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.44, y: 0, z: 0}
+  m_LocalPosition: {x: -2.44, y: -3.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1203,6 +1248,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 202859770}
     m_Modifications:
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: loadsound
+      value: 
+      objectReference: {fileID: 2132053597}
     - target: {fileID: 9004363311652389611, guid: 4ff71f72563c77e41857e4592ad7ce83,
         type: 3}
       propertyPath: m_Name
@@ -1267,6 +1317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004363311652389614, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ff71f72563c77e41857e4592ad7ce83, type: 3}
@@ -1365,6 +1420,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689788560}
     m_Modifications:
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: loadsound
+      value: 
+      objectReference: {fileID: 2132053597}
     - target: {fileID: 9004363311652389611, guid: 4ff71f72563c77e41857e4592ad7ce83,
         type: 3}
       propertyPath: m_Name
@@ -1429,6 +1489,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004363311652389614, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ff71f72563c77e41857e4592ad7ce83, type: 3}
@@ -1957,7 +2022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336172111}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.02, y: 0, z: 0}
+  m_LocalPosition: {x: 4.02, y: -3.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2828,7 +2893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790692387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3758,7 +3823,7 @@ PrefabInstance:
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
       propertyPath: crystalAmbienceRef.Path
-      value: event:/CrystalAmbience2
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
@@ -3903,22 +3968,22 @@ PrefabInstance:
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
       propertyPath: crystalAmbienceRef.Guid.Data1
-      value: -1748728028
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
       propertyPath: crystalAmbienceRef.Guid.Data2
-      value: 1213475433
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
       propertyPath: crystalAmbienceRef.Guid.Data3
-      value: -535954250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1445073047098171464, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
       propertyPath: crystalAmbienceRef.Guid.Data4
-      value: -1441061663
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3645635260371250226, guid: 94087c8dd2dafb447bcd27864d773ca3,
         type: 3}
@@ -4559,6 +4624,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1336172112}
     m_Modifications:
+    - target: {fileID: 2175086631295927373, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: loadsound
+      value: 
+      objectReference: {fileID: 2132053597}
     - target: {fileID: 9004363311652389611, guid: 4ff71f72563c77e41857e4592ad7ce83,
         type: 3}
       propertyPath: m_Name
@@ -4623,6 +4693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004363311652389614, guid: 4ff71f72563c77e41857e4592ad7ce83,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ff71f72563c77e41857e4592ad7ce83, type: 3}
