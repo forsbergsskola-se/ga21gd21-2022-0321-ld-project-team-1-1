@@ -253,17 +253,17 @@ PrefabInstance:
     - target: {fileID: 1770302392392877442, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.824793
+      value: -30.9
       objectReference: {fileID: 0}
     - target: {fileID: 1770302392392877442, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 19.09
       objectReference: {fileID: 0}
     - target: {fileID: 1770302392392877442, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4
+      value: -28.7
       objectReference: {fileID: 0}
     - target: {fileID: 1770302392392877442, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
@@ -305,6 +305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicParam_Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 1770302392392877470, guid: 6614fddfd93d9c94493bf88e1974bdb3,
+        type: 3}
+      propertyPath: mc
+      value: 
+      objectReference: {fileID: 2092353514}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6614fddfd93d9c94493bf88e1974bdb3, type: 3}
 --- !u!1 &323077867
@@ -1200,17 +1205,17 @@ PrefabInstance:
     - target: {fileID: 1317213225815720472, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.824793
+      value: 30.67
       objectReference: {fileID: 0}
     - target: {fileID: 1317213225815720472, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 19.67
       objectReference: {fileID: 0}
     - target: {fileID: 1317213225815720472, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.4
+      value: 25.41
       objectReference: {fileID: 0}
     - target: {fileID: 1317213225815720472, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
@@ -1247,6 +1252,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1317213225815720484, guid: 0e21faeb9fbc23949864e2287c23ba32,
+        type: 3}
+      propertyPath: mc
+      value: 
+      objectReference: {fileID: 2092353514}
     - target: {fileID: 1317213225815720485, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
       propertyPath: m_Name
@@ -1906,6 +1916,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicParam_Controller (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3667808438207246515, guid: b439dd58e4e40b749b07cfa0f8546cec,
+        type: 3}
+      propertyPath: mc
+      value: 
+      objectReference: {fileID: 2092353514}
     - target: {fileID: 3667808438207246527, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
       propertyPath: m_RootOrder
@@ -1914,17 +1929,17 @@ PrefabInstance:
     - target: {fileID: 3667808438207246527, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.824793
+      value: -28.72
       objectReference: {fileID: 0}
     - target: {fileID: 3667808438207246527, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 20.28
       objectReference: {fileID: 0}
     - target: {fileID: 3667808438207246527, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.9
+      value: 29.96
       objectReference: {fileID: 0}
     - target: {fileID: 3667808438207246527, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
@@ -2003,7 +2018,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747523978}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
@@ -2508,6 +2523,18 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: -1
   OverrideMaxDistance: -1
+--- !u!114 &2092353514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2537624641048168181, guid: da81bc1f06e1b6443844fa807bf56de7,
+    type: 3}
+  m_PrefabInstance: {fileID: 813153200}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 350fc8f2dbd8c504f901f7905bde98fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2110679764642141113
 PrefabInstance:
   m_ObjectHideFlags: 0
