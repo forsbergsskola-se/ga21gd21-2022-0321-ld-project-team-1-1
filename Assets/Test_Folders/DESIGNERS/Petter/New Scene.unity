@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
+  m_IndirectSpecularColor: {r: 262.05444, g: 324.66895, b: 429.71777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -294,14 +294,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821379499}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 248, z: 0}
+  m_LocalRotation: {x: 0.13913998, y: -0.8557799, z: 0.39905673, w: 0.29838678}
+  m_LocalPosition: {x: 277.6, y: 248, z: 498.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -141.556, z: 0}
 --- !u!114 &1821379502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,65 +431,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 386010442910499065, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain (empty object)
-      objectReference: {fileID: 0}
     - target: {fileID: 1181564699254109491, guid: 55a1f3fced3004a418287305fc6958b3,
         type: 3}
       propertyPath: m_Name
       value: Terrain_variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646012052920735968, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain OUTER BORDER 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790394628580328370, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329204738862275476, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain OUTER BORDER 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521664879121006398, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4723042732519419083, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5046655490472510755, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5256623737639405920, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5475872902728955162, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191750333368769898, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6422141917982781923, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain OUTER BORDER 1
       objectReference: {fileID: 0}
     - target: {fileID: 7886877862964123544, guid: 55a1f3fced3004a418287305fc6958b3,
         type: 3}
@@ -545,16 +490,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8119551603032446437, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9084682101035627488, guid: 55a1f3fced3004a418287305fc6958b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Terrain 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55a1f3fced3004a418287305fc6958b3, type: 3}
