@@ -144,10 +144,7 @@ public class SoundController : MonoBehaviour
         {
             journalInst = FMODUnity.RuntimeManager.CreateInstance(journal4_Ref);
         }
-        else if (journalNum == 5)
-        {
-            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal5_Ref);
-        }
+
         journalInst.start();
         journalInst.release();
 
