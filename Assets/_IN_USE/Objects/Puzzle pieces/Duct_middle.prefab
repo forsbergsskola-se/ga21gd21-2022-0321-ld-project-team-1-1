@@ -698,6 +698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8607726187169999221}
   - component: {fileID: 5692246421139731239}
+  - component: {fileID: -8091783639724357484}
   m_Layer: 0
   m_Name: Duct_middle
   m_TagString: CanShrink
@@ -734,8 +735,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.83, y: 1.15, z: 1.85}
+  m_Size: {x: 1.9, y: 1.2, z: 1.9}
   m_Center: {x: 0.91, y: 0.2, z: -1.6}
+--- !u!65 &-8091783639724357484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743842911289472057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9, y: 1.2, z: 1.9}
+  m_Center: {x: 0.91, y: 1.36, z: -1.6}
 --- !u!1 &8244993348934958536
 GameObject:
   m_ObjectHideFlags: 0

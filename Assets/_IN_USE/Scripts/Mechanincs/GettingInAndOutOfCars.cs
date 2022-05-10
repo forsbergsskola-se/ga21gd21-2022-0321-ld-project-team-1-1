@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityStandardAssets.Cameras;
 using UnityStandardAssets.Vehicles.Car;
+using UnityEngine.UI;
 
 public class GettingInAndOutOfCars : MonoBehaviour
 {
@@ -35,6 +36,10 @@ public class GettingInAndOutOfCars : MonoBehaviour
 
     [Header("Input")]
     [SerializeField] private KeyCode enterExitKey = KeyCode.E;
+
+    [Header("UI")]
+    [SerializeField] private Image pointer;
+    [SerializeField] private Image bar;
 
     bool inCar = false;
     public bool ridingInCar = false;
@@ -77,6 +82,10 @@ public class GettingInAndOutOfCars : MonoBehaviour
         inCar = false;
         
         human.SetActive((true));
+        
+        //activate HUD
+        pointer.enabled = true;
+        bar.enabled = true;
 
         ThirdPersonCamera.SetActive((false));
         
@@ -106,6 +115,10 @@ public class GettingInAndOutOfCars : MonoBehaviour
         inCar = true;
         
         human.SetActive((false));
+        
+        //Deactivate HUD
+        pointer.enabled = false;
+        bar.enabled = false;
         
         ThirdPersonCamera.SetActive((true));
         

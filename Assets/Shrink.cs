@@ -8,7 +8,7 @@ public class Shrink : MonoBehaviour
 {
     private bool isShrink = false;
     
-    private bool canShrink;
+    private bool canShrink = true;
     
     [SerializeField] private float shrinkHeight;
     [SerializeField] private float standingHeight = 1f;
@@ -32,7 +32,7 @@ public class Shrink : MonoBehaviour
         //camera.transform.position = StandardCameraPosition;
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("CanShrink"))
         {
@@ -44,10 +44,21 @@ public class Shrink : MonoBehaviour
     {
         if(other.CompareTag("CanShrink"))
         {
-            canShrink = false;
-            isShrink = false;
+            RaycastHit hit;
+            Collider newOther = null;
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 2f))
+            {
+                newOther = hit.collider;
+            }
+
+            if (!newOther.CompareTag("CanShrink") || newOther == null)
+            {
+                canShrink = false;
+                isShrink = false;
+            }
         }
-    }
+    }*/
+    
 
     void Update()
     {
