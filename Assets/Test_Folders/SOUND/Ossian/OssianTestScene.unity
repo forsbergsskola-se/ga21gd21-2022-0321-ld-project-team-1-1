@@ -248,7 +248,7 @@ PrefabInstance:
     - target: {fileID: 1770302392392877442, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1770302392392877442, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
@@ -303,7 +303,7 @@ PrefabInstance:
     - target: {fileID: 1770302392392877465, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
       propertyPath: m_Name
-      value: MusicParam_Controller
+      value: MusicParam_Controller1
       objectReference: {fileID: 0}
     - target: {fileID: 1770302392392877470, guid: 6614fddfd93d9c94493bf88e1974bdb3,
         type: 3}
@@ -1200,7 +1200,7 @@ PrefabInstance:
     - target: {fileID: 1317213225815720472, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1317213225815720472, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
@@ -1260,7 +1260,7 @@ PrefabInstance:
     - target: {fileID: 1317213225815720485, guid: 0e21faeb9fbc23949864e2287c23ba32,
         type: 3}
       propertyPath: m_Name
-      value: MusicParam_Controller (2)
+      value: MusicParam_Controller3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e21faeb9fbc23949864e2287c23ba32, type: 3}
@@ -1914,7 +1914,7 @@ PrefabInstance:
     - target: {fileID: 3667808438207246514, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
       propertyPath: m_Name
-      value: MusicParam_Controller (1)
+      value: MusicParam_Controller2
       objectReference: {fileID: 0}
     - target: {fileID: 3667808438207246515, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
@@ -1924,7 +1924,7 @@ PrefabInstance:
     - target: {fileID: 3667808438207246527, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3667808438207246527, guid: b439dd58e4e40b749b07cfa0f8546cec,
         type: 3}
