@@ -336,7 +336,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: 
-  sourceBankPath: Assets/Streaming Assets
+  sourceBankPath: Assets/Streaming Assets/Desktop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -360,7 +360,6 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Desktop/Master
-  - Desktop/Desktop/Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
