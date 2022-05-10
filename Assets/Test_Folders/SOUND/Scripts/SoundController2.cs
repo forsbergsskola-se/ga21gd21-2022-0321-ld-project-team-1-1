@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundController : MonoBehaviour
+public class SoundController2 : MonoBehaviour
 {
-                [Header("CrystalAudio")]
+    [Header("CrystalAudio")]
     //The Crystalharvest Beam
     public FMODUnity.EventReference gravBeamRef;
     private FMOD.Studio.EventInstance gravBeamInst;
@@ -33,7 +33,7 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference computerButtonRef;
     private FMOD.Studio.EventInstance computerButtonInst;
 
-               [Header("Dialogue")]
+    [Header("Dialogue")]
     //Dialouge incrementer function
     public int dialougeIncr = 0;
     public FMODUnity.EventReference dialouge1_Ref;
@@ -54,7 +54,7 @@ public class SoundController : MonoBehaviour
 
     private FMOD.Studio.EventInstance journalInst;
 
-               [Header("NonLinearDialogue")]
+    [Header("NonLinearDialogue")]
     //NonLinear Dialogue
     public int NonLinearNum = 0;
     public FMODUnity.EventReference Nl1_Ref;
@@ -97,7 +97,7 @@ public class SoundController : MonoBehaviour
 
     void Update()
     {
-        
+
     }
     public void GravitygunAudio() //Crystal Harvest
     {
