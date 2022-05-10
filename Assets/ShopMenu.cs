@@ -8,6 +8,7 @@ public class ShopMenu : MonoBehaviour
 {
     private string interactiveTag = "Shop";
     private static bool GameIsPaused = false;
+    public static bool shopIsOpen = false;
 
     
         [Header("References")]
@@ -68,40 +69,56 @@ public class ShopMenu : MonoBehaviour
         {
             instructions.SetActive(false);
         }
-        if (GameIsPaused && Input.GetKeyDown(KeyCode.Escape))
+        if (GameIsPaused && Input.GetKeyUp(KeyCode.Escape))
         {
             Resume();
+            shopIsOpen = false; //the shop is closed
         }
  }
 
     public void Resume()
     {
-        Cursor.visible = false;
+        Debug.Log(shopIsOpen);
+        
+        Cursor.visible = false; //Disable Cursor
         Cursor.lockState = CursorLockMode.Locked;
-        player.GetComponent<SUPERCharacterAIO>().enabled = true;
-        player.GetComponent<TapDestroy>().enabled = true;
-        //camera.GetComponent<GravityGun2>().enabled = true;
-        //selectionManager.SetActive(true);
-        shopMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        
+        player.GetComponent<SUPERCharacterAIO>().enabled = true; //Character Controller Enabled
+        
+        player.GetComponent<TapDestroy>().enabled = true; //Laser Enabled
+        
+            //camera.GetComponent<GravityGun2>().enabled = true;
+            //selectionManager.SetActive(true);
+        
+        shopMenuUI.SetActive(false); //Deactivate Shop UI
+        
+        Time.timeScale = 1f; //Resume the Game
         GameIsPaused = false;
     }
     public void Pause()
     {
-        shopMenuUI.SetActive(true);
-        instructions.SetActive(false);
-        Time.timeScale = 0f;
+        shopIsOpen = true; //the shop is open
+        Debug.Log(shopIsOpen);
+        
+        shopMenuUI.SetActive(true); //Activate Shop UI
+        
+        instructions.SetActive(false); //Disable instructions on screen
+        
+        Time.timeScale = 0f; //Pause the Game
         GameIsPaused = true;
 
         EnableButtons();
         
-        player.GetComponent<SUPERCharacterAIO>().enabled = false;
-        player.GetComponent<TapDestroy>().enabled = false;
-        //camera.GetComponent<GravityGun2>().enabled = false;
-        //selectionManager.SetActive(false);
+        player.GetComponent<SUPERCharacterAIO>().enabled = false; //Character Controller Disabled
         
-        Cursor.visible = true;
+        player.GetComponent<TapDestroy>().enabled = false; //Laser Disabled
+        
+            //camera.GetComponent<GravityGun2>().enabled = false;
+            //selectionManager.SetActive(false);
+        
+        Cursor.visible = true; //Enable Cursor
         Cursor.lockState = CursorLockMode.None;
+        
         //Audio
         Debug.Log("EnterShopAudio");
         //playAudio.enterShopAudio();

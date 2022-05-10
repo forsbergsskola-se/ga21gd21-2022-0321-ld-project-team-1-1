@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     private bool m_Paused;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject gameUI;
+    [SerializeField] private bool shop;
 
 
     /*void Awake()
@@ -80,8 +81,9 @@ public class PauseMenu : MonoBehaviour
 
 #if !MOBILE_INPUT
 	void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.Escape))
+    {
+        shop = ShopMenu.shopIsOpen;
+		if(Input.GetKeyDown(KeyCode.Escape) && shop == false)
 		{
             OnMenuStatusChange();
 		    /*m_MenuToggle.isOn = !m_MenuToggle.isOn;
