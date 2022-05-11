@@ -180,27 +180,39 @@ public class SoundController : MonoBehaviour
         if (NonLinearNum == 1)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
-            
-            
+                      
         }
         else if (NonLinearNum == 2)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
-           
-            
+                      
         }
         else if (NonLinearNum == 3)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
-           
-           
+                      
         }
         else if (NonLinearNum == 4)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
-           
-            
+                      
         }
+        else if (NonLinearNum == 5)
+        {
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
+
+        }
+        else if (NonLinearNum == 6)
+        {
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
+
+        }
+        else if (NonLinearNum == 7)
+        {
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
+
+        }
+
         NonLinearInst.start();
         NonLinearInst.release();
        

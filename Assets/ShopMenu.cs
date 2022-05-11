@@ -46,6 +46,7 @@ public class ShopMenu : MonoBehaviour
     //public SoundController playAudio;
     public FMODUnity.EventReference enterShopRef;
     private FMOD.Studio.EventInstance enterShopInst;
+    public SoundController dialogue;
 
     void Update()
     {
@@ -125,6 +126,7 @@ public class ShopMenu : MonoBehaviour
         enterShopInst = FMODUnity.RuntimeManager.CreateInstance(enterShopRef);
         enterShopInst.start();
         enterShopInst.release();
+        dialogue.ShopDialogue();
     }
 
     public void EnableGravityGun()
