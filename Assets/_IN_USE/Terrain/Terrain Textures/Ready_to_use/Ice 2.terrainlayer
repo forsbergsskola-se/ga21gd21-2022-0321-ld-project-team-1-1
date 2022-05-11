@@ -9,7 +9,7 @@ TerrainLayer:
   m_Name: Ice 2
   m_DiffuseTexture: {fileID: 2800000, guid: 538aa10a2e5a44e6993a787d16ac5e8a, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: 3e1ee33dc83d84dfd915d560b936405b, type: 3}
-  m_MaskMapTexture: {fileID: 0}
+  m_MaskMapTexture: {fileID: 2800000, guid: d01d6cf96ed774c4889ba04638067c9f, type: 3}
   m_TileSize: {x: 10, y: 10}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 1, g: 1, b: 1, a: 0}
