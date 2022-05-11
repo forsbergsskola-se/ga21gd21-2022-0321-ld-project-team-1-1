@@ -82,6 +82,8 @@ public class SoundController : MonoBehaviour
     //private FMOD.Studio.EventInstance S4Inst;
 
     private FMOD.Studio.EventInstance NonLinearInst;
+    FMOD.Studio.PLAYBACK_STATE pbState;
+    //public bool hasPLayed = false;
 
     void Start()
     {
@@ -187,64 +189,79 @@ public class SoundController : MonoBehaviour
     }
     public void NonLinearAudio()
     {
-        if (NonLinearNum == 1)
+        NonLinearInst.getPlaybackState(out pbState);
+
+        if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
         {
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
-            //Destroying the first Water Filter
-        }
-        else if (NonLinearNum == 2)
-        {
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
-            //The 2nd water filter Filter
-        }
-        else if (NonLinearNum == 3)
-        {
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
-            //Destroying the 2nd Water Filter
-        }
-        else if (NonLinearNum == 4)
-        {
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
-            //Finding resources
-        }
-        else if (NonLinearNum == 5)
-        {
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
-            //Puzzle #1 Solved
-        }
-        else if (NonLinearNum == 6)
-        {
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
-            //Puzzle #2 
-        }
-        else if (NonLinearNum == 7)
-        {
-            //Trigger enter
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
-        }
-        else if (NonLinearNum == 7)
-        {
-            //trigger exit
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S5_Ref);
-        }
-        else if (NonLinearNum == 8)
-        {
-            //in camp
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
-        }
-        else if (NonLinearNum == 9)
-        {
-            //Open World
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S8_Ref);
-        }
-        else if (NonLinearNum == 10)
-        {
-            //Kelta's Approach from the Ship
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S9_Ref);
+            if (NonLinearNum == 1)
+            {
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
+
+                //Destroying the first Water Filter
+            }
+            else if (NonLinearNum == 2)
+            {
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
+                //The 2nd water filter Filter
+
+            }
+            else if (NonLinearNum == 3)
+            {
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
+                //Destroying the 2nd Water Filter
+
+            }
+            else if (NonLinearNum == 4)
+            {
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
+                //Finding resources
+
+            }
+            else if (NonLinearNum == 5)
+            {
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
+                //Puzzle #1 Solved
+
+            }
+            else if (NonLinearNum == 6)
+            {
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
+                //Puzzle #2 
+
+            }
+            else if (NonLinearNum == 7)
+            {
+                //Trigger enter
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
+            }
+            else if (NonLinearNum == 7)
+            {
+                //trigger exit
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S5_Ref);
+
+            }
+            else if (NonLinearNum == 8)
+            {
+                //in camp
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
+            }
+            else if (NonLinearNum == 9)
+            {
+                //Open World
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S8_Ref);
+            }
+            else if (NonLinearNum == 10)
+            {
+                //Kelta's Approach from the Ship
+                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S9_Ref);
+            }
+
+            NonLinearInst.start();
+            //hasPlayed Bool? 
+            NonLinearInst.release();
+
         }
 
-        NonLinearInst.start();
-        NonLinearInst.release();
        
 
 
