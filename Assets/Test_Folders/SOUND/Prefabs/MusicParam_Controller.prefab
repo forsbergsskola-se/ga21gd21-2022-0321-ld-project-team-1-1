@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1770302392392877468}
   - component: {fileID: 1770302392392877471}
   - component: {fileID: 1770302392392877470}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: MusicParam_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770302392392877465}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -130.63, y: 88.9, z: -216.68}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0

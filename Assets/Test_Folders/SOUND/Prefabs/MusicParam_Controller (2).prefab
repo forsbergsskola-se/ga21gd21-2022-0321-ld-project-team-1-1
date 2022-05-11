@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1317213225815720474}
   - component: {fileID: 1317213225815720475}
   - component: {fileID: 1317213225815720484}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: MusicParam_Controller (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1317213225815720485}
   m_LocalRotation: {x: 0, y: -0.65289193, z: 0, w: 0.7574511}
   m_LocalPosition: {x: -83.33, y: 88.39, z: -181.58}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 1.18, y: -1.9, z: 9.48}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -50,7 +50,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317213225815720485}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
