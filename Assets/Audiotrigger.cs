@@ -19,4 +19,13 @@ public class Audiotrigger : MonoBehaviour
             Debug.Log("destroyObject");
             Destroy(gameObject);
     }
+    public void OnTriggerExit(Collider other)
+    {
+        trigger.NonLinearNum = funcNum;
+        if (funcNum == 7)
+        {
+            trigger.NonLinearAudio();
+            Destroy(gameObject);
+        }
+    }
 }

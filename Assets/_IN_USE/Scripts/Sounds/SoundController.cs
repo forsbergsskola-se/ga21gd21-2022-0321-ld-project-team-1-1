@@ -180,37 +180,57 @@ public class SoundController : MonoBehaviour
         if (NonLinearNum == 1)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
-                      
+            //Destroying the first Water Filter
         }
         else if (NonLinearNum == 2)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
-                      
+            //The 2nd water filter Filter
         }
         else if (NonLinearNum == 3)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
-                      
+            //Destroying the 2nd Water Filter
         }
         else if (NonLinearNum == 4)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
-                      
+            //Finding resources
         }
         else if (NonLinearNum == 5)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
-
+            //Puzzle #1 Solved
         }
         else if (NonLinearNum == 6)
         {
             NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
-
+            //Puzzle #2 
         }
         else if (NonLinearNum == 7)
         {
-            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
-
+            //Trigger enter
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
+        }
+        else if (NonLinearNum == 7)
+        {
+            //trigger exit
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S5_Ref);
+        }
+        else if (NonLinearNum == 8)
+        {
+            //in camp
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
+        }
+        else if (NonLinearNum == 9)
+        {
+            //Open World
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S8_Ref);
+        }
+        else if (NonLinearNum == 10)
+        {
+            //Kelta's Approach from the Ship
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S9_Ref);
         }
 
         NonLinearInst.start();
@@ -220,35 +240,7 @@ public class SoundController : MonoBehaviour
 
 
     }
-    public void DestroyWaterFilter1_Audio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
 
-    }
-    public void WaterFilter2_Audio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
-
-    }
-    public void DestroyWaterFilter2_Audio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
-
-
-    }
-    public void FindingresourcesAudio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
-
-    }
     public void Puzzle1_Audio()
     {
         NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
@@ -277,12 +269,7 @@ public class SoundController : MonoBehaviour
         }
 
     }
-    public void ApproachingCampAudio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
-    }
+
     public void InCampAudio()
     {
         NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
