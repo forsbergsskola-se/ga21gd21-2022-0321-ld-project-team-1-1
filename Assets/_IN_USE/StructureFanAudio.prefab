@@ -53,8 +53,8 @@ MonoBehaviour:
       Data4: -1099605377
     Path: event:/StructureFan
   Event: 
-  PlayEvent: 3
-  StopEvent: 4
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
