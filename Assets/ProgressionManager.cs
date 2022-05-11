@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ProgressionManager : MonoBehaviour
 {
+    [SerializeField] private int maxFinters = 4;
     void Update()
     {
-        if (TapDestroy.waterFilterCount >= 3)
+        if (TapDestroy.waterFilterCount >= maxFinters)
         {
             SceneManager.LoadScene(sceneBuildIndex: 1);
         }
