@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 65449873406743088}
   - component: {fileID: 65449873406743089}
   - component: {fileID: 65449873406743090}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 3548812015353924397}
   - component: {fileID: 5046228063845648946}
   - component: {fileID: 4610952745610769304}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 4529685261248300586}
   - component: {fileID: 478220015293138095}
   - component: {fileID: 8323996628393708774}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,9 +1077,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5407397845914383178}
   - component: {fileID: 78847316230825481}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Duct_middle_piece
-  m_TagString: CanShrink
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1111,7 +1111,7 @@ BoxCollider:
   m_GameObject: {fileID: 4202810326228860821}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.9, y: 1.2, z: 1.9}
   m_Center: {x: 0.91, y: 0.2, z: -1.6}
@@ -1130,7 +1130,7 @@ PrefabInstance:
     - target: {fileID: 246284305875944190, guid: 7dd8b545e0d114827a50b7c2dc8dd919,
         type: 3}
       propertyPath: m_TagString
-      value: CanShrink
+      value: Pipe
       objectReference: {fileID: 0}
     - target: {fileID: 487794947122417395, guid: 7dd8b545e0d114827a50b7c2dc8dd919,
         type: 3}
@@ -1290,7 +1290,7 @@ PrefabInstance:
     - target: {fileID: 246284305875944190, guid: 7dd8b545e0d114827a50b7c2dc8dd919,
         type: 3}
       propertyPath: m_TagString
-      value: CanShrink
+      value: Pipe
       objectReference: {fileID: 0}
     - target: {fileID: 487794947122417395, guid: 7dd8b545e0d114827a50b7c2dc8dd919,
         type: 3}
@@ -1450,7 +1450,7 @@ PrefabInstance:
     - target: {fileID: 246284305875944190, guid: 7dd8b545e0d114827a50b7c2dc8dd919,
         type: 3}
       propertyPath: m_TagString
-      value: CanShrink
+      value: Pipe
       objectReference: {fileID: 0}
     - target: {fileID: 487794947122417395, guid: 7dd8b545e0d114827a50b7c2dc8dd919,
         type: 3}

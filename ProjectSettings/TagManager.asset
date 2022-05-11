@@ -11,6 +11,7 @@ TagManager:
   - WaterFilter
   - CanShrink
   - Ship
+  - Pipe
   layers:
   - Default
   - TransparentFX

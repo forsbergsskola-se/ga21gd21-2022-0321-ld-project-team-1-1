@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6788328258265340669}
   - component: {fileID: 2561709794166397010}
   - component: {fileID: 6986138866049830871}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Duct_corner
-  m_TagString: CanShrink
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 7959054392189741255}
   - component: {fileID: 6199886455829686850}
   - component: {fileID: 2534497065837830667}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 5782647363998629085}
   - component: {fileID: 5782647363998629084}
   - component: {fileID: 5782647363998629087}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 7032222153528534464}
   - component: {fileID: 1634627185809351903}
   - component: {fileID: 8022587023464439157}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 3078402307236075727}
   - component: {fileID: 5484549203200180480}
   - component: {fileID: 3875249786432493551}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,7 +1445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1991293361697070503}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Duct_corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4339972626792830871}
   - component: {fileID: 7984743987775252310}
   - component: {fileID: 8999495785840351960}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 5288842936342141559}
   - component: {fileID: 614483185719420771}
   - component: {fileID: 4698826559470218735}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (09)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,9 +699,9 @@ GameObject:
   - component: {fileID: 8607726187169999221}
   - component: {fileID: 5692246421139731239}
   - component: {fileID: -8091783639724357484}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Duct_middle
-  m_TagString: CanShrink
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 2830453551850804431}
   - component: {fileID: 8320846827982835306}
   - component: {fileID: 3265269956157915632}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
