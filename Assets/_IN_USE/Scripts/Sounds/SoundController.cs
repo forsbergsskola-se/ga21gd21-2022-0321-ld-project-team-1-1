@@ -27,7 +27,7 @@ public class SoundController : MonoBehaviour
     private FMOD.Studio.EventInstance pauseFilterInst;
 
     //ComputerAudio
-
+    bool destroyAudio = false;
     public FMODUnity.EventReference enterShopRef;
     private FMOD.Studio.EventInstance enterShopInst;
     public FMODUnity.EventReference computerButtonRef;
@@ -264,9 +264,18 @@ public class SoundController : MonoBehaviour
 
     public void ShopDialogue()
     {
+        if (destroyAudio == false)
+        {
         NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl1_Ref);
         NonLinearInst.start();
         NonLinearInst.release();
+        destroyAudio = true;
+        }
+        else
+        {
+
+        }
+
     }
     public void ApproachingCampAudio()
     {
