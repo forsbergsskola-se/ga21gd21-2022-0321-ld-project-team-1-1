@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 65181051199376934}
   m_Layer: 0
   m_Name: Spacefrigate
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

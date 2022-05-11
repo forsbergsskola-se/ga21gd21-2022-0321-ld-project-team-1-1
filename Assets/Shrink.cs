@@ -8,7 +8,7 @@ public class Shrink : MonoBehaviour
 {
     private bool isShrink = false;
     
-    private bool canShrink = false;
+    private bool canShrink = true;
     
     [SerializeField] private float shrinkHeight;
     [SerializeField] private float standingHeight = 1f;
@@ -32,16 +32,12 @@ public class Shrink : MonoBehaviour
         //camera.transform.position = StandardCameraPosition;
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("CanShrink"))
         {
             canShrink = true;
         }
-        /*if (other.CompareTag("Pipe"))
-        {
-            canShrink = false;
-        }*/
     }
     
     private void OnTriggerExit(Collider other)
@@ -51,11 +47,7 @@ public class Shrink : MonoBehaviour
             canShrink = false;
             //isShrink = false;
         }
-        /*else if (other.CompareTag("Pipe"))
-        {
-            canShrink = true;
-        }*/
-    }
+    }*/
     
 
     void Update()
