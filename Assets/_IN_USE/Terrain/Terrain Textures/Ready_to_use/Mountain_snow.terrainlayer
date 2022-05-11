@@ -9,7 +9,7 @@ TerrainLayer:
   m_Name: Mountain_snow
   m_DiffuseTexture: {fileID: 2800000, guid: be3fcb8d3a0db4b529f2327f7f86c60e, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: a287c1a0c8c1648af9f5b15bc27f833b, type: 3}
-  m_MaskMapTexture: {fileID: 2800000, guid: be708f861d9b246d3ad46158cd1d3d50, type: 3}
+  m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 2, y: 2}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
