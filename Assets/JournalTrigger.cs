@@ -13,6 +13,8 @@ public class JournalTrigger : MonoBehaviour
         Jtrigger.journalNum = journalLvl;
         Debug.Log("journaTrigger");
         Jtrigger.Journal();
+        Debug.Log("DestroyObject");
+        Destroy(gameObject);
     }
 
 }

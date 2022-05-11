@@ -70,15 +70,15 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference S8_Ref;
     public FMODUnity.EventReference S9_Ref;
 
-    private FMOD.Studio.EventInstance Nl1Inst;
-    private FMOD.Studio.EventInstance Nl2Inst;
-    private FMOD.Studio.EventInstance Nl3Inst;
-    private FMOD.Studio.EventInstance Nl4Inst;
-    private FMOD.Studio.EventInstance Nl5Inst;
-    private FMOD.Studio.EventInstance Nl7Inst;
-    private FMOD.Studio.EventInstance Nl8Inst;
-    private FMOD.Studio.EventInstance S3Inst;
-    private FMOD.Studio.EventInstance S4Inst;
+    //private FMOD.Studio.EventInstance Nl1Inst;
+    //private FMOD.Studio.EventInstance Nl2Inst;
+    //private FMOD.Studio.EventInstance Nl3Inst;
+    //private FMOD.Studio.EventInstance Nl4Inst;
+    //private FMOD.Studio.EventInstance Nl5Inst;
+    //private FMOD.Studio.EventInstance Nl7Inst;
+    //private FMOD.Studio.EventInstance Nl8Inst;
+    //private FMOD.Studio.EventInstance S3Inst;
+    //private FMOD.Studio.EventInstance S4Inst;
 
     private FMOD.Studio.EventInstance NonLinearInst;
 
@@ -177,63 +177,63 @@ public class SoundController : MonoBehaviour
     }
     public void DestroyWaterFilter1_Audio()
     {
-        Nl2Inst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
-        Nl2Inst.start();
-        Nl2Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
 
     }
     public void WaterFilter2_Audio()
     {
-        Nl3Inst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
-        Nl3Inst.start();
-        Nl3Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
 
     }
     public void DestroyWaterFilter2_Audio()
     {
-        Nl4Inst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
-        Nl4Inst.start();
-        Nl4Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
 
 
     }
     public void FindingresourcesAudio()
     {
-        Nl5Inst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
-        Nl5Inst.start();
-        Nl5Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
 
     }
     public void Puzzle1_Audio()
     {
-        Nl7Inst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
-        Nl7Inst.start();
-        Nl7Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
     }
     public void Puzzle2_Audio()
     {
-        Nl8Inst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
-        Nl8Inst.start();
-        Nl8Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
     }
 
     public void ShopDialogue()
     {
-        Nl1Inst = FMODUnity.RuntimeManager.CreateInstance(Nl1_Ref);
-        Nl1Inst.start();
-        Nl1Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl1_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
     }
     public void ApproachingCampAudio()
     {
-        S3Inst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
-        S3Inst.start();
-        S3Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
     }
     public void InCampAudio()
     {
-        S4Inst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
-        S4Inst.start();
-        S4Inst.release();
+        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
+        NonLinearInst.start();
+        NonLinearInst.release();
     }
     public void PauseMenu()
     {
