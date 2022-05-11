@@ -515,7 +515,6 @@ MonoBehaviour:
     Data4: -641509264
   Banks:
   - {fileID: 2536008503797336486}
-  - {fileID: -586796677571076234}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -748,7 +747,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637877918289303625
+  lastModified: 637878716069784147
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -823,7 +822,7 @@ MonoBehaviour:
   - {fileID: -586796677571076234}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637877918289393396
+  cacheTime: 637878716069853352
   cacheVersion: 10
 --- !u!114 &39171794477483216
 MonoBehaviour:
