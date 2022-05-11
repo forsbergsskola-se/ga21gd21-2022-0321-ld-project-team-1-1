@@ -46,6 +46,7 @@ public class SoundController : MonoBehaviour
 
     //JournalMonolog function
     public int journalNum = 0;
+    
     public FMODUnity.EventReference journal1_Ref;
     public FMODUnity.EventReference journal2_Ref;
     public FMODUnity.EventReference journal3_Ref;
@@ -147,6 +148,13 @@ public class SoundController : MonoBehaviour
             dialougeInst = FMODUnity.RuntimeManager.CreateInstance(dialouge2_Ref);
             Debug.Log("playDialouge_2");
         }
+        else if (dialougeIncr == 3)
+        {
+            dialougeInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(dialouge2_Ref);
+            Debug.Log("playDialouge_3");
+
+        }
         dialougeInst.start();
         dialougeInst.release();
 
@@ -154,6 +162,8 @@ public class SoundController : MonoBehaviour
     }
     public void Journal()
     {
+        journalNum++;
+
         if (journalNum == 1)
         {
             journalInst = FMODUnity.RuntimeManager.CreateInstance(journal1_Ref);
