@@ -175,6 +175,39 @@ public class SoundController : MonoBehaviour
         journalInst.release();
 
     }
+    public void NonLinearAudio()
+    {
+        if (NonLinearNum == 1)
+        {
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
+            
+            
+        }
+        else if (NonLinearNum == 2)
+        {
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
+           
+            
+        }
+        else if (NonLinearNum == 3)
+        {
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
+           
+           
+        }
+        else if (NonLinearNum == 4)
+        {
+            NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
+           
+            
+        }
+        NonLinearInst.start();
+        NonLinearInst.release();
+       
+
+
+
+    }
     public void DestroyWaterFilter1_Audio()
     {
         NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
