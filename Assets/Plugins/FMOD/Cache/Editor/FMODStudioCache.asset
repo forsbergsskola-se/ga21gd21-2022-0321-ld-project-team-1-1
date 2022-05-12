@@ -319,6 +319,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &-6099653321196877607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StashingCrystal
+  m_EditorClassIdentifier: 
+  Path: event:/StashingCrystal
+  Guid:
+    Data1: 1099367854
+    Data2: 1297305257
+    Data3: 2109049769
+    Data4: 1770277326
+  Banks:
+  - {fileID: 2536008503797336486}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5485235920671139461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,10 +684,10 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637879568602676942
+  lastModified: 637879650773681667
   FileSizes:
   - Name: 
-    Value: 3444
+    Value: 3500
   Exists: 1
 --- !u!114 &-1990389168480842602
 MonoBehaviour:
@@ -839,13 +866,14 @@ MonoBehaviour:
   - {fileID: -3438941258841742858}
   - {fileID: 4720151275321864389}
   - {fileID: -1273037392322492935}
+  - {fileID: -6099653321196877607}
   EditorParameters:
   - {fileID: 3431532142493638294}
   MasterBanks:
   - {fileID: 2536008503797336486}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637879568602676942
+  cacheTime: 637879650773681667
   cacheVersion: 10
 --- !u!114 &39171794477483216
 MonoBehaviour:
@@ -1255,7 +1283,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637879568602626928
+  lastModified: 637879650773612004
   FileSizes: []
   Exists: 1
 --- !u!114 &2728855770330876017

@@ -49,6 +49,8 @@ public class ShopMenu : MonoBehaviour
     public SoundController sc;
     public FMODUnity.EventReference attractioinGloveRef;
     private FMOD.Studio.EventInstance attractionGloveInst;
+    public FMODUnity.EventReference stashingCrystalRef;
+    private FMOD.Studio.EventInstance stashingCrystalInst;
 
     void Update()
     {
@@ -135,10 +137,17 @@ public class ShopMenu : MonoBehaviour
     {
         if (TapDestroy.count >= 1)
         {
+            stashingCrystalInst = FMODUnity.RuntimeManager.CreateInstance(stashingCrystalRef);
+            stashingCrystalInst.start();
+            Debug.Log("stashingcrystalAudio");
+            stashingCrystalInst.release();
+
             attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
             attractionGloveInst.start();
             Debug.Log("AttractionAudio");
             attractionGloveInst.release();
+
+
             camera.GetComponent<GravityGun2>().enabled = true;
             selectionManager.GetComponent<SelectionManager>().enabled = true;
             //gravityGunButton.enabled = false;
