@@ -81,7 +81,7 @@ public class SoundController : MonoBehaviour
     //private FMOD.Studio.EventInstance S3Inst;
     //private FMOD.Studio.EventInstance S4Inst;
 
-    private FMOD.Studio.EventInstance NonLinearInst;
+    public FMOD.Studio.EventInstance NonLinearInst;
     FMOD.Studio.PLAYBACK_STATE pbState;
     //public bool hasPLayed = false;
 
@@ -189,10 +189,10 @@ public class SoundController : MonoBehaviour
     }
     public void NonLinearAudio()
     {
-        NonLinearInst.getPlaybackState(out pbState);
+        //NonLinearInst.getPlaybackState(out pbState);
 
-        if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
-        {
+        //if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        //{
             if (NonLinearNum == 1)
             {
                 NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
@@ -260,7 +260,7 @@ public class SoundController : MonoBehaviour
             //hasPlayed Bool? 
             NonLinearInst.release();
 
-        }
+        //}
 
        
 
