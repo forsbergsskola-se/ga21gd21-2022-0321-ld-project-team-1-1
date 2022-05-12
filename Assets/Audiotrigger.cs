@@ -38,16 +38,16 @@ public class Audiotrigger : MonoBehaviour
     }
    public void OnTriggerExit(Collider other)
     {
-        sc.NonLinearNum = funcNum;
-        if (funcNum == 7)
+        //sc.NonLinearNum = funcNum;
+        //if (funcNum == 7)
         {
-            if(pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+            //if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
             {
-                sc.NonLinearAudio();
-                Destroy(gameObject);
+                //sc.NonLinearAudio();
+                //Destroy(gameObject);
 
             }
-            else
+            //else
             {
 
 

@@ -246,9 +246,7 @@ public class SoundController : MonoBehaviour
             }
             else if (NonLinearNum == 7)
             {
-            //trigger exit
-            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(S5_Ref);
-
+            //setting out from camp
             }
             else if (NonLinearNum == 8)
             {
