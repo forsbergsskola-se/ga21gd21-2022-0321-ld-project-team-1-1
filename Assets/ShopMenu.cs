@@ -166,6 +166,10 @@ public class ShopMenu : MonoBehaviour
     
     public void EnableCrouch()
     {
+        stashingCrystalInst = FMODUnity.RuntimeManager.CreateInstance(stashingCrystalRef);
+        stashingCrystalInst.start();
+        Debug.Log("stashingcrystalAudio");
+
         player.GetComponent<Shrink>().enabled = true;
         //CrouchButton.enabled = false;
         CrouchButton.image.enabled = false;
