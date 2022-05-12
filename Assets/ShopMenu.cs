@@ -36,7 +36,7 @@ public class ShopMenu : MonoBehaviour
     private bool gravityGunAffordable;
     private bool crouchAffordable;
 
-    private bool gravityGunPurchased = false;
+    public static bool gravityGunPurchased = false;
     private bool crouchPurchased = false;
 
     [SerializeField] private int gravityGunCost = 1;
@@ -135,6 +135,10 @@ public class ShopMenu : MonoBehaviour
     {
         if (TapDestroy.count >= 1)
         {
+            attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
+            attractionGloveInst.start();
+            Debug.Log("AttractionAudio");
+            attractionGloveInst.release();
             camera.GetComponent<GravityGun2>().enabled = true;
             selectionManager.GetComponent<SelectionManager>().enabled = true;
             //gravityGunButton.enabled = false;
@@ -147,8 +151,7 @@ public class ShopMenu : MonoBehaviour
             TapDestroy.count -= gravityGunCost;
             CostCheck();
             EnableButtons();
-            attractionGloveInst.start();
-            attractionGloveInst.release();
+
         }
     }
     

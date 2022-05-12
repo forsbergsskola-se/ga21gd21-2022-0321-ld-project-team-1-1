@@ -85,6 +85,9 @@ public class SoundController : MonoBehaviour
     FMOD.Studio.PLAYBACK_STATE pbState;
     //public bool hasPLayed = false;
 
+    //AttractionGlove Audio
+    public FMODUnity.EventReference Ag1_ref;
+
     void Start()
     {
         gravBeamInst = FMODUnity.RuntimeManager.CreateInstance(gravBeamRef);
@@ -183,6 +186,13 @@ public class SoundController : MonoBehaviour
             dialougeInst = FMODUnity.RuntimeManager.CreateInstance(journal4_Ref);
         }
 
+        dialougeInst.start();
+        dialougeInst.release();
+
+    }
+    public void AttractionGlove()
+    {
+        dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Ag1_ref);
         dialougeInst.start();
         dialougeInst.release();
 
