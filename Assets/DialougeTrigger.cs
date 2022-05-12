@@ -5,14 +5,26 @@ using UnityEngine;
 public class DialougeTrigger : MonoBehaviour
 {
 
-    public SoundController DialougeIncrementer;
+    public SoundController sc;
+    FMOD.Studio.PLAYBACK_STATE pbState;
 
     private void OnTriggerEnter(Collider Other)
     {
-        Debug.Log("DialougeCollision");
-        DialougeIncrementer.DialougePlayer();
-        Debug.Log("DestroyObject");
-        Destroy(gameObject);
+        sc.dialougeInst.getPlaybackState(out pbState);
+        if(pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            Debug.Log("DialougeCollision");
+            sc.DialougePlayer();
+            Debug.Log("DestroyObject");
+            Destroy(gameObject);
+
+        }
+        else
+        {
+
+
+        }
+
     }
 
 

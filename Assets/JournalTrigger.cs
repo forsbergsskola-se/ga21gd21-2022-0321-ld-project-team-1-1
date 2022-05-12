@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class JournalTrigger : MonoBehaviour
 {
-    public SoundController Jtrigger;
-
+    public SoundController sc;
+    FMOD.Studio.PLAYBACK_STATE pbState;
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("journaTrigger");
-        Jtrigger.Journal();
-        Debug.Log("DestroyObject");
-        Destroy(gameObject);
+        sc.journalInst.getPlaybackState(out pbState);
+        if(pbState!= FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            Debug.Log("journaTrigger");
+            sc.Journal();
+            Debug.Log("DestroyObject");
+            Destroy(gameObject);
+
+
+        }
+        else
+        {
+
+        }
+
     }
 
 }

@@ -41,7 +41,7 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference dialouge3_Ref;
 
 
-    private FMOD.Studio.EventInstance dialougeInst;
+    public FMOD.Studio.EventInstance dialougeInst;
 
 
     //JournalMonolog function
@@ -53,7 +53,7 @@ public class SoundController : MonoBehaviour
     public FMODUnity.EventReference journal4_Ref;
 
 
-    private FMOD.Studio.EventInstance journalInst;
+    public FMOD.Studio.EventInstance journalInst;
 
                [Header("NonLinearDialogue")]
     //NonLinear Dialogue
