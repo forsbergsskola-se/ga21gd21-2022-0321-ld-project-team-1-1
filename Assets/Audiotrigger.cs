@@ -7,28 +7,41 @@ using UnityEngine;
 public class Audiotrigger : MonoBehaviour
 {
     
-    public SoundController trigger;
+    public SoundController sc;
     public int funcNum = 0;
+    FMOD.Studio.PLAYBACK_STATE pbState;
+
 
     public void OnTriggerEnter(Collider other)
     {
-        trigger.NonLinearNum = funcNum;
+        sc.NonLinearInst.getPlaybackState(out pbState);
+        sc.NonLinearNum = funcNum;
 
-         Debug.Log("playDialogue");
-         trigger.NonLinearAudio();
+        if(pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            Debug.Log("playDialogue");
+            sc.NonLinearAudio();
+            Debug.Log("destroyObject");
+            Destroy(gameObject);
 
-         //Debug.Log("destroyObject");
-         //Destroy(gameObject);
+
+        }
+        else
+        {
+
+
+        }
+
 
 
 
     }
     public void OnTriggerExit(Collider other)
     {
-        trigger.NonLinearNum = funcNum;
+        sc.NonLinearNum = funcNum;
         if (funcNum == 7)
         {
-            trigger.NonLinearAudio();
+            sc.NonLinearAudio();
             //Destroy(gameObject);
         }
     }
