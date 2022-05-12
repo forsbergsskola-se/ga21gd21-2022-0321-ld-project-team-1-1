@@ -46,7 +46,9 @@ public class ShopMenu : MonoBehaviour
     //public SoundController playAudio;
     public FMODUnity.EventReference enterShopRef;
     private FMOD.Studio.EventInstance enterShopInst;
-    public SoundController dialogue;
+    public SoundController sc;
+    public FMODUnity.EventReference attractioinGloveRef;
+    private FMOD.Studio.EventInstance attractionGloveInst;
 
     void Update()
     {
@@ -126,7 +128,7 @@ public class ShopMenu : MonoBehaviour
         enterShopInst = FMODUnity.RuntimeManager.CreateInstance(enterShopRef);
         enterShopInst.start();
         enterShopInst.release();
-        dialogue.ShopDialogue();
+        sc.ShopDialogue();
     }
 
     public void EnableGravityGun()
@@ -145,6 +147,8 @@ public class ShopMenu : MonoBehaviour
             TapDestroy.count -= gravityGunCost;
             CostCheck();
             EnableButtons();
+            attractionGloveInst.start();
+            attractionGloveInst.release();
         }
     }
     
