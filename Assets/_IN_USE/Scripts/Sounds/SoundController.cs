@@ -168,23 +168,23 @@ public class SoundController : MonoBehaviour
 
         if (journalNum == 1)
         {
-            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal1_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(journal1_Ref);
         }
         else if (journalNum == 2)
         {
-            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal2_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(journal2_Ref);
         }
         else if (journalNum == 3)
         {
-            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal3_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(journal3_Ref);
         }
         else if (journalNum == 4)
         {
-            journalInst = FMODUnity.RuntimeManager.CreateInstance(journal4_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(journal4_Ref);
         }
 
-        journalInst.start();
-        journalInst.release();
+        dialougeInst.start();
+        dialougeInst.release();
 
     }
     public void NonLinearAudio()
@@ -195,70 +195,70 @@ public class SoundController : MonoBehaviour
         //{
             if (NonLinearNum == 1)
             {
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
 
                 //Destroying the first Water Filter
             }
             else if (NonLinearNum == 2)
             {
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Nl3_Ref);
                 //The 2nd water filter Filter
 
             }
             else if (NonLinearNum == 3)
             {
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Nl4_Ref);
                 //Destroying the 2nd Water Filter
 
             }
             else if (NonLinearNum == 4)
             {
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Nl5_Ref);
                 //Finding resources
 
             }
             else if (NonLinearNum == 5)
             {
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
                 //Puzzle #1 Solved
 
             }
             else if (NonLinearNum == 6)
             {
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
                 //Puzzle #2 
 
             }
             else if (NonLinearNum == 7)
             {
-                //Trigger enter
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
+            //Trigger enter
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(S3_Ref);
             }
             else if (NonLinearNum == 7)
             {
-                //trigger exit
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S5_Ref);
+            //trigger exit
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(S5_Ref);
 
             }
             else if (NonLinearNum == 8)
             {
-                //in camp
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
+            //in camp
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
             }
             else if (NonLinearNum == 9)
             {
-                //Open World
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S8_Ref);
+            //Open World
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(S8_Ref);
             }
             else if (NonLinearNum == 10)
             {
-                //Kelta's Approach from the Ship
-                NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S9_Ref);
+            //Kelta's Approach from the Ship
+            dialougeInst = FMODUnity.RuntimeManager.CreateInstance(S9_Ref);
             }
 
-            NonLinearInst.start();
+            dialougeInst.start();
             //hasPlayed Bool? 
-            NonLinearInst.release();
+            dialougeInst.release();
 
         //}
 
