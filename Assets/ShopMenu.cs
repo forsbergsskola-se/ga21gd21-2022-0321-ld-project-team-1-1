@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ShopMenu : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
     private string interactiveTag = "Shop";
     private static bool GameIsPaused = false;
     public static bool shopIsOpen = false;
@@ -144,8 +145,10 @@ public class ShopMenu : MonoBehaviour
 
             attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
             attractionGloveInst.start();
+            anim.SetBool("isTalking", true);
             Debug.Log("AttractionAudio");
             attractionGloveInst.release();
+            anim.SetBool("isTalking", false);
 
 
             camera.GetComponent<GravityGun2>().enabled = true;

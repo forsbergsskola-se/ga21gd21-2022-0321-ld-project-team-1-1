@@ -187,14 +187,18 @@ public class SoundController : MonoBehaviour
         }
 
         dialougeInst.start();
+        anim.SetBool("isTalking", true);
         dialougeInst.release();
+        anim.SetBool("isTalking", false);
 
     }
     public void AttractionGlove()
     {
         dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Ag1_ref);
         dialougeInst.start();
+        anim.SetBool("isTalking", true);
         dialougeInst.release();
+        anim.SetBool("isTalking", false);
 
     }
     public void NonLinearAudio()
@@ -265,8 +269,10 @@ public class SoundController : MonoBehaviour
             }
 
             dialougeInst.start();
+            anim.SetBool("isTalking", true);
             //hasPlayed Bool? 
             dialougeInst.release();
+            anim.SetBool("isTalking", false);
 
         //}
     }
@@ -277,7 +283,9 @@ public class SoundController : MonoBehaviour
         {
         NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl1_Ref);
         NonLinearInst.start();
+        anim.SetBool("isTalking", true);
         NonLinearInst.release();
+        anim.SetBool("isTalking", false);
         destroyAudio = true;
         }
         else

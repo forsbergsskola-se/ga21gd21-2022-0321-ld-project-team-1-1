@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShrinkingAudio : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
     public FMODUnity.EventReference ShrinkingRef;
     private FMOD.Studio.EventInstance ShrinkingInst;
     FMOD.Studio.PLAYBACK_STATE pbState;
@@ -15,7 +16,9 @@ public class ShrinkingAudio : MonoBehaviour
             ShrinkingInst = FMODUnity.RuntimeManager.CreateInstance(ShrinkingRef);
             Debug.Log("shrinkingUpgradeAudio");
             ShrinkingInst.start();
+            anim.SetBool("isTalking", true);
             ShrinkingInst.release();
+            anim.SetBool("isTalking", false);
 
         }
         else
