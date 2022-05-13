@@ -17,13 +17,14 @@ public class DialougeTrigger : MonoBehaviour
             anim.SetBool("isTalking", true);
             Debug.Log("DialougeCollision");
             sc.DialougePlayer();
+            anim.SetBool("isTalking", false);
             Debug.Log("DestroyObject");
             Destroy(gameObject);
+            
 
         }
         else
         {
-            anim.SetBool("isTalking", false);
 
         }
 
