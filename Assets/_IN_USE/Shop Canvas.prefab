@@ -1139,6 +1139,21 @@ MonoBehaviour:
       Data3: -1699311470
       Data4: 1294278230
     Path: event:/EnterShop
+  sc: {fileID: 0}
+  attractioinGloveRef:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  stashingCrystalRef:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1893236024806365823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,6 +2605,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main_Frame
       objectReference: {fileID: 0}
+    - target: {fileID: 6626872064092821198, guid: 5019cacbd18b66e4b82c0195efb21574,
+        type: 3}
+      propertyPath: m_text
+      value: Attraction Glove
+      objectReference: {fileID: 0}
     - target: {fileID: 6626872064651859344, guid: 5019cacbd18b66e4b82c0195efb21574,
         type: 3}
       propertyPath: m_Enabled
@@ -2676,6 +2696,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626872065389273086, guid: 5019cacbd18b66e4b82c0195efb21574,
+        type: 3}
+      propertyPath: m_text
+      value: Shrinking System
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626872065389273086, guid: 5019cacbd18b66e4b82c0195efb21574,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626872065389273086, guid: 5019cacbd18b66e4b82c0195efb21574,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626872065389273087, guid: 5019cacbd18b66e4b82c0195efb21574,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 6626872065631787669, guid: 5019cacbd18b66e4b82c0195efb21574,
         type: 3}
