@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundController : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
                 [Header("CrystalAudio")]
     //The Crystalharvest Beam
     public FMODUnity.EventReference gravBeamRef;
@@ -158,7 +159,9 @@ public class SoundController : MonoBehaviour
 
         }
         dialougeInst.start();
+        anim.SetBool("isTalking", true);
         dialougeInst.release();
+        anim.SetBool("isTalking", false);
 
 
     }
