@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialougeTrigger : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
 
     public SoundController sc;
     FMOD.Studio.PLAYBACK_STATE pbState;
@@ -13,6 +14,7 @@ public class DialougeTrigger : MonoBehaviour
         sc.dialougeInst.getPlaybackState(out pbState);
         if(pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
         {
+            anim.SetBool("isTalking", true);
             Debug.Log("DialougeCollision");
             sc.DialougePlayer();
             Debug.Log("DestroyObject");
@@ -21,7 +23,7 @@ public class DialougeTrigger : MonoBehaviour
         }
         else
         {
-
+            anim.SetBool("isTalking", false);
 
         }
 
