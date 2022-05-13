@@ -37,7 +37,7 @@ public class ShopMenu : MonoBehaviour
     private bool crouchAffordable;
 
     public static bool gravityGunPurchased = false;
-    private bool crouchPurchased = false;
+    public static bool crouchPurchased = false;
 
     [SerializeField] private int gravityGunCost = 1;
     [SerializeField] private int crouchCost = 2;
