@@ -96,9 +96,6 @@ public class SoundController : MonoBehaviour
         crystalAmbienceInst = FMODUnity.RuntimeManager.CreateInstance(crystalAmbienceRef);
 
         //Dialouge
-
-
-
     }
 
     void Update()
@@ -269,24 +266,6 @@ public class SoundController : MonoBehaviour
             dialougeInst.release();
 
         //}
-
-       
-
-
-
-    }
-
-    public void Puzzle1_Audio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl7_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
-    }
-    public void Puzzle2_Audio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(Nl8_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
     }
 
     public void ShopDialogue()
@@ -305,12 +284,6 @@ public class SoundController : MonoBehaviour
 
     }
 
-    public void InCampAudio()
-    {
-        NonLinearInst = FMODUnity.RuntimeManager.CreateInstance(S4_Ref);
-        NonLinearInst.start();
-        NonLinearInst.release();
-    }
     public void PauseMenu()
     {
         pauseFilterInst = FMODUnity.RuntimeManager.CreateInstance("snapshot:/PauseFilter");
