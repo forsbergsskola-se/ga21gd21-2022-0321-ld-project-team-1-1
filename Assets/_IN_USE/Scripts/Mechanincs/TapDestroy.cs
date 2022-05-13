@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TapDestroy : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
+    [SerializeField] private TextMeshProUGUI text;
+    
     [SerializeField] private Camera camera = null;
     [SerializeField] public GameObject LaserBeam = null;
     
@@ -36,6 +40,7 @@ public class TapDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        text.text = "Water Filter Destroyed: " + waterFilterCount.ToString() + "/4";
         SetCountText();
         if (Input.GetMouseButtonDown(0))
         {
@@ -59,6 +64,7 @@ public class TapDestroy : MonoBehaviour
                 Debug.Log("ShootRay");
                 //perform our action
                 ShootRay();
+                //anim.ResetTrigger("OpenNotification");
             }
         }
         else
@@ -101,6 +107,7 @@ public class TapDestroy : MonoBehaviour
             {
                 waterFilterCount++;
                 Destroy(rayHit.transform.gameObject);
+                anim.SetTrigger("OpenNotification");
             }
 
         }
