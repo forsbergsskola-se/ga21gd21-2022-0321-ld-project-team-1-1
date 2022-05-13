@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13dadf388b7c3dc42a9742a2abd2a235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialougeIncrementer: {fileID: 2132053597}
+  sc: {fileID: 0}
 --- !u!4 &625121104
 Transform:
   m_ObjectHideFlags: 0
@@ -1251,8 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385ccb77892590243b71dc8caf1d902d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jtrigger: {fileID: 2132053597}
-  journalLvl: 3
+  sc: {fileID: 0}
 --- !u!65 &775507801
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1429,8 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385ccb77892590243b71dc8caf1d902d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jtrigger: {fileID: 2132053597}
-  journalLvl: 4
+  sc: {fileID: 0}
 --- !u!65 &896541695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1459,6 +1457,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &941527483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8986626670413437194, guid: 634f7f7d6e433409186b67c9343cadad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794501076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &941527484
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941527483}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 124
+  m_CollisionDetection: 0
+--- !u!114 &941527485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941527483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef869a2389ab8f43898c2fb2af244c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loopRef:
+    Guid:
+      Data1: 1709415700
+      Data2: 1242706138
+      Data3: -1622398279
+      Data4: -2133437491
+    Path: event:/BoxScraping
 --- !u!4 &948958660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9004363311652389612, guid: 4ff71f72563c77e41857e4592ad7ce83,
@@ -2897,6 +2936,90 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790692387}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1794501076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -126.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 71.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -168.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646130611594658736, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8986626670413437194, guid: 634f7f7d6e433409186b67c9343cadad,
+        type: 3}
+      propertyPath: m_Name
+      value: Crate_green
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 634f7f7d6e433409186b67c9343cadad, type: 3}
 --- !u!1 &1845585273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3460,8 +3583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385ccb77892590243b71dc8caf1d902d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jtrigger: {fileID: 2132053597}
-  journalLvl: 5
+  sc: {fileID: 0}
 --- !u!65 &2007665760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3608,8 +3730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385ccb77892590243b71dc8caf1d902d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jtrigger: {fileID: 2132053597}
-  journalLvl: 2
+  sc: {fileID: 0}
 --- !u!65 &2054573796
 BoxCollider:
   m_ObjectHideFlags: 0
