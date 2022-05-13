@@ -269,7 +269,6 @@ public class SoundController : MonoBehaviour
             }
 
             dialougeInst.start();
-            anim.SetBool("isTalking", true);
             //hasPlayed Bool? 
             dialougeInst.release();
             anim.SetBool("isTalking", false);
