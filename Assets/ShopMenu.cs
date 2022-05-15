@@ -138,17 +138,17 @@ public class ShopMenu : MonoBehaviour
     {
         if (TapDestroy.count >= 1)
         {
-            stashingCrystalInst = FMODUnity.RuntimeManager.CreateInstance(stashingCrystalRef);
-            stashingCrystalInst.start();
-            Debug.Log("stashingcrystalAudio");
-            stashingCrystalInst.release();
+            //stashingCrystalInst = FMODUnity.RuntimeManager.CreateInstance(stashingCrystalRef);
+            //stashingCrystalInst.start();
+            //Debug.Log("stashingcrystalAudio");
+            //stashingCrystalInst.release();
 
-            attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
-            attractionGloveInst.start();
-            anim.SetBool("isTalking", true);
-            Debug.Log("AttractionAudio");
-            attractionGloveInst.release();
-            anim.SetBool("isTalking", false);
+            //attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
+            //attractionGloveInst.start();
+            //anim.SetBool("isTalking", true);
+            //Debug.Log("AttractionAudio");
+            //attractionGloveInst.release();
+            //anim.SetBool("isTalking", false);
 
 
             camera.GetComponent<GravityGun2>().enabled = true;
