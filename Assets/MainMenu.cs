@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class MainMenu : MonoBehaviour
 {
-    public void NewGame()
+    public void NewGame(int i)
     {
-        SceneManager.LoadScene(sceneBuildIndex: 1);
+        SceneController.LoadScene(i, 1, 2);
     }
 
     public void Quit()
