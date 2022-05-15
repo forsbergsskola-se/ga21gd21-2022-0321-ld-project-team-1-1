@@ -27,7 +27,7 @@ public class ShipInteraction : MonoBehaviour
                 {
                     instructions.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
-                        SceneManager.LoadScene(sceneBuildIndex: 2);
+                        SceneController.LoadScene(4, 1, 1);
                 }
             }
 

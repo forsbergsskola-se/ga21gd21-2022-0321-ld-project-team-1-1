@@ -10,7 +10,7 @@ public class ProgressionManager : MonoBehaviour
     {
         if (TapDestroy.waterFilterCount >= maxFinters)
         {
-            SceneManager.LoadScene(sceneBuildIndex: 1);
+            SceneController.LoadScene(3, 1, 1);
         }
             
     }
