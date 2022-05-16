@@ -203,11 +203,13 @@ public class SoundController : MonoBehaviour
     }
     public void NonLinearAudio()
     {
+
+        anim.SetBool("isTalking", true);
         //NonLinearInst.getPlaybackState(out pbState);
 
         //if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
         //{
-            if (NonLinearNum == 1)
+        if (NonLinearNum == 1)
             {
             dialougeInst = FMODUnity.RuntimeManager.CreateInstance(Nl2_Ref);
 
@@ -271,7 +273,7 @@ public class SoundController : MonoBehaviour
             dialougeInst.start();
             //hasPlayed Bool? 
             dialougeInst.release();
-            anim.SetBool("isTalking", false);
+
 
         //}
     }

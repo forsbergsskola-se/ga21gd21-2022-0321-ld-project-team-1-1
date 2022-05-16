@@ -44,7 +44,6 @@ public class ShopMenu : MonoBehaviour
     [SerializeField] private int crouchCost = 2;
 
          [Header("Audio")]
-    //public SoundController playAudio;
     public FMODUnity.EventReference enterShopRef;
     private FMOD.Studio.EventInstance enterShopInst;
     public SoundController sc;
@@ -52,6 +51,9 @@ public class ShopMenu : MonoBehaviour
     private FMOD.Studio.EventInstance attractionGloveInst;
     public FMODUnity.EventReference stashingCrystalRef;
     private FMOD.Studio.EventInstance stashingCrystalInst;
+    public FMODUnity.EventReference sh4Ref;
+    private FMOD.Studio.EventInstance sh4Inst;
+    FMOD.Studio.PLAYBACK_STATE pbState;
 
     void Update()
     {
@@ -165,8 +167,9 @@ public class ShopMenu : MonoBehaviour
             stashingCrystalInst.start();
             Debug.Log("stashingcrystalAudio");
             stashingCrystalInst.release();
-
+            
             attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
+
             attractionGloveInst.start();
             //anim.SetBool("isTalking", true);
             Debug.Log("AttractionAudio");
@@ -191,6 +194,10 @@ public class ShopMenu : MonoBehaviour
         TapDestroy.count -= crouchCost;
         CostCheck();
         EnableButtons();
+        sh4Inst = FMODUnity.RuntimeManager.CreateInstance(sh4Ref);
+        attractionGloveInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        sh4Inst.start();
+        sh4Inst.release();
     }
 
     void EnableButtons()

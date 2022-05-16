@@ -15,8 +15,9 @@ public class DialougeTrigger : MonoBehaviour
         if(pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
         {
             Debug.Log("DialougeCollision");
+
             sc.DialougePlayer();
-            anim.SetBool("isTalking", true);
+            //anim.SetBool("isTalking", true);
             Debug.Log("DestroyObject");
             Destroy(gameObject);
             
