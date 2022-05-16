@@ -89,6 +89,10 @@ public class SoundController : MonoBehaviour
     //AttractionGlove Audio
     public FMODUnity.EventReference Ag1_ref;
 
+
+    //crouchbool
+    private bool crouchActivaded = false;
+
     void Start()
     {
         gravBeamInst = FMODUnity.RuntimeManager.CreateInstance(gravBeamRef);
@@ -317,5 +321,19 @@ public class SoundController : MonoBehaviour
         computerButtonInst = FMODUnity.RuntimeManager.CreateInstance(computerButtonRef);
         computerButtonInst.start();
         computerButtonInst.release();
+    }
+    public void crouchAudio()
+    {
+        if (ShopMenu.crouchPurchased == true && crouchActivaded == false)
+        {
+            if (Input.GetButton("Shift"))
+            {
+                crouchActivaded = true;
+
+
+            }
+
+
+        }
     }
 }
