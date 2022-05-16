@@ -138,10 +138,7 @@ public class ShopMenu : MonoBehaviour
     {
         if (TapDestroy.count >= 1)
         {
-            //stashingCrystalInst = FMODUnity.RuntimeManager.CreateInstance(stashingCrystalRef);
-            //stashingCrystalInst.start();
-            //Debug.Log("stashingcrystalAudio");
-            //stashingCrystalInst.release();
+
 
             //attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
             //attractionGloveInst.start();
@@ -163,7 +160,18 @@ public class ShopMenu : MonoBehaviour
             TapDestroy.count -= gravityGunCost;
             CostCheck();
             EnableButtons();
+            //Audio
+            stashingCrystalInst = FMODUnity.RuntimeManager.CreateInstance(stashingCrystalRef);
+            stashingCrystalInst.start();
+            Debug.Log("stashingcrystalAudio");
+            stashingCrystalInst.release();
 
+            attractionGloveInst = FMODUnity.RuntimeManager.CreateInstance(attractioinGloveRef);
+            attractionGloveInst.start();
+            //anim.SetBool("isTalking", true);
+            Debug.Log("AttractionAudio");
+            attractionGloveInst.release();
+            //anim.SetBool("isTalking", false);
         }
     }
     
