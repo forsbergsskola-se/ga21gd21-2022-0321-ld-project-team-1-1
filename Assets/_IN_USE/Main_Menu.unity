@@ -544,6 +544,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c5d11c59a9078468e9cc31e09494ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuAudioRef:
+    Guid:
+      Data1: -37742160
+      Data2: 1178760824
+      Data3: 644890771
+      Data4: -1641907359
+    Path: event:/Main Menu
 --- !u!1 &716430650
 GameObject:
   m_ObjectHideFlags: 0
