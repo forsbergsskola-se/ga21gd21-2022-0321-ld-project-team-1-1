@@ -194,8 +194,9 @@ public class ShopMenu : MonoBehaviour
         TapDestroy.count -= crouchCost;
         CostCheck();
         EnableButtons();
+
         sh4Inst = FMODUnity.RuntimeManager.CreateInstance(sh4Ref);
-        attractionGloveInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //attractionGloveInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         sh4Inst.start();
         sh4Inst.release();
     }
