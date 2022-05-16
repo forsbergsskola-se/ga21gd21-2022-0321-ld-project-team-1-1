@@ -874,7 +874,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799962647}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 0c6efcd7690297a4ba12d3845a039b4e, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 7635321344559c346a718f453effbcb3, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -965,8 +965,6 @@ PlayableDirector:
     value: {fileID: 1799962647}
   - key: {fileID: -635623111223468131, guid: a508e5a412ebbb54384534db42096c9e, type: 2}
     value: {fileID: 1456411007}
-  - key: {fileID: 6773910716574956958, guid: a508e5a412ebbb54384534db42096c9e, type: 2}
-    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - d0a7eaf36d8542f409b1d1e136c4edf8: {fileID: 1159984421}
