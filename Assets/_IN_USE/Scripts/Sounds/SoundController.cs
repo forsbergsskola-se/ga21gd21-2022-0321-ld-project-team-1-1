@@ -93,6 +93,8 @@ public class SoundController : MonoBehaviour
     //crouchbool
     private bool crouchActivaded = false;
 
+    public FMODUnity.EventReference Sh4Ref;
+    private FMOD.Studio.EventInstance sh4Inst;
     void Start()
     {
         gravBeamInst = FMODUnity.RuntimeManager.CreateInstance(gravBeamRef);
@@ -326,8 +328,12 @@ public class SoundController : MonoBehaviour
     {
         if (ShopMenu.crouchPurchased == true && crouchActivaded == false)
         {
-            if (Input.GetButton("Shift"))
+            if (Input.GetKeyDown(KeyCode.LeftControl))
             {
+                sh4Inst = FMODUnity.RuntimeManager.CreateInstance(Sh4Ref);
+                Debug.Log("shrinkingOnceAudio");
+                sh4Inst.start();
+                sh4Inst.release();
                 crouchActivaded = true;
 
 

@@ -195,10 +195,10 @@ public class ShopMenu : MonoBehaviour
         CostCheck();
         EnableButtons();
 
-        sh4Inst = FMODUnity.RuntimeManager.CreateInstance(sh4Ref);
+        //sh4Inst = FMODUnity.RuntimeManager.CreateInstance(sh4Ref);
         //attractionGloveInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        sh4Inst.start();
-        sh4Inst.release();
+        //sh4Inst.start();
+        //sh4Inst.release();
     }
 
     void EnableButtons()
