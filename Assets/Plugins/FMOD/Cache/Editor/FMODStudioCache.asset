@@ -867,13 +867,14 @@ MonoBehaviour:
   - {fileID: 4720151275321864389}
   - {fileID: -1273037392322492935}
   - {fileID: -6099653321196877607}
+  - {fileID: 4145633299766997662}
   EditorParameters:
   - {fileID: 3431532142493638294}
   MasterBanks:
   - {fileID: 2536008503797336486}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637882993882242750
+  cacheTime: 637883029302659125
   cacheVersion: 10
 --- !u!114 &39171794477483216
 MonoBehaviour:
@@ -1283,7 +1284,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637882959126410729
+  lastModified: 637883029302659125
   FileSizes: []
   Exists: 1
 --- !u!114 &2728855770330876017
@@ -1571,6 +1572,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 15625
+--- !u!114 &4145633299766997662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/IntroCutScene
+  m_EditorClassIdentifier: 
+  Path: event:/IntroCutScene
+  Guid:
+    Data1: -95195255
+    Data2: 1231737604
+    Data3: -134626893
+    Data4: 183251884
+  Banks:
+  - {fileID: 2536008503797336486}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40965
 --- !u!114 &4322104672246098914
 MonoBehaviour:
   m_ObjectHideFlags: 0
