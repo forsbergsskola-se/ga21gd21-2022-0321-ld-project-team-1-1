@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &865255812616932816
 Transform:
@@ -220,6 +220,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T_pipe_vent
       objectReference: {fileID: 0}
+    - target: {fileID: 7191770715348369268, guid: 6b17ddb6157ef2a4eb99d8bf2337128b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b17ddb6157ef2a4eb99d8bf2337128b, type: 3}
 --- !u!4 &4769041475138331649 stripped
@@ -294,6 +299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -385,6 +395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686963984570721 stripped
@@ -459,6 +474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -540,6 +560,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111335089315341 stripped
@@ -559,6 +584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375161164195061202, guid: 2dea599bc27493a45b6e72b342863f32,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1899099358904516666, guid: 2dea599bc27493a45b6e72b342863f32,
         type: 3}
@@ -634,6 +664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7723000694816955062, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -765,6 +800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686963882501120 stripped
@@ -840,6 +880,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964120226026 stripped
@@ -859,6 +904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7723000694816955062, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -1005,6 +1055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964068178795 stripped
@@ -1079,6 +1134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe_one_end (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
@@ -1155,6 +1215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 4590918245682087377, guid: 084710c8974f3c24c80800df4ae415c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 084710c8974f3c24c80800df4ae415c3, type: 3}
 --- !u!4 &2444020806860503547 stripped
@@ -1229,6 +1294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: short_pipe_one_end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
@@ -1310,6 +1380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111335191267869 stripped
@@ -1384,6 +1459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -1475,6 +1555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686963725935351 stripped
@@ -1549,6 +1634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_one_end (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590918245682087377, guid: 084710c8974f3c24c80800df4ae415c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 084710c8974f3c24c80800df4ae415c3, type: 3}
@@ -1640,6 +1730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686963628225389 stripped
@@ -1729,6 +1824,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -1825,6 +1925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686963848933612 stripped
@@ -1915,6 +2020,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686963857331905 stripped
@@ -1934,6 +2044,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -2065,6 +2180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111335383876630 stripped
@@ -2155,6 +2275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686963805571737 stripped
@@ -2174,6 +2299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375161164195061202, guid: 2dea599bc27493a45b6e72b342863f32,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1899099358904516666, guid: 2dea599bc27493a45b6e72b342863f32,
         type: 3}
@@ -2305,6 +2435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964542076682 stripped
@@ -2324,6 +2459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -2470,6 +2610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964502897135 stripped
@@ -2565,6 +2710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T_pipe_vent (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7191770715348369268, guid: 6b17ddb6157ef2a4eb99d8bf2337128b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b17ddb6157ef2a4eb99d8bf2337128b, type: 3}
 --- !u!4 &5453321793417011123 stripped
@@ -2655,6 +2805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964491356708 stripped
@@ -2674,6 +2829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7723000694816955062, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -2749,6 +2909,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: short_pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333032201692643701, guid: f639fa74a0ca2f74dbcd91abae42a495,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6958017979761888684, guid: f639fa74a0ca2f74dbcd91abae42a495,
         type: 3}
@@ -2900,6 +3065,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T_pipe_vent
       objectReference: {fileID: 0}
+    - target: {fileID: 7191770715348369268, guid: 6b17ddb6157ef2a4eb99d8bf2337128b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b17ddb6157ef2a4eb99d8bf2337128b, type: 3}
 --- !u!4 &5453321793345491052 stripped
@@ -2974,6 +3144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: short_pipe_one_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
@@ -3065,6 +3240,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964622720052 stripped
@@ -3139,6 +3319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: short_pipe_one_end (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
@@ -3215,6 +3400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964613095724 stripped
@@ -3290,6 +3480,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964597970587 stripped
@@ -3364,6 +3559,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -3460,6 +3660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964207659439 stripped
@@ -3479,6 +3684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375161164195061202, guid: 2dea599bc27493a45b6e72b342863f32,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1899099358904516666, guid: 2dea599bc27493a45b6e72b342863f32,
         type: 3}
@@ -3610,6 +3820,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111335878088409 stripped
@@ -3700,6 +3915,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964192917183 stripped
@@ -3774,6 +3994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -3864,6 +4089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -3960,6 +4190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964152529451 stripped
@@ -4050,6 +4285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964161643830 stripped
@@ -4069,6 +4309,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4570113540119274866, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -4220,6 +4465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111335938162808 stripped
@@ -4310,6 +4560,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964322101975 stripped
@@ -4329,6 +4584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4570113540119274866, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -4424,6 +4684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324869901324082870, guid: 584b805c90b012f4aabb07956129f281,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7080002009607662932, guid: 584b805c90b012f4aabb07956129f281,
         type: 3}
@@ -4560,6 +4825,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965053781772 stripped
@@ -4644,6 +4914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe_one_end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
@@ -4740,6 +5015,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111333899802530 stripped
@@ -4830,6 +5110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965027340414 stripped
@@ -4849,6 +5134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4570113540119274866, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -5015,6 +5305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965199291555 stripped
@@ -5105,6 +5400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965150674020 stripped
@@ -5124,6 +5424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -5199,6 +5504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -5330,6 +5640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_pipe_one_end (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
 --- !u!4 &504572252595268842 stripped
@@ -5404,6 +5719,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_one_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590918245682087377, guid: 084710c8974f3c24c80800df4ae415c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 084710c8974f3c24c80800df4ae415c3, type: 3}
@@ -5495,6 +5815,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964792059106 stripped
@@ -5569,6 +5894,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: short_pipe_one_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
@@ -5645,6 +5975,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111334191220793 stripped
@@ -5719,6 +6054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe_one_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
@@ -5795,6 +6135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111334176000788 stripped
@@ -5814,6 +6159,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375161164195061202, guid: 2dea599bc27493a45b6e72b342863f32,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1899099358904516666, guid: 2dea599bc27493a45b6e72b342863f32,
         type: 3}
@@ -5945,6 +6295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964707746753 stripped
@@ -6019,6 +6374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: short_pipe_one_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
@@ -6110,6 +6470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964896274321 stripped
@@ -6129,6 +6494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -6204,6 +6574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -6350,6 +6725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964886696813 stripped
@@ -6440,6 +6820,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964856996825 stripped
@@ -6515,6 +6900,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686964855509431 stripped
@@ -6534,6 +6924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -6665,6 +7060,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965565686485 stripped
@@ -6749,6 +7149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe_one_end (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
@@ -6845,6 +7250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &1779111334609692384 stripped
@@ -6919,6 +7329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe_one_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
@@ -6995,6 +7410,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T_pipe_one_end (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4590918245682087377, guid: 084710c8974f3c24c80800df4ae415c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 084710c8974f3c24c80800df4ae415c3, type: 3}
 --- !u!4 &2444020808538917898 stripped
@@ -7069,6 +7489,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe_one_end (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
@@ -7160,6 +7585,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965708476326 stripped
@@ -7235,6 +7665,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_pipe_one_end (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
 --- !u!4 &504572253097492106 stripped
@@ -7309,6 +7744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -7400,6 +7840,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965689341743 stripped
@@ -7474,6 +7919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_vent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191770715348369268, guid: 6b17ddb6157ef2a4eb99d8bf2337128b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b17ddb6157ef2a4eb99d8bf2337128b, type: 3}
@@ -7570,6 +8020,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_pipe_one_end (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
 --- !u!4 &504572252895998505 stripped
@@ -7589,6 +8044,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4570113540119274866, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -7684,6 +8144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: T_pipe_two_ends (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835952737807416672, guid: be12ce24f6e4c774aad3d3d790652825,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8818251733526774126, guid: be12ce24f6e4c774aad3d3d790652825,
         type: 3}
@@ -7830,6 +8295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965258847708 stripped
@@ -7920,6 +8390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965236040569 stripped
@@ -7939,6 +8414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7723000694816955062, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -8014,6 +8494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375161164195061202, guid: 2dea599bc27493a45b6e72b342863f32,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1899099358904516666, guid: 2dea599bc27493a45b6e72b342863f32,
         type: 3}
@@ -8165,6 +8650,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965392945028 stripped
@@ -8255,6 +8745,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3629686965392046756 stripped
@@ -8274,6 +8769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 409266977558023815, guid: b33ec50ec06627946af306f06caac5dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7723000694816955062, guid: b33ec50ec06627946af306f06caac5dc,
         type: 3}
@@ -8349,6 +8849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375161164195061202, guid: 2dea599bc27493a45b6e72b342863f32,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1899099358904516666, guid: 2dea599bc27493a45b6e72b342863f32,
         type: 3}
@@ -8485,6 +8990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &3297326352635272013 stripped
@@ -8559,6 +9069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -8640,6 +9155,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &3575965055266448289 stripped
@@ -8714,6 +9234,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: short_pipe_one_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
@@ -8790,6 +9315,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &1512538083933607097 stripped
@@ -8864,6 +9394,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -8940,6 +9475,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &5885893817664630607 stripped
@@ -9014,6 +9554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -9100,6 +9645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &5388720007106918586 stripped
@@ -9175,6 +9725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &6753577326825221426 stripped
@@ -9194,6 +9749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375161164195061202, guid: 2dea599bc27493a45b6e72b342863f32,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1899099358904516666, guid: 2dea599bc27493a45b6e72b342863f32,
         type: 3}
@@ -9325,6 +9885,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long_pipe_one_end (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
 --- !u!4 &5822862946174214178 stripped
@@ -9400,6 +9965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: curved_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
 --- !u!4 &8918026402583852727 stripped
@@ -9474,6 +10044,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Long_pipe_one_end (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665082668029172286, guid: a554b5899155d264cb85a057665c91b2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a554b5899155d264cb85a057665c91b2, type: 3}
@@ -9555,6 +10130,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_pipe_one_end
       objectReference: {fileID: 0}
+    - target: {fileID: 816861981173167282, guid: 068f66d64af78264ebc53a92bf332607,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068f66d64af78264ebc53a92bf332607, type: 3}
 --- !u!4 &9041984031807216419 stripped
@@ -9629,6 +10209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: curved_pipe_one_end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810027880318166303, guid: a3bace035948b984ea746de53e116be9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bace035948b984ea746de53e116be9, type: 3}
