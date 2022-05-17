@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -11,6 +12,8 @@ public class GravityGun2 : MonoBehaviour
    //[SerializeField] private Material defaultMaterial;
 
    [SerializeField] private GameObject SelectionManager;
+
+   [SerializeField] private Animator Arm_rigged;
    
    private float Yrot;
    private RaycastHit hit;
@@ -21,7 +24,13 @@ public class GravityGun2 : MonoBehaviour
     public SoundController Gravitygun2;
     public SoundController Error;
 
-   private void Update()
+
+    private void Start()
+    {
+       Arm_rigged.GetComponent<Animator>();
+    }
+
+    private void Update()
    {
       /*Yrot -= Input.GetAxis("Mouse Y");
       Yrot = Mathf.Clamp(Yrot, -60, 60);
@@ -29,6 +38,7 @@ public class GravityGun2 : MonoBehaviour
       if (Input.GetMouseButtonDown(1) && Physics.Raycast(transform.position, transform.forward, out hit, 30) &&
           hit.transform.GetComponent<Rigidbody>() && hit.transform.CompareTag(interactiveTag))
       {
+         
          SelectionManager.SetActive(false);
          //defaultMaterial = selectionRenderer.material; //save object original material
          grabbedOBJ = hit.transform.gameObject;
@@ -59,6 +69,14 @@ public class GravityGun2 : MonoBehaviour
          grabbedOBJ.GetComponent<Rigidbody>().velocity = 10 * (grabPos.position - grabbedOBJ.transform.position);
       }
 
+      if (Input.GetMouseButton(1))
+      {
+         Arm_rigged.SetBool("Gravity 0", true);
+      }
+      else
+      {
+         Arm_rigged.SetBool("Gravity 0", false);
+      }
 
       
    }
