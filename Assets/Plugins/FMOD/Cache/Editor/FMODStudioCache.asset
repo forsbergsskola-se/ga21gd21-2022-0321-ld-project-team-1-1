@@ -346,6 +346,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &-6265421197066035416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/outro2.1Music
+  m_EditorClassIdentifier: 
+  Path: event:/outro2.1Music
+  Guid:
+    Data1: -1072825799
+    Data2: 1100470145
+    Data3: 1330657711
+    Data4: 1837300672
+  Banks:
+  - {fileID: 2536008503797336486}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 53500
 --- !u!114 &-6099653321196877607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,10 +765,10 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637883272694958374
+  lastModified: 637883750718800192
   FileSizes:
   - Name: 
-    Value: 3664
+    Value: 3750
   Exists: 1
 --- !u!114 &-1990389168480842602
 MonoBehaviour:
@@ -924,13 +951,15 @@ MonoBehaviour:
   - {fileID: 4145633299766997662}
   - {fileID: -4324590564592725336}
   - {fileID: -7677044769552020757}
+  - {fileID: -6265421197066035416}
+  - {fileID: 1297824099602767526}
   EditorParameters:
   - {fileID: 3431532142493638294}
   MasterBanks:
   - {fileID: 2536008503797336486}
   StringsBanks:
   - {fileID: -2750405667526196540}
-  cacheTime: 637883272694958374
+  cacheTime: 637883750718800192
   cacheVersion: 10
 --- !u!114 &39171794477483216
 MonoBehaviour:
@@ -1120,6 +1149,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 39000
+--- !u!114 &1297824099602767526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/outro2.1
+  m_EditorClassIdentifier: 
+  Path: event:/outro2.1
+  Guid:
+    Data1: 534082966
+    Data2: 1174989927
+    Data3: -814558793
+    Data4: -1983762011
+  Banks:
+  - {fileID: 2536008503797336486}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 51000
 --- !u!114 &1463747151814817836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1340,7 +1396,7 @@ MonoBehaviour:
   Path: Assets/Streaming Assets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637883272694889139
+  lastModified: 637883750718712469
   FileSizes: []
   Exists: 1
 --- !u!114 &2728855770330876017
