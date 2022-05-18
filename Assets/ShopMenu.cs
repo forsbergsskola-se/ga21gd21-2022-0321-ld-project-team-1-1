@@ -86,7 +86,7 @@ public class ShopMenu : MonoBehaviour
 
     public void Resume()
     {
-        Debug.Log(shopIsOpen);
+        //Debug.Log(shopIsOpen);
         
         Cursor.visible = false; //Disable Cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -100,19 +100,20 @@ public class ShopMenu : MonoBehaviour
         
         shopMenuUI.SetActive(false); //Deactivate Shop UI
         
-        Time.timeScale = 1f; //Resume the Game
+        //Time.timeScale = 1f; //Resume the Game
         GameIsPaused = false;
+        shopIsOpen = false;
     }
     public void Pause()
     {
         shopIsOpen = true; //the shop is open
-        Debug.Log(shopIsOpen);
+        //Debug.Log(shopIsOpen);
         
         shopMenuUI.SetActive(true); //Activate Shop UI
         
         instructions.SetActive(false); //Disable instructions on screen
         
-        Time.timeScale = 0f; //Pause the Game
+        //Time.timeScale = 0f; //Pause the Game
         GameIsPaused = true;
 
         EnableButtons();
